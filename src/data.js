@@ -8,28 +8,28 @@ export const categories = [
 export const services = [
   {
     id: 1,
-    title: "Essential Clean",
+    title: "Post-Construction Cleaning",
     description: "Standard maintenance cleaning to keep your home fresh, tidy, and consistently welcoming.",
-    price: "From ₦120,000",
+    price: "Custom Quotes",
     icon: "Sparkles"
   },
   {
     id: 2,
-    title: "Deep Revive",
+    title: "Fumigation & Pest Control",
     description: "Intensive top-to-bottom cleaning targeting hidden dirt, grime, and neglected areas.",
-    price: "From ₦250,000",
+    price: "Custom Quotes",
     icon: "Droplets"
   },
   {
     id: 3,
-    title: "Move-In / Move-Out",
+    title: "Janitorial Services | Routine Cleaning",
     description: "Comprehensive detailing ensuring spaces are spotless for the next chapter of your life.",
-    price: "From ₦300,000",
+    price: "Custom Quotes",
     icon: "Home"
   },
   {
     id: 4,
-    title: "Corporate Gleam",
+    title: "Cleaning Equipment & Supplies",
     description: "Tailored commercial cleaning solutions for a pristine, productive workspace.",
     price: "Custom Quotes",
     icon: "Briefcase"

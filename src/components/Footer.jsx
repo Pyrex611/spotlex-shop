@@ -16,9 +16,9 @@ export default function Footer() {
               Elevating spaces through minimalist design, premium equipment, and meticulous cleaning services.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="text-gray-400 hover:text-gray-900 transition-colors"><Instagram className="w-5 h-5" /></a>
-              <a href="#" className="text-gray-400 hover:text-gray-900 transition-colors"><Twitter className="w-5 h-5" /></a>
-              <a href="#" className="text-gray-400 hover:text-gray-900 transition-colors"><Facebook className="w-5 h-5" /></a>
+              <a href="https://www.instagram.com/spotlexworld/" className="text-gray-400 hover:text-gray-900 transition-colors"><Instagram className="w-5 h-5" /></a>
+              <a href="https://twitter.com/spotlexworld1" className="text-gray-400 hover:text-gray-900 transition-colors"><Twitter className="w-5 h-5" /></a>
+              <a href="https://www.facebook.com/spotlexworld" className="text-gray-400 hover:text-gray-900 transition-colors"><Facebook className="w-5 h-5" /></a>
             </div>
           </div>
           
@@ -45,7 +45,7 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold text-gray-900 mb-4">Company</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="text-sm text-gray-500 hover:text-brand-500 transition-colors">About Us</a></li>
+              <li><a href="https://www.spotlexworld.com" className="text-sm text-gray-500 hover:text-brand-500 transition-colors">About Us</a></li>
               <li><a href="#" className="text-sm text-gray-500 hover:text-brand-500 transition-colors">Contact</a></li>
               <li><a href="#" className="text-sm text-gray-500 hover:text-brand-500 transition-colors">Privacy Policy</a></li>
               <li><a href="#" className="text-sm text-gray-500 hover:text-brand-500 transition-colors">Terms of Service</a></li>
@@ -54,9 +54,9 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-gray-100 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-gray-400">© {new Date().getFullYear()} Spotlex Shop. All rights reserved.</p>
+          <p className="text-sm text-gray-400">© {new Date().getFullYear()} SpotlexWorld Environmental Solutions. All rights reserved.</p>
           <div className="flex gap-4">
-             <span className="text-sm text-gray-400">Designed with precision.</span>
+             <span className="text-sm text-gray-400">Designed by Pyrexx.</span>
           </div>
         </div>
       </div>

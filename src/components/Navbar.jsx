@@ -18,21 +18,32 @@ export default function Navbar({ cartCount, openCart }) {
     setMobileMenuOpen(false);
   }, [location.pathname]);
 
+  // Distraction-free funnel: Hide menu on shop page to increase conversion focus
+  const isShopPage = location.pathname === '/shop';
+
   return (
     <nav className={`fixed top-0 w-full z-40 transition-all duration-300 ${scrolled ? 'glass-nav py-4' : 'bg-transparent py-6'}`}>
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
         
+        {/* Logo - Acts as the Home Button */}
         <Link to="/" className="flex items-center gap-3 group">
           <img src="/spotlex_logo.jpg" alt="Spotlex Logo" className="w-9 h-9 rounded-full object-cover shadow-sm group-hover:scale-105 transition-transform" />
           <span className="text-xl font-semibold tracking-tight text-gray-900">Spotlex Shop</span>
         </Link>
 
-        <div className="hidden md:flex items-center gap-8">
-          <Link to="/" className={`text-sm font-medium transition-colors ${location.pathname === '/' ? 'text-brand-600' : 'text-gray-500 hover:text-gray-900'}`}>Home</Link>
-          <Link to="/shop" className={`text-sm font-medium transition-colors ${location.pathname === '/shop' ? 'text-brand-600' : 'text-gray-500 hover:text-gray-900'}`}>Equipment Shop</Link>
-          <Link to="/admin" className="text-sm font-medium text-gray-500 hover:text-gray-900 transition-colors flex items-center gap-1"><LayoutDashboard className="w-4 h-4"/> Admin</Link>
-        </div>
+        {/* Desktop Links - Hidden on Shop Page */}
+        {!isShopPage && (
+          <div className="hidden md:flex items-center gap-8">
+            <Link to="/" className={`text-sm font-medium transition-colors ${location.pathname === '/' ? 'text-brand-600' : 'text-gray-500 hover:text-gray-900'}`}>Home</Link>
+            <a href="#services" className="text-sm font-medium text-gray-500 hover:text-gray-900 transition-colors">Services</a>
+            <Link to="/shop" className="text-sm font-medium text-gray-500 hover:text-gray-900 transition-colors">Shop</Link>
+            <Link to="/admin" className="text-sm font-medium text-gray-500 hover:text-gray-900 transition-colors flex items-center gap-1">
+              <LayoutDashboard className="w-4 h-4"/> Admin
+            </Link>
+          </div>
+        )}
 
+        {/* Icons */}
         <div className="flex items-center gap-6">
           <button onClick={openCart} className="relative group p-2">
             <ShoppingBag className="w-5 h-5 text-gray-700 group-hover:text-brand-500 transition-colors" />
@@ -47,14 +58,18 @@ export default function Navbar({ cartCount, openCart }) {
             )}
           </button>
           
-          <button className="md:hidden p-2 text-gray-700" onClick={() => setMobileMenuOpen(true)}>
-            <Menu className="w-6 h-6" />
-          </button>
+          {/* Mobile Menu Toggle - Hidden on Shop Page */}
+          {!isShopPage && (
+            <button className="md:hidden p-2 text-gray-700" onClick={() => setMobileMenuOpen(true)}>
+              <Menu className="w-6 h-6" />
+            </button>
+          )}
         </div>
       </div>
 
+      {/* Mobile Menu */}
       <AnimatePresence>
-        {mobileMenuOpen && (
+        {mobileMenuOpen && !isShopPage && (
           <motion.div 
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -72,7 +87,7 @@ export default function Navbar({ cartCount, openCart }) {
             </div>
             <div className="flex flex-col gap-6">
               <Link to="/" className="text-lg font-medium text-gray-800 hover:text-brand-600 transition-colors">Home</Link>
-              <Link to="/shop" className="text-lg font-medium text-gray-800 hover:text-brand-600 transition-colors">Equipment Shop</Link>
+              <Link to="/shop" className="text-lg font-medium text-gray-800 hover:text-brand-600 transition-colors">Shop Equipment</Link>
               <Link to="/admin" className="text-lg font-medium text-gray-800 hover:text-brand-600 transition-colors">Admin Dashboard</Link>
             </div>
           </motion.div>

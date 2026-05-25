@@ -1,18 +1,33 @@
 import React, { useState, useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
+import { Toaster } from 'react-hot-toast';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Cart from './components/Cart';
 import Home from './pages/Home';
 import ShopPage from './pages/ShopPage';
 import AdminDashboard from './pages/AdminDashboard';
+import AdminLogin from './pages/AdminLogin';
+import ProtectedRoute from './components/ProtectedRoute';
 
 function App() {
-  const [cartItems, setCartItems] = useState([]);
+  const [cartItems, setCartItems] = useState(() => {
+    try {
+      const saved = localStorage.getItem('spotlex_cart');
+      return saved ? JSON.parse(saved) : [];
+    } catch (e) {
+      console.warn('Cart storage corrupted, resetting cart.');
+      return [];
+    }
+  });
+  
   const [isCartOpen, setIsCartOpen] = useState(false);
   const location = useLocation();
 
-  // Scroll to top on route change
+  useEffect(() => {
+    localStorage.setItem('spotlex_cart', JSON.stringify(cartItems));
+  }, [cartItems]);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location.pathname]);
@@ -44,10 +59,13 @@ function App() {
     }));
   };
 
+  const hideNavAndFooter = location.pathname.startsWith('/admin');
+
   return (
     <div className="relative w-full min-h-screen bg-gray-50 flex flex-col">
-      {/* Hide Navbar on Admin page for a cleaner dashboard look */}
-      {location.pathname !== '/admin' && (
+      <Toaster position="top-center" toastOptions={{ duration: 3000, style: { borderRadius: '12px', background: '#333', color: '#fff' } }} />
+      
+      {!hideNavAndFooter && (
         <Navbar 
           cartCount={cartItems.reduce((acc, item) => acc + item.quantity, 0)} 
           openCart={() => setIsCartOpen(true)} 
@@ -58,11 +76,16 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={<ShopPage onAddToCart={addToCart} />} />
-          <Route path="/admin" element={<AdminDashboard />} />
+          <Route path="/admin/login" element={<AdminLogin />} />
+          <Route path="/admin" element={
+            <ProtectedRoute>
+              <AdminDashboard />
+            </ProtectedRoute>
+          } />
         </Routes>
       </main>
 
-      {location.pathname !== '/admin' && <Footer />}
+      {!hideNavAndFooter && <Footer />}
 
       <Cart 
         isOpen={isCartOpen} 
