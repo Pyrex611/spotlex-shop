@@ -16,6 +16,7 @@ export default function Shop({ cartItems, onAddToCart, onUpdateQuantity }) {
   const [searchQuery, setSearchQuery] = useState('');
   const [sortBy, setSortBy] = useState('newest');
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [showIntro, setShowIntro] = useState(true);
 
   // Slideshow Timer
   useEffect(() => {
@@ -23,6 +24,14 @@ export default function Shop({ cartItems, onAddToCart, onUpdateQuantity }) {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
     }, 5000);
     return () => clearInterval(timer);
+  }, []);
+
+  // Intro Text Auto-Collapse Timer
+  useEffect(() => {
+    const introTimer = setTimeout(() => {
+      setShowIntro(false);
+    }, 3500); // Shows for 3.5 seconds before smoothly collapsing
+    return () => clearTimeout(introTimer);
   }, []);
 
   const isNewArrival = (dateString) => {
@@ -50,20 +59,29 @@ export default function Shop({ cartItems, onAddToCart, onUpdateQuantity }) {
   }, [products, activeCategory, searchQuery, sortBy]);
 
   return (
-    <div className="bg-gray-50 min-h-screen pb-16 md:pb-24 pt-24 md:pt-32">
+    <div className="bg-gray-50 min-h-screen pb-16 md:pb-24 pt-24 md:pt-28">
       
-      {/* 1. Introductory Text */}
-      <section className="px-6 md:px-12 max-w-4xl mx-auto mb-8 text-center">
-        <h1 className="text-3xl md:text-5xl font-bold text-gray-900 tracking-tight mb-4">
-          Spotlexworld Environmental Solutions<br className="hidden md:block"/> Cleaning Provisions Store
-        </h1>
-        <p className="text-gray-500 text-base md:text-lg">
-          Equip yourself with the exact tools our professionals use. Browse our curated selection of eco-friendly solutions, durable hardware, and state-of-the-art vacuums.
-        </p>
-      </section>
+      {/* 1. Introductory Text (Auto-Collapsing Splash Effect) */}
+      <AnimatePresence>
+        {showIntro && (
+          <motion.section 
+            initial={{ opacity: 1, height: 'auto', marginBottom: 32 }}
+            exit={{ opacity: 0, height: 0, marginBottom: 0, overflow: 'hidden' }}
+            transition={{ duration: 0.8, ease: "easeInOut" }}
+            className="px-6 md:px-12 max-w-4xl mx-auto text-center"
+          >
+            <h1 className="text-3xl md:text-5xl font-bold text-gray-900 tracking-tight mb-4">
+              Spotlexworld Environmental Solutions<br className="hidden md:block"/> Cleaning Provisions Store
+            </h1>
+            <p className="text-gray-500 text-base md:text-lg pb-4">
+              Equip yourself with the exact tools our professionals use. Browse our curated selection of eco-friendly solutions, durable hardware, and state-of-the-art vacuums.
+            </p>
+          </motion.section>
+        )}
+      </AnimatePresence>
 
       {/* 2. Shop Hero Slideshow */}
-      <section className="px-6 md:px-12 max-w-7xl mx-auto mb-12">
+      <section className="px-6 md:px-12 max-w-7xl mx-auto mb-8">
         <div className="relative w-full h-64 md:h-[400px] rounded-[2rem] overflow-hidden shadow-xl bg-gray-900">
           <AnimatePresence mode="wait">
             <motion.img
@@ -82,9 +100,9 @@ export default function Shop({ cartItems, onAddToCart, onUpdateQuantity }) {
         </div>
       </section>
 
-      {/* 3. Trust / Value Proposition Cards (Reduced Height, Horizontal on Mobile) */}
-      <section className="px-6 md:px-12 max-w-7xl mx-auto mb-16 md:mb-20">
-        <div className="flex md:grid md:grid-cols-3 overflow-x-auto hide-scrollbar gap-4 md:gap-6 pb-4 -mx-6 px-6 md:mx-0 md:px-0 snap-x snap-mandatory">
+      {/* 3. Trust / Value Proposition Cards */}
+      <section className="px-6 md:px-12 max-w-7xl mx-auto mb-10 md:mb-12">
+        <div className="flex md:grid md:grid-cols-3 overflow-x-auto hide-scrollbar gap-4 md:gap-6 pb-2 -mx-6 px-6 md:mx-0 md:px-0 snap-x snap-mandatory">
           
           <div className="min-w-[85%] sm:min-w-[60%] md:min-w-0 snap-center bg-white p-4 md:p-5 rounded-2xl border border-gray-100 flex items-center gap-4 shadow-sm shrink-0">
             <div className="w-12 h-12 bg-brand-50 rounded-xl flex items-center justify-center shrink-0 text-brand-600">
@@ -121,7 +139,7 @@ export default function Shop({ cartItems, onAddToCart, onUpdateQuantity }) {
 
       {/* 4. Catalog Section */}
       <section id="catalog" className="px-6 md:px-12 max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-10">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-8">
           
           {/* Category Pills Menu */}
           <div className="flex overflow-x-auto hide-scrollbar gap-2 md:gap-3 pb-2 -mx-6 px-6 md:mx-0 md:px-0 w-full md:w-auto">
@@ -146,8 +164,10 @@ export default function Shop({ cartItems, onAddToCart, onUpdateQuantity }) {
             ))}
           </div>
 
-          {/* Search & Sort */}
-          <div className="flex w-full md:w-auto gap-3 flex-col sm:flex-row">
+          {/* Search & Space-Saving Sort */}
+          <div className="flex w-full md:w-auto gap-2 sm:gap-3 flex-row items-center">
+            
+            {/* Search Bar - Flex 1 */}
             <div className="relative flex-1 md:w-64">
               <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
               <input 
@@ -159,13 +179,32 @@ export default function Shop({ cartItems, onAddToCart, onUpdateQuantity }) {
               />
               {searchQuery && <button onClick={() => setSearchQuery('')} className="absolute right-3.5 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-700"><X className="w-4 h-4" /></button>}
             </div>
-            <div className="relative shrink-0 w-full sm:w-auto">
-              <div className="absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none"><ArrowDownUp className="w-4 h-4 text-gray-400" /></div>
-              <select value={sortBy} onChange={(e) => setSortBy(e.target.value)} className="appearance-none w-full sm:w-auto pl-10 pr-8 py-2.5 bg-white border border-gray-200 rounded-full focus:ring-2 focus:ring-brand-500 focus:border-transparent outline-none shadow-sm text-sm font-medium text-gray-700 cursor-pointer">
+            
+            {/* Sort Dropdown - Icon Button on Mobile, Full Menu on Desktop */}
+            <div className="relative shrink-0 flex items-center group">
+              
+              {/* Mobile Icon View (Visible only on small screens) */}
+              <div className="flex sm:hidden items-center justify-center w-[42px] h-[42px] bg-white border border-gray-200 rounded-full shadow-sm group-hover:border-gray-300 transition-colors">
+                <ArrowDownUp className="w-4 h-4 text-gray-600" />
+              </div>
+              
+              {/* Desktop View Icon (Hidden on small screens) */}
+              <div className="hidden sm:block absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none">
+                <ArrowDownUp className="w-4 h-4 text-gray-400" />
+              </div>
+
+              {/* Invisible Native Picker trick on mobile, normal select on desktop */}
+              <select 
+                value={sortBy}
+                onChange={(e) => setSortBy(e.target.value)}
+                className="absolute sm:relative inset-0 w-full h-full opacity-0 sm:opacity-100 sm:w-auto appearance-none sm:pl-10 sm:pr-8 sm:py-2.5 bg-white sm:border border-gray-200 rounded-full focus:ring-2 focus:ring-brand-500 focus:border-transparent outline-none sm:shadow-sm text-sm font-medium text-gray-700 cursor-pointer"
+                title="Sort Products"
+              >
                 <option value="newest">Newest Arrivals</option>
                 <option value="price-asc">Price: Low to High</option>
                 <option value="price-desc">Price: High to Low</option>
               </select>
+
             </div>
           </div>
         </div>
