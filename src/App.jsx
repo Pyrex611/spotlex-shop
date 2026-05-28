@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Cart from './components/Cart';
 import Home from './pages/Home';
 import ShopPage from './pages/ShopPage';
+import ProductPage from './pages/ProductPage';
 import AdminDashboard from './pages/AdminDashboard';
 import AdminLogin from './pages/AdminLogin';
 import ProtectedRoute from './components/ProtectedRoute';
@@ -42,7 +43,7 @@ function App() {
       }
       return [...prev, { ...product, quantity: 1 }];
     });
-    setIsCartOpen(true);
+    // UX Update: Removed setIsCartOpen(true) to prevent interrupting the user
   };
 
   const removeFromCart = (id) => {
@@ -75,7 +76,8 @@ function App() {
       <main className="flex-grow">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/shop" element={<ShopPage onAddToCart={addToCart} />} />
+          <Route path="/shop" element={<ShopPage cartItems={cartItems} onAddToCart={addToCart} onUpdateQuantity={updateQuantity} />} />
+          <Route path="/product/:id" element={<ProductPage cartItems={cartItems} onAddToCart={addToCart} onUpdateQuantity={updateQuantity} />} />
           <Route path="/admin/login" element={<AdminLogin />} />
           <Route path="/admin" element={
             <ProtectedRoute>
