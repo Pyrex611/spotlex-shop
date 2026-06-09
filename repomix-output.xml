@@ -381,22 +381,6 @@ export default function ProtectedRoute({ children }) {
 }
 </file>
 
-<file path="src/lib/supabase.js">
-import { createClient } from '@supabase/supabase-js';
-
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || '';
-const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY || '';
-
-// Export a flag so our context knows if it's safe to make API calls
-export const isSupabaseConfigured = Boolean(supabaseUrl && supabaseAnonKey);
-
-// We provide dummy URLs if missing so the createClient function doesn't crash the React tree.
-export const supabase = createClient(
-  supabaseUrl || 'https://placeholder-project.supabase.co',
-  supabaseAnonKey || 'placeholder-anon-key'
-);
-</file>
-
 <file path="src/main.jsx">
 import React from 'react'
 import ReactDOM from 'react-dom/client'
@@ -932,39 +916,6 @@ dist-ssr
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
-</file>
-
-<file path="package.json">
-{
-  "name": "spotlex-shop",
-  "private": true,
-  "version": "1.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite --host",
-    "build": "vite build",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "@supabase/supabase-js": "^2.39.8",
-    "framer-motion": "^11.0.8",
-    "lucide-react": "^0.358.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-hot-toast": "^2.4.1",
-    "react-router-dom": "^6.22.3"
-  },
-  "devDependencies": {
-    "@tailwindcss/vite": "^4.0.0",
-    "@types/react": "^18.2.64",
-    "@types/react-dom": "^18.2.21",
-    "@vitejs/plugin-react": "^4.2.1",
-    "eslint": "^8.57.0",
-    "tailwindcss": "^4.0.0",
-    "vite": "^5.1.6"
-  }
-}
 </file>
 
 <file path="src/components/Cart.jsx">
@@ -1656,6 +1607,45 @@ export const products = [
 }
 </file>
 
+<file path="src/lib/supabase.js">
+import { createClient } from '@supabase/supabase-js';
+
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || '';
+const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY || '';
+
+// Custom Cookie Storage Adapter for Cross-Subdomain SSO
+const sharedCookieStorage = {
+  getItem: (key) => {
+    if (typeof document === 'undefined') return null;
+    const match = document.cookie.match(new RegExp('(^| )' + key + '=([^;]+)'));
+    return match ? decodeURIComponent(match[2]) : null;
+  },
+  setItem: (key, value) => {
+    if (typeof document === 'undefined') return;
+    // CRITICAL: The leading dot (.spotlexworld.com) allows both app. and shop. to share this session
+    document.cookie = `${key}=${encodeURIComponent(value)}; domain=.spotlexworld.com; path=/; max-age=31536000; SameSite=Lax; Secure`;
+  },
+  removeItem: (key) => {
+    if (typeof document === 'undefined') return;
+    document.cookie = `${key}=; domain=.spotlexworld.com; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT; Secure`;
+  }
+};
+
+export const isSupabaseConfigured = Boolean(supabaseUrl && supabaseAnonKey);
+
+export const supabase = createClient(
+  supabaseUrl || 'https://placeholder-project.supabase.co',
+  supabaseAnonKey || 'placeholder-anon-key',
+  {
+    auth: {
+      storage: sharedCookieStorage,
+      // We use a custom key to prevent clashing with Next.js SSR chunking formats
+      storageKey: 'spotlex-ecosystem-token',
+    }
+  }
+);
+</file>
+
 <file path="src/pages/AdminDashboard.jsx">
 import React, { useState, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
@@ -1974,6 +1964,42 @@ export default function ShopPage({ cartItems, onAddToCart, onUpdateQuantity }) {
       <Shop cartItems={cartItems} onAddToCart={onAddToCart} onUpdateQuantity={onUpdateQuantity} />
     </div>
   );
+}
+</file>
+
+<file path="package.json">
+{
+  "name": "spotlex-shop",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@ducanh2912/next-pwa": "^10.2.9",
+    "@supabase/supabase-js": "^2.39.8",
+    "framer-motion": "^11.0.8",
+    "lucide-react": "^0.358.0",
+    "react": "^18.2.0",
+    "react-confetti": "^6.4.0",
+    "react-dom": "^18.2.0",
+    "react-hot-toast": "^2.4.1",
+    "react-router-dom": "^6.22.3",
+    "react-use": "^17.6.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.0.0",
+    "@types/react": "^18.2.64",
+    "@types/react-dom": "^18.2.21",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.57.0",
+    "tailwindcss": "^4.0.0",
+    "vite": "^5.1.6"
+  }
 }
 </file>
 
