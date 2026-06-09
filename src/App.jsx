@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
+import { Analytics } from '@vercel/analytics/react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Cart from './components/Cart';
@@ -68,6 +69,7 @@ function App() {
   return (
     <div className="relative w-full min-h-screen bg-gray-50 flex flex-col">
       <Toaster position="top-center" toastOptions={{ duration: 3000, style: { borderRadius: '12px', background: '#333', color: '#fff' } }} />
+      <Analytics />
       
       {!hideNavAndFooter && (
         <Navbar 
