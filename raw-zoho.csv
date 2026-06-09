@@ -1,0 +1,782 @@
+Item ID,Item Name,SKU,Description,Rate,Account,Account Code,Tax Name,Tax Percentage,Tax Type,Purchase Tax Name,Purchase Tax Percentage,Purchase Tax Type,Product Type,Source,Reference ID,Last Sync Time,Status,Usage unit,Unit Name,Purchase Rate,Purchase Account,Purchase Account Code,Purchase Description,Inventory Account,Inventory Account Code,Inventory Valuation Method,Reorder Point,Vendor,Vendor Number,Opening Stock,Opening Stock Value,Stock On Hand,Item Type,Sellable,Purchasable,Track Inventory
+6642928000000163624,UV Flashlight & Normal Flashlight In One,,"Light,Pet urine,stains & bed bugs detector",NGN 30000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 15000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 15000.00,2.00,Inventory,true,true,true
+6642928000000163660,Greenleaf Powder Fly Killing Bait,,"Attract flies and kills, suitable for indoor",NGN 500.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 300.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,40.00,NGN 300.00,72.00,Inventory,true,true,true
+6642928000000163691,Flyforce,,fly killing insecticide Baiut formulation,NGN 500.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 300.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,23.00,NGN 300.00,23.00,Inventory,true,true,true
+6642928000000163722,Dfortune Rat killer,,kills all rat at a single eat,NGN 500.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 300.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,9.00,NGN 300.00,14.00,Inventory,true,true,true
+6642928000000163753,Anion 40SC,,Systemic Insecticide Against Capsid Bugs,NGN 25000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 20000.00,Advertising And Marketing,,Agricultural insecticide to control wide range of crop- damaging pests.,Inventory Asset,,fifo,,,,2.00,NGN 25000.00,2.00,Inventory,true,true,true
+6642928000000163784,Bedbug Killer Powder,,long lasstuing and odourless,NGN 7000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 5000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,17.00,NGN 5000.00,6.00,Inventory,true,true,true
+6642928000000163815,Imi Force,,Active ingredent: IMIDACLOPRID 200G/L,NGN 4500.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 2000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,5.00,NGN 2500.00,3.00,Inventory,true,true,true
+6642928000000163826,Royamila,,Active ingredent: IMIDACLOPRID 200G/L,NGN 3000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 2500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 2500.00,1.00,Inventory,true,true,true
+6642928000000163857,Premise 200SC,,Bayer Insecticide,NGN 40000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 30000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 30000.00,0.00,Inventory,true,true,true
+6642928000000163888,Kukbo ULTRA,,Eliminating Nasty Roaches and Ants,NGN 18000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 15000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 15000.00,4.00,Inventory,true,true,true
+6642928000000163919,Maxforce,,insecticide gel bait for german cockroaches,NGN 55000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 30000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 30000.00,2.00,Inventory,true,true,true
+6642928000000163950,ZAPPERCIDE,,Tracking powder,NGN 110000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 100000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 65000.00,1.00,Inventory,true,true,true
+6642928000000163981,Trapcoll,,No poisonous glue for killing rat,NGN 9000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 6000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,11.00,NGN 9000.00,9.00,Inventory,true,true,true
+6642928000000164012,Effect,,Fly insecticicide,NGN 800.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,71.00,NGN 500.00,71.00,Inventory,true,true,true
+6642928000000164043,Pestox,,The powder insect killer,NGN 1000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 700.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,33.00,NGN 700.00,15.00,Inventory,true,true,true
+6642928000000164074,Mosquito Bits,,Quick kills Mosquitoes before they kill,NGN 50000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 40000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 40000.00,1.00,Inventory,true,true,true
+6642928000000164105,Gardia,,Mosquito Repellant Cream,NGN 500.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 200.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 200.00,2.00,Inventory,true,true,true
+6642928000000164136,Rodelon Blocks,,For rat control and mice,NGN 5000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 3500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 3500.00,0.00,Inventory,true,true,true
+6642928000000164167,Contrac,,Rodenticide Ready to use place pacs,NGN 5000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 3500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,8.00,NGN 3500.00,5.00,Inventory,true,true,true
+6642928000000164198,Fly Trap Catchmaster (Big),,Disposable,NGN 25000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 15000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 15000.00,0.00,Inventory,true,true,true
+6642928000000164229,Bioclean Septic,,Advance Biotechnology for septic maintenance,NGN 15000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 10000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,4.00,NGN 15000.00,-2.00,Inventory,true,true,true
+6642928000000164260,Quickbayt Spray,,Insecticide for fly,NGN 25000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 20000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,5.00,NGN 20000.00,6.00,Inventory,true,true,true
+6642928000000164291,Mosquito Dunks,,Floating Sustained Released Larvicide,NGN 6000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 4000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,19.00,NGN 4000.00,19.00,Inventory,true,true,true
+6642928000000164322,Fly Catcher (small),,Disposable,NGN 15000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 10000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 10000.00,0.00,Inventory,true,true,true
+6642928000000164353,No Fear,,Snake Repellant,NGN 1500.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 1000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,5.00,NGN 1000.00,0.00,Inventory,true,true,true
+6642928000000164384,Bedbug Killer Spray,,kills prevent protect,NGN 10000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 7000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,22.00,NGN 7000.00,7.00,Inventory,true,true,true
+6642928000000164415,Greenleaf Powder Cockroach and Ant,,Cockroach killer,NGN 500.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 200.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,9.00,NGN 200.00,48.00,Inventory,true,true,true
+6642928000000164448,Bait Gun,,bait gun,NGN 40000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 29000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 29000.00,8.00,Inventory,true,true,true
+6642928000000164479,Fumisect,,Mist Spray  Insecticide,NGN 3800.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 2500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,9.00,NGN 2500.00,8.00,Inventory,true,true,true
+6642928000000164510,Green Ant Bait Station,,Green Ant Bait Station,NGN 10000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 8000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 8000.00,1.00,Inventory,true,true,true
+6642928000000164541,Fly Bait Station,,Fly Bait Station,NGN 7000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 5000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 5000.00,0.00,Inventory,true,true,true
+6642928000000164572,AL-CYPERNET 10SC,,For control of of crawling and flying insect,NGN 35000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 20000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 20000.00,2.00,Inventory,true,true,true
+6642928000000164603,No Fly Zone,,for rapid knock down,NGN 10000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 5000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 5000.00,1.00,Inventory,true,true,true
+6642928000000164634,Fostoxin,,Fumigation Tablet,NGN 7000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 5000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 5000.00,0.00,Inventory,true,true,true
+6642928000000164665,Weedol Root Killer,,kills weed to the root,NGN 15000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 10000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 10000.00,0.00,Inventory,true,true,true
+6642928000000164696,Cockroach Killing Bait Powder (Canye),,Powerful and effective Home Defense,NGN 300.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 150.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,38.00,NGN 150.00,31.00,Inventory,true,true,true
+6642928000000164727,Roundup Turbo,,Herbicide,NGN 8000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 5000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,6.00,NGN 5000.00,3.00,Inventory,true,true,true
+6642928000000164758,Slug & Snail Killer Doof,,shower proof upto 10days,NGN 35000.00,Sales,,,,,,,,goods,2,,,Inactive,Pcs,,NGN 15000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,5.00,NGN 15000.00,5.00,Inventory,true,true,true
+6642928000000164789,Slug & Snail Killer Petshield,,shower proof upto 10days,NGN 25000.00,Sales,,,,,,,,goods,2,,,Inactive,Pcs,,NGN 20000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 20000.00,3.00,Inventory,true,true,true
+6642928000000164820,Butane Battery,,for use in portable gas appliance,NGN 7000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 5000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 5000.00,1.00,Inventory,true,true,true
+6642928000000164851,Kriskolins Powder,,kills cockroach and ants,NGN 200.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 100.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,41.00,NGN 100.00,31.00,Inventory,true,true,true
+6642928000000164882,Snake Repel BlosFields,,Snake Repel Blos field,NGN 17000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 15000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 15000.00,0.00,Inventory,true,true,true
+6642928000000164913,snake -a-way Hose -END Sprayer,,snake repelling spray,NGN 75000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 45000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 45000.00,1.00,Inventory,true,true,true
+6642928000000164944,Mortein,,multi insect killer,NGN 6000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 3500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,8.00,NGN 3500.00,0.00,Inventory,true,true,true
+6642928000000164975,BNC,,Mosquito Spray,NGN 3500.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 3000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,9.00,NGN 4000.00,7.00,Inventory,true,true,true
+6642928000000165006,snake -a-way,,snake repelling granules,NGN 110000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 70000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 70000.00,1.00,Inventory,true,true,true
+6642928000000165037,Viva Refuse Sacks (BIG),,Refuse Sacks (heavy duty),NGN 1500.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 1000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,8.00,NGN 1000.00,-2.00,Inventory,true,true,true
+6642928000000165068,Refuse Sack (Viva Standard size),,Refuse Sacks,NGN 800.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 600.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 1000.00,33.00,Inventory,true,true,true
+6642928000000165099,Refuse sack (ROYAL MASTER KING),,home and offive use,NGN 1200.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 700.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,11.00,NGN 700.00,12.00,Inventory,true,true,true
+6642928000000165130,Windolene,,Glass and shiny Surface,NGN 5000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 3000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 3000.00,0.00,Inventory,true,true,true
+6642928000000165161,Glass Cleaner Hamfex,,Hamfex,NGN 2700.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 1800.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 1800.00,0.00,Inventory,true,true,true
+6642928000000165192,Leather & vinyl Cleaner,,all leather and vinyl surface,NGN 7500.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 5000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,5.00,NGN 5000.00,6.00,Inventory,true,true,true
+6642928000000165223,Hand Sanitizer,,28 mile DISTILLING CO,NGN 2300.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 2000.00,Cost of Goods Sold,,28 Mile Distilling Co. Fool's Gin,Inventory Asset,,fifo,,,,4.00,NGN 2000.00,1.00,Inventory,true,true,true
+6642928000000165254,Chamois Cleaner,,soaks up moisture fast,NGN 8000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 5000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 5000.00,2.00,Inventory,true,true,true
+6642928000000165285,Wind Block Air freshener,,Wind Block air freshner,NGN 600.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 350.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,30.00,NGN 350.00,8.00,Inventory,true,true,true
+6642928000000165316,Ikeda Liquid (small),,liquid air freshner,NGN 10000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 6500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 6500.00,0.00,Inventory,true,true,true
+6642928000000165347,Ikeda Liquid (big),,liquid air freshner,NGN 15000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 10000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,6.00,NGN 10000.00,0.00,Inventory,true,true,true
+6642928000000165378,Initial,,Peach Nectar,NGN 25000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 20000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,9.00,NGN 20000.00,5.00,Inventory,true,true,true
+6642928000000165409,Ikeda Scent,,Ceramic airf refreshment,NGN 7000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 4000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,13.00,NGN 4000.00,5.00,Inventory,true,true,true
+6642928000000165440,Astonish Stain Remover,,clears tough stains,NGN 6500.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 4000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 4000.00,0.00,Inventory,true,true,true
+6642928000000165471,anti bacterial surface cleaner Astonish,,Kills 99.9% of bacteria,NGN 6500.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 4000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 4000.00,2.00,Inventory,true,true,true
+6642928000000165502,Astonish Oxy Active Fabric Stain Remover,,clears tough stains,NGN 6500.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 4000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 4000.00,1.00,Inventory,true,true,true
+6642928000000165533,Tile Grout cleaner,,Whitens white grout,NGN 7000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 4000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,5.00,NGN 7000.00,3.00,Inventory,true,true,true
+6642928000000165564,Tile & Joint Cleaner,,no acid added,NGN 2500.00,Sales,,,,,,,,goods,2,,,Inactive,Pcs,,NGN 1800.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,4.00,NGN 1800.00,4.00,Inventory,true,true,true
+6642928000000165595,Bingosil Fresh,,cleaning agent,NGN 2800.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 1800.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 1800.00,1.00,Inventory,true,true,true
+6642928000000165626,Clean All Abro Masters,,all purpose automotive foam c leaner,NGN 3500.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 2000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 2000.00,1.00,Inventory,true,true,true
+6642928000000165657,Multipurpose Foamy Cleaner,,foamy cleaner,NGN 3500.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 2000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,5.00,NGN 2000.00,1.00,Inventory,true,true,true
+6642928000000165688,The pink stuff  The miracle laundry,,oxi stain remover,NGN 12000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 8000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 8000.00,1.00,Inventory,true,true,true
+6642928000000165719,The pink stuff the cleaning paste,,oxi stain remover,NGN 8000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 5000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,4.00,NGN 5000.00,3.00,Inventory,true,true,true
+6642928000000165750,the pink stuff Miracle Multipurpose Cleaner,,oxi stain remover,NGN 12000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 8000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 8000.00,1.00,Inventory,true,true,true
+6642928000000165781,2sure multipourpose liquid wash,,3.6L liquid wash,NGN 5000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 2000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,4.00,NGN 2000.00,1.00,Inventory,true,true,true
+6642928000000165812,Deep Action cream cleaner,,combat greese & germs,NGN 3000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 2500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,13.00,NGN 2500.00,3.00,Inventory,true,true,true
+6642928000000165843,Syntethic Chamois,,Super absorbent,NGN 8000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 4000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,5.00,NGN 4000.00,2.00,Inventory,true,true,true
+6642928000000165874,Disposable Bedroom Slippers,,Disposable Bedroom Slippers,NGN 2000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 1000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,12.00,NGN 1000.00,12.00,Inventory,true,true,true
+6642928000000165905,Morning Fresh,,Dishwashing Liquid 1000Ml,NGN 3000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 2000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,7.00,NGN 2000.00,0.00,Inventory,true,true,true
+6642928000000165936,2sure Original (1000ml),,Dishwasing Liquid 1000ml,NGN 2800.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 1800.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 1800.00,0.00,Inventory,true,true,true
+6642928000000165967,Bravo Max power,,Dishwashing liquid 500ml,NGN 1300.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 1000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 1000.00,2.00,Inventory,true,true,true
+6642928000000165998,2sure Original Dishwashing Liquid 250ml,,Dishwashing Liquid 250ml,NGN 750.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 400.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 400.00,0.00,Inventory,true,true,true
+6642928000000166029,Hypo Toilet Cleaner (750Ml),,750ml,NGN 5000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 3000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 3000.00,0.00,Inventory,true,true,true
+6642928000000166060,Hypo Toilet Cleaner (450 Ml),,450ml,NGN 3500.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 2000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 2000.00,0.00,Inventory,true,true,true
+6642928000000166091,CIF Cleaningboost cream,,500ml,NGN 4500.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 3000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,5.00,NGN 3000.00,11.00,Inventory,true,true,true
+6642928000000166122,Harpic Power Plus 10X 45ml,,Clean and Protect,NGN 3000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 2500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,14.00,NGN 2500.00,0.00,Inventory,true,true,true
+6642928000000166153,Jik Regular,,950ml,NGN 4500.00,Sales,,,,,,,,goods,2,,,Active,ml,Milli Litre,NGN 3000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,4.00,NGN 4500.00,3.00,Inventory,true,true,true
+6642928000000166184,Hypo whitener Disinfentant,,1l,NGN 4000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 2500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,14.00,NGN 2500.00,10.00,Inventory,true,true,true
+6642928000000166215,Household handgloves,,,NGN 1000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 800.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,5.00,NGN 800.00,4.00,Inventory,true,true,true
+6642928000000166246,handgloves Heavyduty,,Sungloves,NGN 1300.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 700.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,12.00,NGN 700.00,7.00,Inventory,true,true,true
+6642928000000166277,Red Hand Gloves,,Red safety,NGN 1600.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 800.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,13.00,NGN 800.00,10.00,Inventory,true,true,true
+6642928000000166308,Big Pack Windolene,,Glass & Shiny Surfaces,NGN 5000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 4200.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,4.00,NGN 4200.00,3.00,Inventory,true,true,true
+6642928000000166339,Windolene Diamond Shine,,Glass and shiny Surface,NGN 5000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 2500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 2500.00,0.00,Inventory,true,true,true
+6642928000000166370,Disposable facemask,,Imate 3play,NGN 50.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 30.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,9.00,NGN 30.00,40.00,Inventory,true,true,true
+6642928000000166401,ITE german brush,,wooden handbrush,NGN 2000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 1600.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,8.00,NGN 1600.00,5.00,Inventory,true,true,true
+6642928000000166432,"Paint brush (big) 4""",,red,NGN 800.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 400.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,9.00,NGN 400.00,7.00,Inventory,true,true,true
+6642928000000166463,"Paint brush (Medium) 3""",,red,NGN 700.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 300.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,9.00,NGN 300.00,9.00,Inventory,true,true,true
+6642928000000166494,"Paint brush (Small) 2""",,red,NGN 500.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 300.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,5.00,NGN 300.00,3.00,Inventory,true,true,true
+6642928000000166525,Caution Mop Bucket,,yellow caution bucket 20litres (Industrial Cleaning Bucket),NGN 55000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 48000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 48000.00,0.00,Inventory,true,true,true
+6642928000000166556,Scrubbing pad (White),,Buffing pad,NGN 20000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 18000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,4.00,NGN 18000.00,0.00,Inventory,true,true,true
+6642928000000166587,Scrubbing pad (Black),,,NGN 20000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 18000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,13.00,NGN 18000.00,6.00,Inventory,true,true,true
+6642928000000166618,Scrubbing brush,,,NGN 40000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 40000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 40000.00,1.00,Inventory,true,true,true
+6642928000000166649,Toilet Bag,,wears when going to toilet,NGN 2500.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 1500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 1500.00,1.00,Inventory,true,true,true
+6642928000000166680,Albrite Carpet and Upholstery Cleaner (4ltr),,Carpet and upholstery cleaner,NGN 8500.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 6000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 6000.00,2.00,Inventory,true,true,true
+6642928000000166711,Albrite Cleaner (1lt),,Carpet and upholstery cleaner,NGN 2700.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 1500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,6.00,NGN 1500.00,4.00,Inventory,true,true,true
+6642928000000166742,Izal (Disinfectant 1L),,Disinfectant 1L,NGN 4700.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 4000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 4000.00,0.00,Inventory,true,true,true
+6642928000000166773,Izal (Disinfectant 150ml),,Disinfectant 150ml,NGN 1000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 800.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 800.00,0.00,Inventory,true,true,true
+6642928000000166804,Olivia Tile/floor Cleaner,,floor cleaner,NGN 2600.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 2000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 2000.00,0.00,Inventory,true,true,true
+6642928000000166835,Dovion Power plus,,Toilet/Tiles Floor Cleaner,NGN 9000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 7500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 3000.00,2.00,Inventory,true,true,true
+6642928000000166866,Kingfisher Home,,Interior Dehumidifier,NGN 15000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 9000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 9000.00,3.00,Inventory,true,true,true
+6642928000000166877,Scraper (local),,yellow scraper big,NGN 2000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 1000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 1000.00,0.00,Inventory,true,true,true
+6642928000000166908,Odor Remover bag,,Absorbs odor like sponge,NGN 33000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 30000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 30000.00,4.00,Inventory,true,true,true
+6642928000000166939,bamboo Charcoal,,Odour Control,NGN 7000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 5000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 5000.00,0.00,Inventory,true,true,true
+6642928000000166970,Pet Odour Eliminator,,Clear the air,NGN 21000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 15000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,5.00,NGN 15000.00,3.00,Inventory,true,true,true
+6642928000000167001,2sure handwash,,kills 99% of germs,NGN 2200.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 2900.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 2900.00,0.00,Inventory,true,true,true
+6642928000000167032,Sanitol Handwash,,Anti Bacterial,NGN 2000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 1800.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 1800.00,0.00,Inventory,true,true,true
+6642928000000167063,Evans Spotlight,,spot and stain remover,NGN 6500.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 5800.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 5800.00,0.00,Inventory,true,true,true
+6642928000000167094,latex Examination Gloves,,,NGN 100.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 70.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,100.00,NGN 70.00,21.00,Inventory,true,true,true
+6642928000000167125,Expandable Garden Hose 60m,,multi setting spray gun 60m,NGN 105000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 95000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 95000.00,1.00,Inventory,true,true,true
+6642928000000167156,Window glass squeegee wiper,,"Cleaning glass surfaces, prevents soap scum buildup on glass",NGN 10000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 8000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 10000.00,2.00,Inventory,true,true,true
+6642928000000167187,Ash Industrial Cobweb broom,,Ash Color,NGN 21000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 15000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,4.00,NGN 15000.00,2.00,Inventory,true,true,true
+6642928000000167218,Cordless Trimmer,,Zip Trim,NGN 18000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 13000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 18000.00,1.00,Inventory,true,true,true
+6642928000000167229,Mr Sheen,,multi surface polish,NGN 3000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 2500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,12.00,NGN 2500.00,9.00,Inventory,true,true,true
+6642928000000167260,scouring powder,,Shine All / We care,NGN 2000.00,Discount,,,,,,,,goods,2,,,Active,Pcs,,NGN 1000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 2000.00,2.00,Inventory,true,true,true
+6642928000000167291,Shock,,Anti Sumbat Drain Opener,NGN 7000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 4000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,4.00,NGN 4000.00,3.00,Inventory,true,true,true
+6642928000000167322,Wind Air Freshener Gel,,150g,NGN 1200.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 700.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 700.00,3.00,Inventory,true,true,true
+6642928000000167353,Arola Magic Cool,,Odour absorber for fridge,NGN 3000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 2700.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,5.00,NGN 2700.00,1.00,Inventory,true,true,true
+6642928000000167384,Swiss Flower,,Air freshener,NGN 2800.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 2500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,6.00,NGN 2500.00,0.00,Inventory,true,true,true
+6642928000000167415,Febreze,,Air Mist,NGN 7500.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 4000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,8.00,NGN 4000.00,3.00,Inventory,true,true,true
+6642928000000167446,AIR WICK FRESHMATIC MAX,,AUTOMATIC SPRAY,NGN 4000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 1800.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 1800.00,3.00,Inventory,true,true,true
+6642928000000167477,Inspire Airfreshner,,Cherry,NGN 2000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 1800.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 1800.00,1.00,Inventory,true,true,true
+6642928000000167508,Scouring Pad Liao,,All Purpose,NGN 800.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 700.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,27.00,NGN 700.00,22.00,Inventory,true,true,true
+6642928000000167539,Mobi Bright Heavy Duty Scrubbing Pad,,Multipurpose Cleaner,NGN 500.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 200.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,227.00,NGN 200.00,185.00,Inventory,true,true,true
+6642928000000167570,Star Cool,,Sponge Scouring Pad,NGN 800.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,6.00,NGN 800.00,42.00,Inventory,true,true,true
+6642928000000167601,Hard iron Sponge,,Amanda,NGN 500.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 100.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,9.00,NGN 100.00,20.00,Inventory,true,true,true
+6642928000000167632,Hard iron Sponge Parvenu,,Parvenu,NGN 300.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 100.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,49.00,NGN 100.00,98.00,Inventory,true,true,true
+6642928000000167663,iron sponge amanda scourer (Soft),,,NGN 500.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 400.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,49.00,NGN 400.00,30.00,Inventory,true,true,true
+6642928000000167694,Window cleaner LiAO 35CM,,,NGN 6000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 5500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 5500.00,1.00,Inventory,true,true,true
+6642928000000167725,Spray Window Cleaner,,"3 in 1 design Sray, Wipe and Clean",NGN 6000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 5500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 5500.00,1.00,Inventory,true,true,true
+6642928000000167756,Safety Googles Steel PRO,,Rubber,NGN 8000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 5000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 5000.00,2.00,Inventory,true,true,true
+6642928000000167787,Safety Googles Transparent,,,NGN 2200.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 1500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 1500.00,2.00,Inventory,true,true,true
+6642928000000167818,Safety Googles Black Edges,,,NGN 500.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 400.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,5.00,NGN 400.00,5.00,Inventory,true,true,true
+6642928000000167849,Trapper Flat (Gorrilla Trap),,Rat and Mice,NGN 12000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 10500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 10500.00,2.00,Inventory,true,true,true
+6642928000000167880,Trapper Rubber (T-TREX),,Rat and Mice,NGN 15000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 13500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 13500.00,3.00,Inventory,true,true,true
+6642928000000167911,Heavy Duty Carpet Extraction Cleaner,,For high soiling in high traffic areas,NGN 52000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 40000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 40000.00,1.00,Inventory,true,true,true
+6642928000000167942,Perfumed Floor Maintainer Jangro,,Professional,NGN 120000.00,Sales,,,,,,,,goods,2,,,Active,litres,,NGN 105000.00,Cost of Goods Sold,,5 litre,Inventory Asset,,fifo,,,,1.00,NGN 105000.00,0.00,Inventory,true,true,true
+6642928000000167973,Heavy Duty Cleaner Concentrated,,Jangro professional,NGN 115000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 98000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 98000.00,1.00,Inventory,true,true,true
+6642928000000168004,Bar Keepers Friend,,"soft cleanser. Remove rust,lime and stains",NGN 26000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 15000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 15000.00,1.00,Inventory,true,true,true
+6642928000000168035,Bar Keepers Friend (340g),,cleanser 340g,NGN 17000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 13000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 13000.00,1.00,Inventory,true,true,true
+6642928000000168066,Bar Keepers Friend Multi Surface Cleaner,,Multi Surface Cleaner,NGN 20000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 15000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 15000.00,2.00,Inventory,true,true,true
+6642928000000168097,Multi surface Stain Remover,,"Fabrics, Plastics, Hard Surface",NGN 4000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 3500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,14.00,NGN 3500.00,6.00,Inventory,true,true,true
+6642928000000168128,Bin Fresh Buddy,,keeps Bin clean and fresh,NGN 10000.00,Sales,,,,,,,,goods,2,,,Inactive,Pcs,,NGN 8500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 8500.00,1.00,Inventory,true,true,true
+6642928000000168159,Vanish Oxi Action,,Chlorine Free Fabric Stain  Remover,NGN 12000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 9500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 9500.00,2.00,Inventory,true,true,true
+6642928000000168190,Kink Resistant Flat Hose Set 15m,,"Compact Watering Solution, Multi Setrting Spray gun 15m",NGN 55000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 40000.00,Cost of Goods Sold,,Green Habitats 15m. 50 feet,Inventory Asset,,fifo,,,,1.00,NGN 40000.00,2.00,Inventory,true,true,true
+6642928000000168221,Water Spray Gun,,Lithium Battery,NGN 100000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 70000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 70000.00,2.00,Inventory,true,true,true
+6642928000000168252,Heavy Duty Cleaner Nilfisk Proflex,,,NGN 75000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 40000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 40000.00,0.00,Inventory,true,true,true
+6642928000000168283,Mop Cleaner,,Top Class Dual Wireless,NGN 160000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 110000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 110000.00,1.00,Inventory,true,true,true
+6642928000000168314,High Grade Extraction Carpet Powder,,Jangro Professional,NGN 125000.00,Sales,,,,,,,,goods,2,,,Active,kg,Kilograms,NGN 80000.00,Cost of Goods Sold,,5KG,Inventory Asset,,fifo,,,,1.00,NGN 80000.00,1.00,Inventory,true,true,true
+6642928000000168345,schafer Window Vaccum Cleaner,,with spray bottle,NGN 65000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 55000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 55000.00,0.00,Inventory,true,true,true
+6642928000000168376,k3,,,NGN 35000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 30000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 30000.00,1.00,Inventory,true,true,true
+6642928000000168407,Fog Mchine,,,NGN 90000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 80000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 80000.00,1.00,Inventory,true,true,true
+6642928000000168438,Safety Boot Yellow,,,NGN 18000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 12000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 12000.00,1.00,Inventory,true,true,true
+6642928000000168469,Safety Boot Black,,,NGN 11000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 15000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 15000.00,2.00,Inventory,true,true,true
+6642928000000168500,Power Wash Soap Cannister,,for fumigation,NGN 35000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 25000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 25000.00,3.00,Inventory,true,true,true
+6642928000000168531,Spray Bottle Blue,,For Fumigation,NGN 3000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 1500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,4.00,NGN 3000.00,1.00,Inventory,true,true,true
+6642928000000168562,Spray Bottle Lemon (big),,For Fumigation,NGN 8000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 7000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 4800.00,2.00,Inventory,true,true,true
+6642928000000168593,Glass Cleaning Machine Titan,,,NGN 170000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 150000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 150000.00,1.00,Inventory,true,true,true
+6642928000000168624,Karcher Spray Bottle with Micro Fibre,,,NGN 30000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 20000.00,Cost of Goods Sold,,Hand window cleaner ,Inventory Asset,,fifo,,,,1.00,NGN 30000.00,1.00,Inventory,true,true,true
+6642928000000168655,Please Keep Clean Sign,,,NGN 1500.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 1000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,7.00,NGN 1000.00,7.00,Inventory,true,true,true
+6642928000000168686,Pad Holder,,For Hand Scrubbing Machine,NGN 11000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 8000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 8000.00,1.00,Inventory,true,true,true
+6642928000000168717,Farrex Flower Trimmer,,Ferrex product,NGN 45000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 30000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 30000.00,1.00,Inventory,true,true,true
+6642928000000168748,Set  of Hand Held Scrubbing Brush,,Yellow and Black,NGN 13000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 9000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 9000.00,5.00,Inventory,true,true,true
+6642928000000168779,Kleaner,,Cleaner Expert,NGN 6000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 5000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 5000.00,1.00,Inventory,true,true,true
+6642928000000168810,Polishing Bonnet Big,,,NGN 7000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 4000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 4000.00,2.00,Inventory,true,true,true
+6642928000000168841,Polishing Bonnet small,,,NGN 4000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 2500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 2500.00,4.00,Inventory,true,true,true
+6642928000000168872,Super Buff,,velcro woolen fleece,NGN 9000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 6000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 6000.00,2.00,Inventory,true,true,true
+6642928000000168903,Plastic Base Pad (Big),,up tools,NGN 9000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 7000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 7000.00,2.00,Inventory,true,true,true
+6642928000000168934,Plastic Base Pad (medium),,up tools,NGN 6000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 4000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,4.00,NGN 4000.00,4.00,Inventory,true,true,true
+6642928000000168965,Plastic Base Pad (small),,up tools,NGN 3000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 1500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,4.00,NGN 1500.00,4.00,Inventory,true,true,true
+6642928000000168996,Vacuum Accessories,,Linear,NGN 7000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 4000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 4000.00,3.00,Inventory,true,true,true
+6642928000000169027,Kingfisher Garden Starter Set,,With multifunctional spray Gun,NGN 25000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 12000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 12000.00,1.00,Inventory,true,true,true
+6642928000000169058,Soft hand brush,,Mankalong,NGN 3000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 1500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,4.00,NGN 1500.00,2.00,Inventory,true,true,true
+6642928000000169089,Scraper (foreign),,Ash & Red Color,NGN 11000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 7000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 7000.00,2.00,Inventory,true,true,true
+6642928000000169120,Litter Picker with black  gun handle,,Black gun handle and black/yellow picker,NGN 10500.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 6500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,7.00,NGN 4900.00,1.00,Inventory,true,true,true
+6642928000000169151,Industrial Garden Scissors,,Red and Ash Color,NGN 18000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 12000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 12000.00,0.00,Inventory,true,true,true
+6642928000000169182,Pad Holder Otto,,,NGN 5500.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 3000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,4.00,NGN 3000.00,4.00,Inventory,true,true,true
+6642928000000169213,Hand brush double face,,hand brush for toilet double face,NGN 3500.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 2000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,5.00,NGN 2000.00,0.00,Inventory,true,true,true
+6642928000000169244,Tissue Box,,Sylflora,NGN 2500.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 2000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 1400.00,17.00,Inventory,true,true,true
+6642928000000169275,Tissue Paper,,softwave whte tissue paper,NGN 250.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 200.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,59.00,NGN 200.00,-46.00,Inventory,true,true,true
+6642928000000169306,Round White Toilet Brush,,,NGN 6500.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 4500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 3000.00,2.00,Inventory,true,true,true
+6642928000000169337,Elegance Toilet Brush,,Trash can,NGN 14000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 8000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 8000.00,1.00,Inventory,true,true,true
+6642928000000169368,Clean Simple fine TOILET Brush,,,NGN 7000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 4000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 4000.00,1.00,Inventory,true,true,true
+6642928000000169399,Round Toilet Brush,,,NGN 5000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 4600.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 4600.00,0.00,Inventory,true,true,true
+6642928000000169430,Dz Morl Toilet Brush,,,NGN 13000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 12000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 12000.00,2.00,Inventory,true,true,true
+6642928000000169461,TPR Toilet Brush,,,NGN 9000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 6000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 6000.00,2.00,Inventory,true,true,true
+6642928000000169492,Toilet Brush Blossom,,Blossom Toilet brush cylindrical,NGN 6000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 4000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 4000.00,1.00,Inventory,true,true,true
+6642928000000169523,Toilet Plunger,,,NGN 2000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 1000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 1000.00,1.00,Inventory,true,true,true
+6642928000000169554,Red Metal Plunger,,,NGN 3000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 2000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,4.00,NGN 2000.00,2.00,Inventory,true,true,true
+6642928000000169585,Drain Buster Plunger,,Neat and Tidy my house,NGN 3000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 2000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 2000.00,2.00,Inventory,true,true,true
+6642928000000169616,Black Funnel,,,NGN 3000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 2000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 2000.00,2.00,Inventory,true,true,true
+6642928000000169647,Bathroom mat,,,NGN 10000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 7000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 7000.00,0.00,Inventory,true,true,true
+6642928000000169678,Footmat,,,NGN 7000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 4000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 4000.00,-2.00,Inventory,true,true,true
+6642928000000169709,Hoe,,,NGN 2500.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 1500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,4.00,NGN 1500.00,2.00,Inventory,true,true,true
+6642928000000169740,Rake,,,NGN 4500.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 2500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 2500.00,3.00,Inventory,true,true,true
+6642928000000169771,Kleansol Detergent,,General Purpose Detergent 25L,NGN 55000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 40000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 40000.00,1.00,Inventory,true,true,true
+6642928000000169802,Double Cover Trash Bin 15L,,,NGN 25000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 20000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 15000.00,4.00,Inventory,true,true,true
+6642928000000169833,Double Cover Trash Bin 10L,,,NGN 15000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 10000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 10000.00,1.00,Inventory,true,true,true
+6642928000000169864,Pedal Bin,,,NGN 25000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 15000.00,Cost of Goods Sold,,Embroidery Flower Stainless Head,Inventory Asset,,fifo,,,,4.00,NGN 15000.00,2.00,Inventory,true,true,true
+6642928000000169895,Baiyun Cleaning Bin,,,NGN 20000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 15000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 15000.00,0.00,Inventory,true,true,true
+6642928000000169926,Papillon Step Bin,,,NGN 21000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 15000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 10000.00,2.00,Inventory,true,true,true
+6642928000000169957,Residual Waste Bin,,,NGN 58000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 45000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 45000.00,0.00,Inventory,true,true,true
+6642928000000169988,Lemon Bin,,,NGN 35000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 25000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 25000.00,0.00,Inventory,true,true,true
+6642928000000170019,Gray Waste Bin,,,NGN 50000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 30000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 30000.00,1.00,Inventory,true,true,true
+6642928000000170050,Lose Trouble Waste bin,,,NGN 10000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 5000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 5000.00,0.00,Inventory,true,true,true
+6642928000000170081,Barrel Environmental Waste Bin (12ltr),,12L,NGN 7000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 4000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,4.00,NGN 4000.00,2.00,Inventory,true,true,true
+6642928000000170112,Barrel Environmental Waste Bin (6Ltr),,6L,NGN 4000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 2500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 2500.00,1.00,Inventory,true,true,true
+6642928000000170143,Waste Bin Dual Lid Opening,,6.5L,NGN 12000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 8000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 8000.00,0.00,Inventory,true,true,true
+6642928000000170174,Stainless Silver Waste Bin,,,NGN 40000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 25000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 25000.00,1.00,Inventory,true,true,true
+6642928000000170205,Basket Waste Bin (Big),,,NGN 8000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 6000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 6000.00,1.00,Inventory,true,true,true
+6642928000000170236,Basket Waste Bin (Medium),,,NGN 6000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 4000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,5.00,NGN 4000.00,-3.00,Inventory,true,true,true
+6642928000000170267,Basket waste bin  (Small),,,NGN 5000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 2000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 2000.00,6.00,Inventory,true,true,true
+6642928000000170298,Rubber Bin,,,NGN 5000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 3300.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,9.00,NGN 3300.00,9.00,Inventory,true,true,true
+6642928000000170329,Silicone Scrubbing Gloves,,,NGN 5000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 4300.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 4300.00,1.00,Inventory,true,true,true
+6642928000000170360,Hand Held Carper Sweeper,,With Dust Pan Attached to it,NGN 6500.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 5200.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 5200.00,1.00,Inventory,true,true,true
+6642928000000170391,Strayer Scraper,,300mm,NGN 2500.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 1500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 1500.00,1.00,Inventory,true,true,true
+6642928000000170422,Spray Gun INGCO 450W,,,NGN 42000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 30000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 30000.00,0.00,Inventory,true,true,true
+6642928000000170453,Caution Mop Bucket (big),,36l yellow mop bucket,NGN 92000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 70000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 70000.00,1.00,Inventory,true,true,true
+6642928000000170484,Extension Pole Holder,,,NGN 12500.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 8000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 8000.00,3.00,Inventory,true,true,true
+6642928000000170515,Easy Squeeze Mop,,,NGN 25000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 20000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 20000.00,2.00,Inventory,true,true,true
+6642928000000170546,Easy Squeeze Mop (Small),,,NGN 23000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 19000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 19000.00,1.00,Inventory,true,true,true
+6642928000000170577,Taste Life Mop Bucket,,,NGN 18000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 16000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,4.00,NGN 16000.00,0.00,Inventory,true,true,true
+6642928000000170608,Khazom Mop Bucket,,,NGN 13000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 8000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 8000.00,0.00,Inventory,true,true,true
+6642928000000170639,Blossom Mop Bucket,,,NGN 13000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 8000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,6.00,NGN 8000.00,0.00,Inventory,true,true,true
+6642928000000170670,Mop Bucket (yellow),,,NGN 23000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 12000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 12000.00,0.00,Inventory,true,true,true
+6642928000000170701,konga 360 Round Spin Mop Bucket,,,NGN 33000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 25000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 25000.00,0.00,Inventory,true,true,true
+6642928000000170732,Nova Mosquito Killer Lamp,,,NGN 15000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 10000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 10000.00,0.00,Inventory,true,true,true
+6642928000000170763,Automatic ToothpastebSqueezing Device,,,NGN 3500.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 1500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 1500.00,1.00,Inventory,true,true,true
+6642928000000170794,Maestro spin Mop Bucket,,,NGN 25000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 12000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 12000.00,0.00,Inventory,true,true,true
+6642928000000170825,Cleaning Kits Carrier,,,NGN 15000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 10000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 10000.00,2.00,Inventory,true,true,true
+6642928000000170856,Parker and sweeper (Blossom),2,Blossom packer and sweeper sky blue,NGN 9000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 4000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 9000.00,4.00,Inventory,true,true,true
+6642928000000170887,Black Sweeper and Parker,,,NGN 21000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 8000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 8000.00,2.00,Inventory,true,true,true
+6642928000000170949,Domestic Cobweb Broom,,,NGN 4500.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 2500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,6.00,NGN 2500.00,1.00,Inventory,true,true,true
+6642928000000170980,Feather Duster Extendable,,"Ash Color,Stainless Handle,Easy to Use",NGN 10000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 8500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 8500.00,2.00,Inventory,true,true,true
+6642928000000171011,Yjieshi Cotton Swab Mop,,"Super absorbent, Fine Fibre, Decontamination",NGN 8000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 5500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,4.00,NGN 8000.00,4.00,Inventory,true,true,true
+6642928000000171042,Blossom Cotton Yarn Mop,,High Quality and Strong Absorbent,NGN 9000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 7000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 7000.00,1.00,Inventory,true,true,true
+6642928000000171073,6MAX COTTON SMALL,,Cleaning More Effieciently,NGN 9000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 6000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 5000.00,0.00,Inventory,true,true,true
+6642928000000171104,S N B Mop,,"Metal Handle, Strong Cotton mop",NGN 15000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 7000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 7000.00,0.00,Inventory,true,true,true
+6642928000000171135,Floor Scrub Brush,,2 IN 1,NGN 5000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 2000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 2000.00,2.00,Inventory,true,true,true
+6642928000000171166,Supreme Floor Wiper,,Green and Black Floor Wiper,NGN 3000.00,Sales,,,,,,,,goods,2,,,Inactive,Pcs,,NGN 1000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 1000.00,1.00,Inventory,true,true,true
+6642928000000171197,Spray Mop,,Spray And Mop at thesame Time,NGN 25000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 15000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 15000.00,1.00,Inventory,true,true,true
+6642928000000171228,St. Chuks Floor Hard Brush,,,NGN 7000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 3000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 3000.00,1.00,Inventory,true,true,true
+6642928000000171259,Sweeper full  wooden hand,,Sweeper full  wooden hand,NGN 5000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 2500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 2500.00,2.00,Inventory,true,true,true
+6642928000000171290,Millet Broom,,miilet broom with wooden handle,NGN 15000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 7000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 7000.00,2.00,Inventory,true,true,true
+6642928000000171321,Simple Mop with Metal Handle,,,NGN 13000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 11200.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 11200.00,1.00,Inventory,true,true,true
+6642928000000171352,Blue Sky Sweeper,,Stainless Steel Head,NGN 9000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 8000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,5.00,NGN 8000.00,4.00,Inventory,true,true,true
+6642928000000171383,ST. CHUKS Mop and Clean the Dust,,stainless steel handle,NGN 15000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 15000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 15000.00,0.00,Inventory,true,true,true
+6642928000000171414,Dust Mop 90CM,,,NGN 16000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 15000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 15000.00,-2.00,Inventory,true,true,true
+6642928000000171445,Microfibre Dust Mop 60cm,,,NGN 18000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 13000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 13000.00,2.00,Inventory,true,true,true
+6642928000000171476,Dust Mop 60CM,,Cotton,NGN 12000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 8000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 8000.00,1.00,Inventory,true,true,true
+6642928000000171507,Dust Mop 40cm,,Cotton,NGN 12000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 8000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 8000.00,2.00,Inventory,true,true,true
+6642928000000171538,Dust Mop 50cm,,Cotton,NGN 13000.00,Sales,,,,,,,,goods,2,,,Inactive,Pcs,,NGN 7000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 7000.00,0.00,Inventory,true,true,true
+6642928000000171569,Bristar Soft Sweeper,,,NGN 4500.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 1500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 1500.00,2.00,Inventory,true,true,true
+6642928000000171600,DZ Squeeze Mop (Medium),,,NGN 15000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 10000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 10000.00,0.00,Inventory,true,true,true
+6642928000000171631,Squeeze Mop (small),,,NGN 15000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 8000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 8000.00,2.00,Inventory,true,true,true
+6642928000000171662,Net Fly Trap,,,NGN 5000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 2000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 2000.00,2.00,Inventory,true,true,true
+6642928000000171693,Replacea ble Dust Mop (Golden Magnetus) (90cm),,Microfibre 90cm,NGN 13000.00,Sales,,,,,,,,goods,2,,,Inactive,Pcs,,NGN 7000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 7000.00,1.00,Inventory,true,true,true
+6642928000000171724,Replaceable Dust Mop (Golden Magnetus) (50cm),,Microbre 50CM,NGN 8000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 4000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 4000.00,0.00,Inventory,true,true,true
+6642928000000171755,Hard Floor Brush,,,NGN 3000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 2000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 2000.00,1.00,Inventory,true,true,true
+6642928000000171786,Industrial Floor Wiper,,,NGN 20000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 15000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 15000.00,0.00,Inventory,true,true,true
+6642928000000171817,Industrial Floor Brush,,,NGN 25000.00,Sales,,,,,,,,goods,2,,,Inactive,Pcs,,NGN 25000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 25000.00,1.00,Inventory,true,true,true
+6642928000000171848,Industrial Floor Sweeper,,,NGN 20000.00,Sales,,,,,,,,goods,2,,,Inactive,Pcs,,NGN 15000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 15000.00,2.00,Inventory,true,true,true
+6642928000000171879,industrial Gutter Brush (Big),,,NGN 23000.00,Sales,,,,,,,,goods,2,,,Inactive,Pcs,,NGN 15000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 15000.00,1.00,Inventory,true,true,true
+6642928000000171910,Industrial Gutter Brush (small),,,NGN 8000.00,Sales,,,,,,,,goods,2,,,Inactive,Pcs,,NGN 4000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 4000.00,1.00,Inventory,true,true,true
+6642928000000171941,Cotton Window Wiper,,,NGN 5000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 3000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 3000.00,3.00,Inventory,true,true,true
+6642928000000171972,Parker Plastic handle,,,NGN 6500.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 5000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,4.00,NGN 1500.00,1.00,Inventory,true,true,true
+6642928000000172003,Sweeper and Parker with chinnish writting,,,NGN 4500.00,Sales,,,,,,,,goods,2,,,Inactive,Pcs,,NGN 2000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 2000.00,1.00,Inventory,true,true,true
+6642928000000172034,Golden King Sweeper,,Soft Domestic Sweeper,NGN 4000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 2000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 4000.00,3.00,Inventory,true,true,true
+6642928000000172065,Caution Wet Floor,,,NGN 20000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 12000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 12000.00,2.00,Inventory,true,true,true
+6642928000000172096,RAF Vacuum Cleaner,,,NGN 90000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 60000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 60000.00,0.00,Inventory,true,true,true
+6642928000000172127,Wheelers Bin 120 litters Happy Family with peder),,,NGN 65000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 40000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 40000.00,1.00,Inventory,true,true,true
+6642928000000172158,Wheelers Bin Big (240 litters happy Family),,,NGN 90000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 50000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 50000.00,-1.00,Inventory,true,true,true
+6642928000000172189,Telescopic Pole,,,NGN 85000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 55000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 55000.00,1.00,Inventory,true,true,true
+6642928000000172220,Scrubbing pad (Red),,Buffing pad,NGN 20000.00,Sales,,,,,,,,goods,2,,,Active,Pcs,,NGN 18000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 18000.00,1.00,Inventory,true,true,true
+6642928000000203087,Spin Mop,,,NGN 10000.00,Sales,,,,,,,,goods,1,,,Inactive,Pcs,,NGN 8000.00,Cost of Goods Sold,,Cleaning ,Inventory Asset,,fifo,,,,3.00,NGN 10000.00,3.00,Inventory,true,true,true
+6642928000000203143,Sunshine Homes Mop,,,NGN 6000.00,Sales,,,,,,,,goods,1,,,Active,Pcs,,NGN 4000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 4000.00,1.00,Inventory,true,true,true
+6642928000000203199,JXING Cotton Swab Mop,,"High liquid absorption i.e removes stubborn dirt, footprint & kitchen grease",NGN 7500.00,Sales,,,,,,,,goods,1,,,Active,pcs,Pieces,NGN 4500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,6.00,NGN 7500.00,3.00,Inventory,true,true,true
+6642928000000206079,Bailer Wooden handle,,,NGN 3000.00,Sales,,,,,,,,goods,1,,,Active,Pcs,,NGN 3000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 4000.00,3.00,Inventory,true,true,true
+6642928000000203436,Extendable window wiper,,,NGN 10000.00,Sales,,,,,,,,goods,1,,,Active,Pcs,,NGN 7500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 3500.00,0.00,Inventory,true,true,true
+6642928000000203492,Brown Squeeze,,,NGN 21000.00,Sales,,,,,,,,goods,1,,,Active,Pcs,,NGN 10000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 11000.00,1.00,Inventory,true,true,true
+6642928000000203671,Chinese Broom,,,NGN 15000.00,Sales,,,,,,,,goods,1,,,Inactive,Pcs,,NGN 10000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 15000.00,2.00,Inventory,true,true,true
+6642928000000203773,Replaceable Flat Mop,,,NGN 10000.00,Sales,,,,,,,,goods,1,,,Active,Pcs,,NGN 9000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 10000.00,1.00,Inventory,true,true,true
+6642928000000203859,Fogging Machine,,,NGN 1200000.00,Sales,,,,,,,,goods,1,,,Active,Pcs,,NGN 1100000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 1200000.00,1.00,Inventory,true,true,true
+6642928000000203915,ULV ELECTRIC FOGGER,,,NGN 400000.00,Sales,,,,,,,,goods,1,,,Active,Pcs,,NGN 350000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 400000.00,1.00,Inventory,true,true,true
+6642928000000209077,Mop Bucket (pink),,,NGN 18000.00,Sales,,,,,,,,goods,1,,,Active,pcs,Pieces,NGN 16000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,4.00,NGN 18000.00,1.00,Inventory,true,true,true
+6642928000000209236,Step Bin Black & Green cover,,,NGN 21000.00,Sales,,,,,,,,goods,1,,,Active,Pcs,,NGN 20000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 21000.00,2.00,Inventory,true,true,true
+6642928000000208031,Floor Scrape Mop Bucket (BIG),,,NGN 25000.00,Sales,,,,,,,,goods,1,,,Active,pcs,Pieces,NGN 23000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 25000.00,1.00,Inventory,true,true,true
+6642928000000212016,Floor Scrape Mop Bucket  (SMALL),,,NGN 23000.00,Sales,,,,,,,,goods,1,,,Active,pcs,Pieces,NGN 20000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 23000.00,1.00,Inventory,true,true,true
+6642928000000212131,Foam Cannon Sprayer Bottle,,Foam lance gun cannon for car pressure wash,NGN 35000.00,Sales,,,,,,,,goods,1,,,Active,,,NGN 30000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 35000.00,3.00,Inventory,true,true,true
+6642928000000213023,Rechargeable Cordless Pressure Washer,,,NGN 110000.00,Sales,,,,,,,,goods,1,,,Active,Pcs,,NGN 105000.00,Cost of Goods Sold,,"portable cordless high-pressure multi-purpose car washer, powered by a 48V Lithium-Ion battery. ",Inventory Asset,,fifo,,,,1.00,NGN 105000.00,1.00,Inventory,true,true,true
+6642928000000213079,Sanding Disc Backing Pad,,,NGN 11000.00,Sales,,,,,,,,goods,1,,,Active,,,NGN 10000.00,Cost of Goods Sold,,"a polishing pad, specifically a 7-inch (180mm) backing pad often used with polishing machines for various applications. ",Inventory Asset,,fifo,,,,1.00,NGN 11000.00,1.00,Inventory,true,true,true
+6642928000000213211,Innova Lemon Bottle Sprayer,,,NGN 8000.00,Sales,,,,,,,,goods,1,,,Active,,,NGN 7000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 8000.00,2.00,Inventory,true,true,true
+6642928000000213349,Rowenta Compact Power Cyclonic,,,NGN 60000.00,Sales,,,,,,,,goods,1,,,Active,Pcs,,NGN 50000.00,Cost of Goods Sold,,a bagless cylinder vacuum cleaner designed for efficient and easy cleaning. ,Inventory Asset,,fifo,,,,1.00,NGN 60000.00,1.00,Inventory,true,true,true
+6642928000000214001,Comfortable Garden Wet & Dry Vacuum Cleaner,,,NGN 320000.00,Sales,,,,,,,,goods,1,,,Active,,,NGN 250000.00,Cost of Goods Sold,,Wet & Dry,Inventory Asset,,fifo,,,,1.00,NGN 280000.00,1.00,Inventory,true,true,true
+6642928000000214118,Spray Gun INGCO 500W,,,NGN 50000.00,Sales,,,,,,,,goods,1,,,Active,,,NGN 40000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 50000.00,1.00,Inventory,true,true,true
+6642928000000214181,Triangular Twist Water Mop,,,NGN 23000.00,Sales,,,,,,,,goods,1,,,Active,Pcs,,NGN 20000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 20000.00,1.00,Inventory,true,true,true
+6642928000000214237,Ronix Cordless Blower,,,NGN 90000.00,Sales,,,,,,,,goods,1,,,Active,pcs,Pieces,NGN 80000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 90000.00,0.00,Inventory,true,true,true
+6642928000000214385,ABRO Premium PVA Chamois Cloth,,,NGN 12000.00,Sales,,,,,,,,goods,1,,,Active,Pcs,,NGN 7000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 8000.00,6.00,Inventory,true,true,true
+6642928000000214487,Microfiber Towel (SMALL),,,NGN 1000.00,Sales,,,,,,,,goods,1,,,Active,Pcs,,NGN 700.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,10.00,NGN 700.00,23.00,Inventory,true,true,true
+6642928000000214543,Hand Towel (MEDIUM) Cotton,,,NGN 1200.00,Sales,,,,,,,,goods,1,,,Active,Pcs,,NGN 1000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,9.00,NGN 1200.00,7.00,Inventory,true,true,true
+6642928000000214599,Cotton Towel Big,,,NGN 1500.00,Sales,,,,,,,,goods,1,,,Active,Pcs,,NGN 1000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 1500.00,1.00,Inventory,true,true,true
+6642928000000214655,Microfiber Towels Medium,,,NGN 3500.00,Sales,,,,,,,,goods,1,,,Active,pcs,Pieces,NGN 2000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,8.00,NGN 1500.00,26.00,Inventory,true,true,true
+6642928000000214711,Long Face towel (Big),,cotton towel for general cleaning,NGN 1800.00,Sales,,,,,,,,goods,1,,,Active,pcs,Pieces,NGN 1000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,5.00,NGN 1500.00,0.00,Inventory,true,true,true
+6642928000000214778,Member's Mark Microfiber Towels,,,NGN 3500.00,Sales,,,,,,,,goods,1,,,Active,Pcs,,NGN 3000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,10.00,NGN 3500.00,0.00,Inventory,true,true,true
+6642928000000206205,Short Towels,,,NGN 2000.00,Sales,,,,,,,,goods,1,,,Active,pcs,Pieces,NGN 1500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,18.00,NGN 1500.00,18.00,Inventory,true,true,true
+6642928000000206246,Hose Reels,,,NGN 140000.00,Sales,,,,,,,,goods,1,,,Active,Pcs,,NGN 130000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 140000.00,0.00,Inventory,true,true,true
+6642928000000216001,Rug Towel,,,NGN 3500.00,Sales,,,,,,,,goods,1,,,Active,Pcs,,NGN 3000.00,Cost of Goods Sold,,Blanket towel hard,Inventory Asset,,fifo,,,,4.00,NGN 3500.00,9.00,Inventory,true,true,true
+6642928000000218077,Extraction Carpet Cleaner,,,NGN 45000.00,Sales,,,,,,,,goods,1,,,Active,Pcs,,NGN 40000.00,Cost of Goods Sold,,1 litre ,Inventory Asset,,fifo,,,,1.00,NGN 45000.00,1.00,Inventory,true,true,true
+6642928000000225062,Short BB Safety Boot,,,NGN 16000.00,Sales,,,,,,,,goods,1,,,Active,Pcs,,NGN 15000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 16000.00,3.00,Inventory,true,true,true
+6642928000000225725,Earthcare Odor Removal Bags,,,NGN 33000.00,Sales,,,,,,,,goods,1,,,Active,pcs,Pieces,NGN 30000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,4.00,NGN 33000.00,4.00,Inventory,true,true,true
+6642928000000225958,Astonish Mould & Mildew Blaster,,,NGN 6500.00,Sales,,,,,,,,goods,1,,,Active,Pcs,,NGN 6000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 6500.00,2.00,Inventory,true,true,true
+6642928000000216372,Air Wick Air Freshner,,,NGN 4500.00,Sales,,,,,,,,goods,1,,,Active,,,NGN 4000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,6.00,NGN 4500.00,7.00,Inventory,true,true,true
+6642928000000216912,Sniper flying insect killer,,,NGN 2500.00,Sales,,,,,,,,goods,1,,,Active,,,NGN 2000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 2500.00,0.00,Inventory,true,true,true
+6642928000000216968,Gluter,,,NGN 6000.00,Sales,,,,,,,,goods,1,,,Active,pcs,Pieces,NGN 5000.00,Cost of Goods Sold,,For weed and grass dry,Inventory Asset,,fifo,,,,2.00,NGN 6000.00,0.00,Inventory,true,true,true
+6642928000000244001,Kness Pest Defense,,,NGN 40000.00,Sales,,,,,,,,goods,1,,,Active,box,Box,NGN 35000.00,Cost of Goods Sold,,Transparent white rat bait station ,Inventory Asset,,fifo,,,,3.00,NGN 40000.00,0.00,Inventory,true,true,true
+6642928000000244057,Rodenticide,,,NGN 35000.00,Sales,,,,,,,,goods,1,,,Active,box,Box,NGN 30000.00,Cost of Goods Sold,,Rat Bait Station BLACK,Inventory Asset,,fifo,,,,6.00,NGN 35000.00,11.00,Inventory,true,true,true
+6642928000000244113,Rat Bait Station (SMALL BLACK),,,NGN 25000.00,Sales,,,,,,,,goods,1,,,Active,box,Box,NGN 20000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 25000.00,1.00,Inventory,true,true,true
+6642928000000247066,"3M Half Facepiece, Medium",,,NGN 40000.00,Sales,,,,,,,,goods,1,,,Active,,,NGN 35000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,5.00,NGN 40000.00,4.00,Inventory,true,true,true
+6642928000000247122,"3M Full Facepiece, Medium",,,NGN 70000.00,Sales,,,,,,,,goods,1,,,Active,box,Box,NGN 65000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 70000.00,2.00,Inventory,true,true,true
+6642928000000247178,Nostrils Nose Mask (Round),,,NGN 7000.00,Sales,,,,,,,,goods,1,,,Active,pcs,Pieces,NGN 6000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 7000.00,0.00,Inventory,true,true,true
+6642928000000250042,"Delvap DDVP 1,OOO EC",,,NGN 13500.00,Sales,,,,,,,,goods,1,,,Active,litres,,NGN 12000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 13500.00,0.00,Inventory,true,true,true
+6642928000000250105,Dominator 440EC,,,NGN 15000.00,Sales,,,,,,,,goods,1,,,Active,litres,,NGN 14000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 15000.00,0.00,Inventory,true,true,true
+6642928000000250161,LIONSEAL DINETHOATE 40% EC,,,NGN 15000.00,Sales,,,,,,,,goods,1,,,Active,Pcs,,NGN 12000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 15000.00,0.00,Inventory,true,true,true
+6642928000000250217,Magic Force,,,NGN 16000.00,Sales,,,,,,,,goods,1,,,Active,Pcs,,NGN 15000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 16000.00,0.00,Inventory,true,true,true
+6642928000000250363,TAKE DOWN II SOFT BAIT,,,NGN 130000.00,Sales,,,,,,,,goods,1,,,Active,pcs,Pieces,NGN 120000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 130000.00,2.00,Inventory,true,true,true
+6642928000000252077,TERMIDOR H.E,,,NGN 450000.00,Sales,,,,,,,,goods,1,,,Active,pcs,Pieces,NGN 400000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 450000.00,1.00,Inventory,true,true,true
+6642928000000256001,SCRUBB Handwash,,handwash 500ML,NGN 2000.00,Sales,,,,,,,,goods,14,,,Active,Pcs,,NGN 1100.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,12.00,NGN 2000.00,0.00,Inventory,true,true,true
+6642928000000258123,HEXACAL,,,NGN 5000.00,Sales,,,,,,,,goods,1,,,Active,Pcs,,NGN 4000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,6.00,NGN 5000.00,2.00,Inventory,true,true,true
+6642928000000258248,LARVIRON 120 ZC,,,NGN 6000.00,Sales,,,,,,,,goods,1,,,Active,Pcs,,NGN 5000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,12.00,NGN 6000.00,6.00,Inventory,true,true,true
+6642928000000256185,HYPO 500ML,,,NGN 2500.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 2000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 2500.00,0.00,Inventory,true,true,true
+6642928000000268138,Industrial Stainless Parker,,,NGN 25000.00,Sales,,,,,,,,goods,14,,,Active,Pcs,,NGN 20000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,4.00,NGN 25000.00,0.00,Inventory,true,true,true
+6642928000000282089,PowerLife Vaccum Cleaner Machine,,,NGN 150000.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 140000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 150000.00,0.00,Inventory,true,true,true
+6642928000000282188,Nilfisk Multi ii 22inox,,,NGN 220000.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 20000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 220000.00,1.00,Inventory,true,true,true
+6642928000000297065,Nasco Action Dishwashing Liquid 500ML,,,NGN 1800.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 1100.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,12.00,NGN 2200.00,3.00,Inventory,true,true,true
+6642928000000306019,25CM HAND INDUSTRAIL BRUSH,,,NGN 8000.00,Sales,,,,,,,,goods,14,,,Active,pcs,Pieces,NGN 7000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 8000.00,0.00,Inventory,true,true,true
+6642928000000306184,Square Toilet Brush,,,NGN 7000.00,Sales,,,,,,,,goods,14,,,Active,Pcs,,NGN 6000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 7000.00,1.00,Inventory,true,true,true
+6642928000000306240,Nasco Beauty Handwash,,,NGN 2000.00,Sales,,,,,,,,goods,14,,,Active,pcs,Pieces,NGN 1400.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,5.00,NGN 2200.00,0.00,Inventory,true,true,true
+6642928000000306303,NASCO Action Dishwashing Liquid 1000ML,,,NGN 2800.00,Sales,,,,,,,,goods,14,,,Active,pcs,Pieces,NGN 2000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,6.00,NGN 2800.00,18.00,Inventory,true,true,true
+6642928000000306359,PowerTell Electric Blower,,,NGN 120000.00,Sales,,,,,,,,goods,14,,,Active,pcs,Pieces,NGN 100000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 120000.00,0.00,Inventory,true,true,true
+6642928000000315001,Brytex Liquid Laundry Detergent,,,NGN 3000.00,Sales,,,,,,,,goods,14,,,Active,pcs,Pieces,NGN 2100.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,12.00,NGN 3500.00,12.00,Inventory,true,true,true
+6642928000000315057,Clean the Air,,,NGN 21000.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 20000.00,Cost of Goods Sold,,"PET ODOR ELIMINATORFOR CARPET & FURNITURE",Inventory Asset,,fifo,,,,5.00,NGN 21000.00,3.00,Inventory,true,true,true
+6642928000000315144,REUSABLE OUTDOOR FLY TRAP,,,NGN 35000.00,Sales,,,,,,,,goods,14,,,Active,pcs,Pieces,NGN 25000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,17.00,NGN 35000.00,12.00,Inventory,true,true,true
+6642928000000315216,Portable Cotton Mop Squeezee 38cm (Big),,Cotton Squeezee Sponge Mop for highly efficient liquid absorption and surface cleaning,NGN 30000.00,Sales,,,,,,,,goods,14,,,Inactive,,,NGN 25000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 30000.00,3.00,Inventory,true,true,true
+6642928000000315257,Light Clean 3 in 1 wet & dry Vacuum Machine,,,NGN 1700000.00,Sales,,,,,,,,goods,14,,,Active,Pcs,,NGN 1500000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 1700000.00,1.00,Inventory,true,true,true
+6642928000000315539,Nasco ACTION Glass Cleaner,,,NGN 2500.00,Sales,,,,,,,,goods,14,,,Active,pcs,Pieces,NGN 2000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,12.00,NGN 2500.00,0.00,Inventory,true,true,true
+6642928000000331074,Big Industrial Wooden Brush,,,NGN 25000.00,Sales,,,,,,,,goods,14,,,Active,Pcs,,NGN 20000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 25000.00,0.00,Inventory,true,true,true
+6642928000000334001,Protective Clothing (Non - Medical),,,NGN 13000.00,Sales,,,,,,,,goods,1,,,Active,Pcs,,NGN 10000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 13000.00,4.00,Inventory,true,true,true
+6642928000000334129,Scraper Blades,,,NGN 1500.00,Sales,,,,,,,,goods,1,,,Active,pcs,Pieces,NGN 1000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 1500.00,1.00,Inventory,true,true,true
+6642928000000334185,White Tissue Paper,,,NGN 500.00,Sales,,,,,,,,goods,1,,,Active,pcs,Pieces,NGN 450.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,48.00,NGN 500.00,0.00,Inventory,true,true,true
+6642928000000338025,Lemon Feather Duster,,,NGN 6000.00,Sales,,,,,,,,goods,1,,,Active,pcs,Pieces,NGN 5000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 6000.00,3.00,Inventory,true,true,true
+6642928000000334241,Leaf Scoop Hand Rake,,,NGN 15000.00,Sales,,,,,,,,goods,1,,,Active,Pcs,,NGN 12000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 15000.00,2.00,Inventory,true,true,true
+6642928000000331182,Industrial Hard Iron Brush with Handle,,,NGN 30000.00,Sales,,,,,,,,goods,14,,,Active,pcs,Pieces,NGN 25000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 30000.00,0.00,Inventory,true,true,true
+6642928000000340105,Steam Cleaner,,,NGN 80000.00,Sales,,,,,,,,goods,14,,,Active,pcs,Pieces,NGN 70000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 80000.00,2.00,Inventory,true,true,true
+6642928000000340146,Grill Brush,,,NGN 10000.00,Sales,,,,,,,,goods,14,,,Active,Pcs,,NGN 8000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,4.00,NGN 10000.00,4.00,Inventory,true,true,true
+6642928000000340187,Mini Duster for AC,,,NGN 13000.00,Sales,,,,,,,,goods,14,,,Active,Pcs,,NGN 120000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,5.00,NGN 13000.00,0.00,Inventory,true,true,true
+6642928000000340228,smart trash can,,,NGN 35000.00,Sales,,,,,,,,goods,14,,,Active,pcs,Pieces,NGN 30000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 35000.00,1.00,Inventory,true,true,true
+6642928000000340269,3 in 1 parker,,,NGN 30000.00,Sales,,,,,,,,goods,14,,,Active,pcs,Pieces,NGN 25000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,5.00,NGN 30000.00,5.00,Inventory,true,true,true
+6642928000000340310,ULTRA HIGH VOLUME,,,NGN 17000.00,Sales,,,,,,,,goods,14,,,Active,pcs,Pieces,NGN 16000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 17000.00,1.00,Inventory,true,true,true
+6642928000000341001,Janitorial Bags small,,,NGN 15000.00,Sales,,,,,,,,goods,14,,,Active,pcs,Pieces,NGN 10000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,4.00,NGN 15000.00,4.00,Inventory,true,true,true
+6642928000000341042,EVEAGE 4000PSI MACHINE,,,NGN 800000.00,Sales,,,,,,,,goods,14,,,Active,Pcs,,NGN 700000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 800000.00,1.00,Inventory,true,true,true
+6642928000000347001,MAGIC SPONGE,,,NGN 1000.00,Sales,,,,,,,,goods,14,,,Active,pcs,Pieces,NGN 900.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,5.00,NGN 1000.00,5.00,Inventory,true,true,true
+6642928000000420001,Screw to Bait Station,,,NGN 2000.00,Sales,,,,,,,,goods,14,,,Active,Pcs,,NGN 800.00,Cost of Goods Sold,,,Inventory Asset,,,,,,,,,Sales and Purchases,true,true,false
+6642928000000425086,Dining Set,,All padded dining sets ,NGN 8000.00,Sales,,VAT,7.50,ItemAmount,,,,service,13,,,Active,,,NGN 6000.00,Cost of Goods Sold,,,Inventory Asset,,,,,,,,,Sales and Purchases,true,true,false
+6642928000000425099,Rug carpet per square meter,,,NGN 200.00,Sales,,,,,,,,service,13,,,Active,Square meter,,NGN 180.00,Cost of Goods Sold,,,Inventory Asset,,,,,,,,,Sales and Purchases,true,true,false
+6642928000000456001,DONTUS VITA QUALITY WET MOP,,,NGN 8000.00,Sales,,,,,,,,goods,14,,,Active,Pcs 2,,NGN 7000.00,Cost of Goods Sold,,,Inventory Asset,,,,,,,,,Sales and Purchases,true,true,false
+6642928000000456012,TRANSPARENT UPHOLDSTERY FILTER,,,NGN 12000.00,Sales,,,,,,,,goods,14,,,Active,Pcs,,NGN 11000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,,,2.00,Inventory,true,true,true
+6642928000000479001,38cm Industrial squeeze mop,,,NGN 30000.00,Sales,,,,,,,,goods,13,,,Active,,,NGN 28000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 30000.00,1.00,Inventory,true,true,true
+6642928000000479052,25 litters Dustbin,,,NGN 50000.00,Sales,,,,,,,,goods,13,,,Active,,,NGN 45000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 50000.00,2.00,Inventory,true,true,true
+6642928000000479093,Beauty Hand wash,,,NGN 2000.00,Sales,,,,,,,,goods,13,,,Active,,,NGN 1000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,,,0.00,Inventory,true,true,true
+6642928000000479106,Odourless vanish,,,NGN 3000.00,Sales,,,,,,,,goods,13,,,Active,,,NGN 2000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 2000.00,1.00,Inventory,true,true,true
+6642928000000479450,METAL TOILET PLUNGER,,,NGN 3000.00,Sales,,,,,,,,goods,14,,,Active,Pcs,,NGN 2500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,,,-1.00,Inventory,true,true,true
+6642928000000479511,SMALL HARD HAND BRUSH,,,NGN 3500.00,Sales,,,,,,,,goods,14,,,Inactive,Pcs,,NGN 1200.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,,,3.00,Inventory,true,true,true
+6642928000000494061,Swis Jardin Air freshener,,,NGN 3500.00,Sales,,,,,,,,goods,14,,,Active,pcs,Pieces,NGN 2500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,6.00,NGN 2500.00,8.00,Inventory,true,true,true
+6642928000000494086,inspire Insignia air freshener,4,,NGN 4500.00,Sales,,,,,,,,goods,14,,,Inactive,ml,Milli Litre,NGN 3500.00,Cost of Goods Sold,,,Inventory Asset,,,,,,,,,Sales and Purchases,true,true,false
+6642928000000504105,Harris Cockroach killing tablet(each tablet),,,NGN 1500.00,Sales,,,,,,,,goods,14,,,Active,pcs,Pieces,NGN 1000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,10.00,NGN 1000.00,0.00,Inventory,true,true,true
+6642928000000504189,Power Kill Rat Killer,,,NGN 1000.00,Sales,,,,,,,,goods,14,,,Active,Pcs,,NGN 600.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,12.00,NGN 600.00,10.00,Inventory,true,true,true
+6642928000000504230,Ikeda Jumbo,,,NGN 18000.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 15000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,4.00,NGN 15000.00,4.00,Inventory,true,true,true
+6642928000000504395,Stainless Toilet plunger,,,NGN 3000.00,Sales,,,,,,,,goods,14,,,Active,pcs,Pieces,NGN 2000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 2000.00,2.00,Inventory,true,true,true
+6642928000000504480,Plastic funnel plunger,,,NGN 3000.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 2000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 2000.00,2.00,Inventory,true,true,true
+6642928000000504531,Gathered toilet plunger,,,NGN 3000.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 2000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 2000.00,1.00,Inventory,true,true,true
+6642928000000511001,Home sweet home foot mat,,,NGN 16000.00,Sales,,,,,,,,goods,14,,,Active,Pcs,,NGN 14500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 14500.00,1.00,Inventory,true,true,true
+6642928000000535021,Face Mask,,,NGN 3500.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 3000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,9.00,NGN 4000.00,5.00,Inventory,true,true,true
+6642928000000535062,Litter picker (gun handle blue),,Blue gun handle/Red picker,NGN 10500.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 6500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 6500.00,1.00,Inventory,true,true,true
+6642928000000535073,Litter picker simple handle,,Simple handle and it has red picker,NGN 6500.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 3500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 3500.00,2.00,Inventory,true,true,true
+6642928000000535114,Long packer,,,NGN 7000.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 1800.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,4.00,NGN 7000.00,6.00,Inventory,true,true,true
+6642928000000535155,Garden Hand packer,,,NGN 18000.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 15000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 15000.00,1.00,Inventory,true,true,true
+6642928000000535196,Export Bag,,,NGN 7500.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 7200.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,11.00,NGN 7200.00,5.00,Inventory,true,true,true
+6642928000000543008,Cotton Mop With PVC Handle,,,NGN 6500.00,Sales,,,,,,,,goods,14,,,Active,pcs,Pieces,NGN 4000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 5500.00,3.00,Inventory,true,true,true
+6642928000000543049,Novex Multipurpose cleaning liquid,,,NGN 6000.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 4000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 4000.00,0.00,Inventory,true,true,true
+6642928000000543090,Sweeper  (Iron handle with foam},,,NGN 10000.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 7000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 7000.00,3.00,Inventory,true,true,true
+6642928000000561001,Hand towel (white&ash),,,NGN 2500.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 1500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,16.00,NGN 1500.00,11.00,Inventory,true,true,true
+6642928000000563001,vita mop stick,,,NGN 8000.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 5000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 7000.00,2.00,Inventory,true,true,true
+6642928000000563042,heart white vinegar,,,NGN 1200.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 1000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,7.00,NGN 1000.00,0.00,Inventory,true,true,true
+6642928000000563083,cobweb remover blue,,,NGN 7000.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 5000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 5000.00,0.00,Inventory,true,true,true
+6642928000000563124,Detachable Long Packer,,Detachable long fancy packer,NGN 6500.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 5000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,6500.00,NGN 5000.00,3.00,Inventory,true,true,true
+6642928000000563284,small napsack,,,NGN 60000.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 50000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 50000.00,2.00,Inventory,true,true,true
+6642928000000567001,Haris cockroach tablet (pack),,,NGN 30000.00,Sales,,,,,,,,goods,14,,,Active,box,Box,NGN 25000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 25000.00,1.00,Inventory,true,true,true
+6642928000000567042,ZOECON GENRTOL IGR CONCENTRATE,,,NGN 25000.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 20000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 20000.00,2.00,Inventory,true,true,true
+6642928000000568001,Chain Saw,,,NGN 350000.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 300000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 300000.00,1.00,Inventory,true,true,true
+6642928000000568042,Ferrex flower cutter,,,NGN 50000.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 40000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 40000.00,0.00,Inventory,true,true,true
+6642928000000568083,Crystal Humidifier,,,NGN 40000.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 30000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 30000.00,1.00,Inventory,true,true,true
+6642928000000568124,Aroma Diffuser,,,NGN 45000.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 35000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 35000.00,1.00,Inventory,true,true,true
+6642928000000570001,green tea tissue,,,NGN 8000.00,Sales,,,,,,,,goods,14,,,Active,pack,,NGN 6000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 6000.00,1.00,Inventory,true,true,true
+6642928000000570042,hand packer and brush,,,NGN 4500.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 3000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,6.00,NGN 3000.00,4.00,Inventory,true,true,true
+6642928000000578032,fabuloso 1L,,,NGN 18000.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 15000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,6.00,NGN 15000.00,4.00,Inventory,true,true,true
+6642928000000578073,Broom/mop holder big size,,,NGN 12500.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 10500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 10500.00,0.00,Inventory,true,true,true
+6642928000000578114,Broom/mop holder small size,,,NGN 12000.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 10000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 10000.00,0.00,Inventory,true,true,true
+6642928000000578239,Exol tile and Joint cleaner 1L,,,NGN 2500.00,Sales,,,,,,,,goods,14,,,Active,Pcs,,NGN 2000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,4.00,NGN 2000.00,2.00,Inventory,true,true,true
+6642928000000578280,Exol tile & joint cleaner 2L,,,NGN 4500.00,Sales,,,,,,,,goods,14,,,Active,Pcs,,NGN 4000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 4000.00,1.00,Inventory,true,true,true
+6642928000000578321,Exol tile & joint cleaner 4L,,,NGN 8500.00,Sales,,,,,,,,goods,14,,,Active,Pcs,,NGN 8000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 8000.00,1.00,Inventory,true,true,true
+6642928000000578362,Home clean 4000ml,,,NGN 10000.00,Sales,,,,,,,,goods,14,,,Active,Pcs,,NGN 8000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 8000.00,1.00,Inventory,true,true,true
+6642928000000578403,Allbrite carpet & upholstery cleaner 1L,,,NGN 2700.00,Sales,,,,,,,,goods,14,,,Active,Pcs,,NGN 2000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,5.00,NGN 2000.00,3.00,Inventory,true,true,true
+6642928000000578444,Allbrite carpet & upholstery cleaner 4L,,,NGN 8500.00,Sales,,,,,,,,goods,14,,,Inactive,Pcs,,NGN 8000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 8000.00,2.00,Inventory,true,true,true
+6642928000000578523,Odur vanish,,,NGN 3500.00,Sales,,,,,,,,goods,14,,,Active,Pcs,,NGN 2500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,6.00,NGN 2500.00,-3.00,Inventory,true,true,true
+6642928000000578571,INSPIRE Air freshener INSIGNIA,,,NGN 2500.00,Sales,,,,,,,,goods,14,,,Active,Pcs,,NGN 1500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,4.00,NGN 1500.00,2.00,Inventory,true,true,true
+6642928000000578612,Wind air freshener gel 50g,,,NGN 600.00,Sales,,,,,,,,goods,14,,,Active,Pcs,,NGN 500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,18.00,NGN 500.00,8.00,Inventory,true,true,true
+6642928000000578653,Hanging scented wardrobe dehumidifier,,,NGN 11000.00,Sales,,,,,,,,goods,14,,,Active,Pcs,,NGN 10000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,6.00,NGN 10000.00,4.00,Inventory,true,true,true
+6642928000000578995,Viva heavy duty garbage bag,,,NGN 1500.00,Sales,,,,,,,,goods,14,,,Inactive,,,NGN 1000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 1000.00,4.00,Inventory,true,true,true
+6642928000000605517,Cantata heavy duty refuse sack,,,NGN 1200.00,Sales,,,,,,,,goods,14,,,Inactive,,,NGN 1000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 1000.00,3.00,Inventory,true,true,true
+6642928000000621051,luxury floor capet,,,NGN 8000.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 6000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 6000.00,3.00,Inventory,true,true,true
+6642928000000623131,Latex Examination Gloves,,,NGN 100.00,Sales,,,,,,,,goods,14,,,Inactive,,,NGN 70.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,245.00,NGN 70.00,245.00,Inventory,true,true,true
+6642928000000626027,Fabuloso 6.2 l,,,NGN 50000.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 45000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 45000.00,2.00,Inventory,true,true,true
+6642928000000633003,Jasmine tissue paper,,,NGN 1500.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 1000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,8.00,NGN 1500.00,6.00,Inventory,true,true,true
+6642928000000645019,Welcome footmat patterned,,,NGN 20000.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 15000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 15000.00,0.00,Inventory,true,true,true
+6642928000000645066,Welcome footmat,,,NGN 18000.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 12000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 12000.00,1.00,Inventory,true,true,true
+6642928000000654019,The Pink stuff Oxi Powder,,The miracle oxi powder stain removal ,NGN 18000.00,Sales,,,,,,,,goods,14,,,Active,1kg,,NGN 15000.00,Cost of Goods Sold,,The miracle oxi powder stain removal ,Inventory Asset,,fifo,,,,1.00,NGN 18000.00,1.00,Inventory,true,true,true
+6642928000000663225,Minhao hook,,,NGN 500.00,Sales,,,,,,,,goods,14,,,Active,pcs,Pieces,NGN 300.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,48.00,NGN 300.00,33.00,Inventory,true,true,true
+6642928000000663342,slug and snail killer 300g,,,NGN 25000.00,Sales,,,,,,,,goods,14,,,Active,g,Grams,NGN 20000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,5.00,NGN 20000.00,2.00,Inventory,true,true,true
+6642928000000663389,Slugs be gone,,,NGN 29500.00,Sales,,,,,,,,goods,14,,,Active,litres,,NGN 24000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,5.00,NGN 24000.00,2.00,Inventory,true,true,true
+6642928000000663436,slug and snail killer (Doff)  800g,,,NGN 35000.00,Sales,,,,,,,,goods,14,,,Active,litres,,NGN 29000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 29000.00,2.00,Inventory,true,true,true
+6642928000000663483,lion seal dimethoate 40%,,,NGN 15000.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 10000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 10000.00,2.00,Inventory,true,true,true
+6642928000000663678,sniper bedbug killer small,,,NGN 5000.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 3500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 2000.00,1.00,Inventory,true,true,true
+6642928000000663725,sniper bedbug killer big,,,NGN 8500.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 7000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 3000.00,3.00,Inventory,true,true,true
+6642928000000663772,fumisect fumigate-insects,,,NGN 6000.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 4500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,6.00,NGN 4500.00,5.00,Inventory,true,true,true
+6642928000000663819,Fuse insecticide and termiticide180,,,NGN 180000.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 150000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 150000.00,1.00,Inventory,true,true,true
+6642928000000663866,chiense broom,,,NGN 15000.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 12000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 12000.00,2.00,Inventory,true,true,true
+6642928000000663931,haosen toilet brush,,,NGN 13000.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 8000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,4.00,NGN 8000.00,4.00,Inventory,true,true,true
+6642928000000681490,charisma garbage bags 3in1,,,NGN 3500.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 3000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,8.00,NGN 3000.00,8.00,Inventory,true,true,true
+6642928000000701162,Face mask,,,NGN 100.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 80.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,100.00,NGN 100.00,438.00,Inventory,true,true,true
+6642928000000714167,Interior Dehumidifier,,,NGN 10000.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 8000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 10000.00,3.00,Inventory,true,true,true
+6642928000000714214,Floral Jasmine Dehumidifier,,,NGN 18000.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 12000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 18000.00,3.00,Inventory,true,true,true
+6642928000000727081,6MAX TOWEL BIG,,,NGN 10000.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 11000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 10000.00,2.00,Inventory,true,true,true
+6642928000000732115,broom holder,,,NGN 12500.00,Sales,,,,,,,,goods,14,,,Inactive,,,NGN 10000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 12500.00,0.00,Inventory,true,true,true
+6642928000000732162,room footmat,,,NGN 8000.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 7000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 8000.00,4.00,Inventory,true,true,true
+6642928000000732209,pee safe,,,NGN 7000.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 6000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,4.00,NGN 7000.00,2.00,Inventory,true,true,true
+6642928000000732256,black pedal waste bin,,,NGN 35000.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 30000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 35000.00,0.00,Inventory,true,true,true
+6642928000000732529,carisma garbage bags 3 in 1,,,NGN 3500.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 2000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,5.00,NGN 3500.00,2.00,Inventory,true,true,true
+6642928000000732640,packer,,,NGN 4500.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 4000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,6.00,NGN 4500.00,1.00,Inventory,true,true,true
+6642928000000738001,rat killer,,,NGN 500.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 400.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,13.00,NGN 500.00,13.00,Inventory,true,true,true
+6642928000000750051,sweeper,,,NGN 4500.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 4000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 4500.00,0.00,Inventory,true,true,true
+6642928000000766001,OPTION B: BASIC- TRADITIONAL CHEMICAL CLEANING,,,NGN 250000.00,Sales,,,,,,,,service,13,,,Active,,,NGN 20000.00,Uncategorized,,,Inventory Asset,,,,,,,,,Sales and Purchases,true,true,false
+6642928000000766012,OPTION A: PREMIUM (Eco-Friendly) GREEN CLEANING SOLUTION,,"Service Description
+
+Our Green Cleaning method uses non-toxic, biodegradable, plant-based chemicals, microfiber systems, and environmentally responsible products that ensure a safer, healthier, and chemical-free environment.
+
+Key Benefits
+	•	Safe for children, pets & sensitive occupants
+	•	No harsh fumes or chemical residues
+	•	Protects wood, marble, stainless steel, and premium surfaces
+	•	Improves indoor air quality post-construction
+	•	Supports ESG, LEED, and sustainable facility management goals
+	•	Recommended for luxury homes, offices, hospitals, schools & hotels",NGN 0.00,Sales,,,,,,,,service,13,,,Active,,,NGN 0.00,Cost of Goods Sold,,,Inventory Asset,,,,,,,,,Sales and Purchases,true,true,false
+6642928000000773375,Jik Regular 475ml,,,NGN 2000.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 1500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,6.00,NGN 1500.00,0.00,Inventory,true,true,true
+6642928000000773518,Aluminium Phosphie,,Qiuckphos,NGN 2000.00,Sales,,,,,,,,goods,14,,,Active,3gm,,NGN 1500.00,Cost of Goods Sold,,Pack is 30000,Inventory Asset,,fifo,,,,16.00,NGN 2000.00,12.00,Inventory,true,true,true
+6642928000000812001,PREMIUM -  GREEN CLEANING (ECO FRIENDLY),,,NGN 0.00,Sales,,,,,,,,goods,13,,,Active,,,NGN 0.00,Cost of Goods Sold,,,Inventory Asset,,,,,,,,,Sales and Purchases,true,true,false
+6642928000000912195,Astonish bathroom cleaner,csv,,NGN 6500.00,Sales,,,,,,,,goods,14,,,Active,Pcs,,NGN 5000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,4.00,NGN 6500.00,4.00,Inventory,true,true,true
+6642928000000912248,Astonish multipurpose cleaner bleach,CSV,,NGN 6500.00,Sales,,,,,,,,goods,14,,,Active,Pcs,,NGN 5000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,4.00,NGN 6500.00,3.00,Inventory,true,true,true
+6642928000000912295,astonish floor cleaner,,1ltr,NGN 10500.00,Sales,,,,,,,,goods,14,,,Active,litres,,NGN 9000.00,Cost of Goods Sold,,1ltr,Inventory Asset,,fifo,,,,4.00,NGN 10500.00,4.00,Inventory,true,true,true
+6642928000000912342,Astonish white vinegar,,,NGN 6500.00,Sales,,,,,,,,goods,14,,,Inactive,,,NGN 5000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 6500.00,1.00,Inventory,true,true,true
+6642928000000912441,Folex,,instant carpet spot removal,NGN 90000.00,Sales,,,,,,,,goods,14,,,Active,32FL,,NGN 85000.00,Cost of Goods Sold,,instant carpet spot removal,Inventory Asset,,fifo,,,,1.00,NGN 90000.00,1.00,Inventory,true,true,true
+6642928000000912490,FOLEX (BIG),,instant carpet spot removal,NGN 200000.00,Sales,,,,,,,,goods,14,,,Active,128FL,,NGN 190000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 200000.00,1.00,Inventory,true,true,true
+6642928000000912539,GOBRIGHT GOCLEAN,,TOILET/CERAMIC STAIN REMOVAL,NGN 4500.00,Sales,,,,,,,,goods,14,,,Active,1LTR,,NGN 3500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 4500.00,3.00,Inventory,true,true,true
+6642928000000912586,LIMPO CLEAN,,TILES CLEANER,NGN 3000.00,Sales,,,,,,,,goods,14,,,Active,1LTR,,NGN 2000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 3000.00,4.00,Inventory,true,true,true
+6642928000000912645,AIR BABY FRAGRANT BEADS,,,NGN 5000.00,Sales,,,,,,,,goods,14,,,Active,Pcs,,NGN 4000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,7.00,NGN 5000.00,6.00,Inventory,true,true,true
+6642928000000912808,CARISMA REFUSE SACK,,,NGN 3500.00,Sales,,,,,,,,goods,14,,,Active,PK,,NGN 3000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,4.00,NGN 3500.00,3.00,Inventory,true,true,true
+6642928000000912857,SMALL BLACK REFUSE PACK,,MADE IN CHINA,NGN 800.00,Sales,,,,,,,,goods,14,,,Active,UNIT,,NGN 700.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,5.00,NGN 800.00,1.00,Inventory,true,true,true
+6642928000000922071,voom scouring powder,,,NGN 2000.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 1500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 2000.00,1.00,Inventory,true,true,true
+6642928000000922120,Waste bin dual lid 15ltr,,Double covered trash bin,NGN 25000.00,Sales,,,,,,,,goods,14,,,Active,15ltr,,NGN 23000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 25000.00,3.00,Inventory,true,true,true
+6642928000000922169,Waste bin dual lid 10ltr,,double covered trash bin,NGN 15000.00,Sales,,,,,,,,goods,14,,,Active,10ltr,,NGN 12000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 15000.00,1.00,Inventory,true,true,true
+6642928000000922216,Mr clean pedal bin,,,NGN 5000.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 4000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 5000.00,2.00,Inventory,true,true,true
+6642928000000922263,Mat pattern waste bin (BIG),,,NGN 10000.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 9000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 10000.00,0.00,Inventory,true,true,true
+6642928000000922310,Mat pattern waste bin (SMALL),,,NGN 5000.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 4000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 5000.00,3.00,Inventory,true,true,true
+6642928000000922359,Caution bucket 36l,,,NGN 92000.00,Sales,,,,,,,,goods,14,,,Active,36ltr,,NGN 90000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 92000.00,1.00,Inventory,true,true,true
+6642928000000922406,Black packer and brush,,,NGN 21000.00,Sales,,,,,,,,goods,14,,,Inactive,,,NGN 20000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 21000.00,2.00,Inventory,true,true,true
+6642928000000922453,Fancy packer and brush,,double brush,NGN 30000.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 28000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,4.00,NGN 30000.00,3.00,Inventory,true,true,true
+6642928000000922500,Long packer detachable,,,NGN 6500.00,Sales,,,,,,,,goods,14,,,Inactive,,,NGN 6000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 6500.00,2.00,Inventory,true,true,true
+6642928000000922547,Toilet brush Haosen,,,NGN 13000.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 12000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 13000.00,2.00,Inventory,true,true,true
+6642928000000922594,Pattern toilet brush,,marble,NGN 4500.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 4000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 4500.00,7.00,Inventory,true,true,true
+6642928000000922667,Paint brush size 1,,,NGN 400.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 300.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 400.00,0.00,Inventory,true,true,true
+6642928000000922714,Haosen Floor Wiper & Brush,,Floor Brush & Water Wiper (RECTANGULAR),NGN 8000.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 5000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 6000.00,2.00,Inventory,true,true,true
+6642928000000931105,OZ Cotton mop,,,NGN 5000.00,Sales,,,,,,,,goods,14,,,Active,,,NGN 3000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,5.00,NGN 5000.00,4.00,Inventory,true,true,true
+6642928000000931208,Twist Mop,,,NGN 10000.00,Sales,,,,,,,,goods,14,,,Active,pcs,Pieces,NGN 8000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,4.00,NGN 10000.00,3.00,Inventory,true,true,true
+6642928000000931281,Wooden sweeper not full,,,NGN 6000.00,Sales,,,,,,,,goods,14,,,Active,Pcs,,NGN 5500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 6000.00,2.00,Inventory,true,true,true
+6642928000000959007,Maxflush 5,,Toilet Rim Block Cleaner Tropical Blossom,NGN 5000.00,Sales,,,,,,,,goods,14,,,Active,box,Box,NGN 4000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 5000.00,3.00,Inventory,true,true,true
+6642928000000970001,MCDELTA ZONE,,For fumigation - pest control,NGN 95000.00,Sales,,,,,,,,goods,14,,,Active,litres,,NGN 90000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 95000.00,1.00,Inventory,true,true,true
+6642928000000976001,Rat Bait Station (Big Black),,Square Shape Big Black for trapping rat,NGN 45000.00,Sales,,,,,,,,goods,14,,,Active,box,Box,NGN 40000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,5.00,NGN 45000.00,7.00,Inventory,true,true,true
+6642928000000978049,Duster,,Duster at the top only,NGN 5000.00,Sales,,,,,,,,goods,14,,,Active,pcs,Pieces,NGN 4000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 5000.00,2.00,Inventory,true,true,true
+6642928000000978112,Spinning Mop Bucket (Lemon),,,NGN 25000.00,Sales,,,,,,,,goods,14,,,Active,pcs,Pieces,NGN 20000.00,Cost of Goods Sold,,,Inventory Asset,,,,,,,,,Sales and Purchases,true,true,false
+6642928000000973300,Examination glove,,,NGN 100.00,Sales,,,,,,,,goods,14,,,Active,pcs,Pieces,NGN 50.00,Cost of Goods Sold,,,Inventory Asset,,,,,,,,,Sales and Purchases,true,true,false
+6642928000000988001,Tissue Paper (good one),,,NGN 500.00,Sales,,,,,,,,goods,14,,,Active,Pcs,,NGN 300.00,Cost of Goods Sold,,,Inventory Asset,,,,,,,,,Sales and Purchases,true,true,false
+6642928000000988012,Dimethoate,,,NGN 15000.00,Sales,,,,,,,,goods,14,,,Active,pcs,Pieces,NGN 12000.00,Cost of Goods Sold,,,Inventory Asset,,,,,,,,,Sales and Purchases,true,true,false
+6642928000000998307,Toilet brush (cylindrical white),,,NGN 6500.00,Sales,,,,,,,,goods,14,,,Active,Pcs,,NGN 3500.00,Cost of Goods Sold,,,Inventory Asset,,,,,,,,,Sales and Purchases,true,true,false
+6642928000001018001,Big packer and sweeper,,Yellow and black,NGN 21000.00,Sales,,,,,,,,goods,14,,,Active,pcs,Pieces,NGN 15000.00,Cost of Goods Sold,,,Inventory Asset,,,,,,,,,Sales and Purchases,true,true,false
+6642928000001019013,Window Wiper with micro fibre and rubber blade,,Squugee and scrubber for washing and drying   ,NGN 10000.00,Sales,,,,,,,,goods,14,,,Active,pcs,Pieces,NGN 8000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 10000.00,1.00,Inventory,true,true,true
+6642928000001019060,Window Wiper Black,,Window squeegee with a mesh scrubber (white net),NGN 8000.00,Sales,,,,,,,,goods,14,,,Active,Pcs,,NGN 6000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 8000.00,1.00,Inventory,true,true,true
+6642928000001019117,Window Track Cleaning Brush,,Cleaning groves with 3 brush and rubber blade for cleaning window glass,NGN 12000.00,Sales,,,,,,,,goods,14,,,Inactive,Pcs,,NGN 10000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,5.00,NGN 12000.00,3.00,Inventory,true,true,true
+6642928000001019162,Drain Unclogging Tool,,with 4 claws for unblocking drain,NGN 7000.00,Sales,,,,,,,,goods,14,,,Active,pcs,Pieces,NGN 4000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 7000.00,3.00,Inventory,true,true,true
+6642928000001019207,Unclogging Tool Rubber,,Toilet unclogging tool (Rubber type),NGN 2000.00,Sales,,,,,,,,goods,14,,,Active,Pcs,,NGN 1000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 2000.00,2.00,Inventory,true,true,true
+6642928000001019252,Vent Cleaner,,"For removing dust, lint and debris e.g. from car AC",NGN 3500.00,Sales,,,,,,,,goods,14,,,Active,Pcs,,NGN 2500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,4.00,NGN 3500.00,4.00,Inventory,true,true,true
+6642928000001043189,Harpic power plus 10x,,,NGN 5500.00,Sales,,,,,,,,goods,14,,,Inactive,ml,Milli Litre,NGN 4100.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,4.00,NGN 5500.00,-2.00,Inventory,true,true,true
+6642928000001043508,Cobweb remover,,,NGN 4500.00,Sales,,,,,,,,goods,14,,,Active,pcs,Pieces,NGN 3500.00,Cost of Goods Sold,,,Inventory Asset,,,,,,,,,Sales and Purchases,true,true,false
+6642928000001050001,Spray Bottle - Deep Green,,Deep Green Sprayer Bottle (Small),NGN 3000.00,Sales,,,,,,,,goods,14,,,Active,Pcs,,NGN 1500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,8.00,NGN 3000.00,6.00,Inventory,true,true,true
+6642928000001088145,Wheelers Bin Big (240 GEEPEE),,,NGN 110000.00,Sales,,,,,,,,goods,14,,,Active,Pcs,,NGN 75000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 50000.00,0.00,Inventory,true,true,true
+6642928000001107013,Glaze Protectant,,"For cleaning dashboard, office and home",NGN 3500.00,Sales,,,,,,,,goods,12,,,Active,"1
+500ML",,NGN 3000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,5.00,NGN 4000.00,3.00,Inventory,true,true,true
+6642928000001108013,Drain Doctor,,Drain opener ,NGN 5000.00,Sales,,,,,,,,goods,12,,,Active,500g,,NGN 3500.00,Word roped,,"Drain opener for kitchen, sinks,washbasin,and outside drains ",Inventory Asset,,fifo,,,,5.00,NGN 5000.00,3.00,Inventory,true,true,true
+6642928000001110011,Blue Toilet Blocks,,Toilet cleaner ,NGN 7000.00,Sales,,,,,,,,goods,12,,,Active,,,NGN 5000.00,Cost of Goods Sold,,Toilet cleaner ,Inventory Asset,,fifo,,,,5.00,NGN 7000.00,1.00,Inventory,true,true,true
+6642928000001111013,Air Wick Gel,,Scented gel natural essential oil,NGN 3000.00,Late Fee Income,,,,,,,,goods,12,,,Active,70g,,NGN 2000.00,Cost of Goods Sold,,Scented gel natural essential oil,Inventory Asset,,fifo,,,,4.00,NGN 3000.00,3.00,Inventory,true,true,true
+6642928000001112013,Bin Fresh  Buddy,,Keep bins fresh and clean ,NGN 10000.00,Sales,,,,,,,,goods,12,,,Active,450g,,NGN 8000.00,Cost of Goods Sold,,"Controls smells, soaks up liquid and fragrances bins ",Inventory Asset,,fifo,,,,1.00,NGN 10000.00,1.00,Inventory,true,true,true
+6642928000001113013,Lu Blue,,Drain cleaner ,NGN 3000.00,Sales,,,,,,,,goods,12,,,Active,50g,,NGN 2000.00,Cost of Goods Sold,,"Colours ,cleans, freshens",Inventory Asset,,fifo,,,,2.00,NGN 3000.00,2.00,Inventory,true,true,true
+6642928000001114011,Mr. Plumber,,Drain unblocker granules ,NGN 13000.00,Sales,,,,,,,,goods,12,,,Active,500g,,NGN 11000.00,Cost of Goods Sold,,Drain unblocker granules ,Inventory Asset,,fifo,,,,2.00,NGN 13000.00,2.00,Inventory,true,true,true
+6642928000001115013,Pure And Natural Fragrance,,Pure natural fragrance for car and home ,NGN 15000.00,Sales,,,,,,,,goods,12,,,Active,230g,,NGN 12500.00,Cost of Goods Sold,,Pure natural fragrance for car and home ,Inventory Asset,,fifo,,,,2.00,NGN 15000.00,2.00,Inventory,true,true,true
+6642928000001116013,Synthetic Chamois,,Super absorbent ,NGN 5000.00,Sales,,,,,,,,goods,12,,,Active,44×46cm,,NGN 3000.00,Cost of Goods Sold,,Super absorbent,Inventory Asset,,fifo,,,,2.00,NGN 5000.00,2.00,Inventory,true,true,true
+6642928000001118013,Window squeegee and microfibre washer,,For scrubbing and drying glass surfaces ,NGN 6000.00,Sales,,,,,,,,goods,12,,,Active,pcs,Pieces,NGN 5000.00,Cost of Goods Sold,,Cleaning the glasses ,Inventory Asset,,fifo,,,,2.00,NGN 6000.00,2.00,Inventory,true,true,true
+6642928000001175013,Rose Belle,,Rose belle tissue paper ,NGN 1500.00,Sales,,,,,,,,goods,12,,,Active,28.8m,,NGN 1000.00,Fuel for Hijet 2,,Rose belle tissue paper ,Inventory Asset,,fifo,,,,5.00,NGN 1500.00,5.00,Inventory,true,true,true
+6642928000001176013,Rose Belle Big,,Rose Belle tissue paper big ,NGN 2000.00,Sales,,,,,,,,goods,12,,,Active,21.6m,,NGN 1500.00,Cost of Goods Sold,,Rose Belle tissue paper big,Inventory Asset,,fifo,,,,5.00,NGN 1500.00,4.00,Inventory,true,true,true
+6642928000001192013,Astonish Kichen Cleaner,,Kitchen cleaning ,NGN 6500.00,Sales,,,,,,,,goods,12,,,Active,750ml,,NGN 5000.00,Fuel for Hijet 2,,Kitchen cleaning ,Inventory Asset,,fifo,,,,1.00,NGN 6500.00,1.00,Inventory,true,true,true
+6642928000001196011,Astonish White Vinegar,,White Vinegar (Multipurpose),NGN 6500.00,Sales,,,,,,,,goods,12,,,Active,750ml,,NGN 5000.00,Cost of Goods Sold,,White Vinegar (Multipurpose),Inventory Asset,,fifo,,,,1.00,NGN 6500.00,1.00,Inventory,true,true,true
+6642928000001207075,Big Mopping cat,,Big Mopping cat,NGN 200000.00,Sales,,,,,,,,goods,14,,,Active,pcs,Pieces,NGN 180000.00,Cost of Goods Sold,,,Inventory Asset,,,,,,,,,Sales and Purchases,true,true,false
+6642928000001218025,CIF (BIG) All purpose cleaner,,All purpose floor cleaning agent,NGN 6800.00,Sales,,,,,,,,goods,14,,,Active,ml,Milli Litre,NGN 5000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 1.00,1.00,Inventory,true,true,true
+6642928000001227031,Micro fiber long face(pink&white),,pink and white cotton fibre,NGN 1200.00,Sales,,,,,,,,goods,14,,,Active,Pcs,,NGN 1000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,4.00,NGN 1000.00,3.00,Inventory,true,true,true
+6642928000001229011,D-Bond,,Chewing gum removal,NGN 20000.00,Sales,,,,,,,,goods,12,,,Active,750ml,,NGN 17000.00,Cost of Goods Sold,,Chewing gum removal,Inventory Asset,,fifo,,,,3.00,NGN 20000.00,3.00,Inventory,true,true,true
+6642928000001230011,Mr. Plumber Liquid,,For clogged and slow moving drain ,NGN 12500.00,Sales,,,,,,,,goods,12,,,Active,750ml,,NGN 8000.00,Cost of Goods Sold,,For clogged and slow moving drain ,Inventory Asset,,fifo,,,,2.00,NGN 12500.00,1.00,Inventory,true,true,true
+6642928000001231037,Vanish Oxi Action Crystal White,,Chlorine bleach free whitening booster ,NGN 18000.00,Sales,,,,,,,,goods,12,,,Active,1kg,,NGN 15000.00,Cost of Goods Sold,,Chlorine bleach free whitening booster ,Inventory Asset,,fifo,,,,1.00,NGN 18000.00,1.00,Inventory,true,true,true
+6642928000001240001,Caution notice sign board,,sign board,NGN 17000.00,Sales,,,,,,,,goods,14,,,Active,Pcs,,NGN 15000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 15000.00,2.00,Inventory,true,true,true
+6642928000001242013,Astonish Hand Wash,,Protect and care anti-bacterial handwash,NGN 3500.00,Sales,,,,,,,,goods,12,,,Active,600ml,,NGN 2000.00,Cost of Goods Sold,,Protect and care anti-bacterial handwash,Inventory Asset,,fifo,,,,4.00,NGN 3500.00,3.00,Inventory,true,true,true
+6642928000001240074,SQEEGEE BIG,,,NGN 30000.00,Sales,,,,,,,,goods,14,,,Active,38CM,,NGN 20000.00,Cost of Goods Sold,,,Inventory Asset,,,,,,,,,Sales and Purchases,true,true,false
+6642928000001252001,Baolian scrapper(SMALL),,SHORT HAND SCRAPPER,NGN 8500.00,Sales,,,,,,,,goods,14,,,Active,Pcs,,NGN 7000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 8500.00,2.00,Inventory,true,true,true
+6642928000001252046,Baolian scrapper(BIG),,LONG HAND SCRAPPER,NGN 10000.00,Sales,,,,,,,,goods,14,,,Active,Pcs,,NGN 8000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,4.00,NGN 10000.00,2.00,Inventory,true,true,true
+6642928000001263001,Hand wash Colourfilled,,Anti bacterial hand wash,NGN 3500.00,Sales,,,,,,,,goods,14,,,Inactive,ml,Milli Litre,NGN 2500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,10000.00,NGN 3000.00,9994.00,Inventory,true,true,true
+6642928000001263046,Mop Stick St Grace/St Paul,,"Heavy duty household & commercial floor cleaning, highly absorbent ",NGN 10000.00,Sales,,,,,,,,goods,14,,,Active,pcs,Pieces,NGN 5500.00,Cost of Goods Sold,,"Heavy duty household & commercial floor cleaning, highly absorbent ",Inventory Asset,,fifo,,,,4.00,NGN 10000.00,3.00,Inventory,true,true,true
+6642928000001263091,Rake tiny mouth,,,NGN 10000.00,Sales,,,,,,,,goods,14,,,Active,Pcs,,NGN 8000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 8000.00,0.00,Inventory,true,true,true
+6642928000001281019,Colourfilled Handwash,,Fruity hand wash anti bacteria,NGN 3500.00,Sales,,,,,,,,goods,12,,,Active,500ml,,NGN 2000.00,Cost of Goods Sold,,Fruity hand wash ,Inventory Asset,,fifo,,,,10.00,NGN 3500.00,0.00,Inventory,true,true,true
+6642928000001306013,Star Cool (Small),,Duster sponge,NGN 300.00,Sales,,,,,,,,goods,12,,,Active,6,,NGN 0.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,48.00,NGN 300.00,46.00,Inventory,true,false,true
+6642928000001316011,Welcome Footmat Flower,,Flower footmat,NGN 18000.00,Sales,,,,,,,,goods,12,,,Active,pcs,Pieces,NGN 15000.00,Cost of Goods Sold,,Flower footmat,Inventory Asset,,fifo,,,,2.00,NGN 18000.00,2.00,Inventory,true,true,true
+6642928000001332013,Evans Mexapol,,Very durable high gloss finish for heavy traffic areas ,NGN 100000.00,Sales,,,,,,,,goods,12,,,Active,5ltr,,NGN 80000.00,Cost of Goods Sold,,High solids floor Polish ,Inventory Asset,,fifo,,,,1.00,NGN 100000.00,1.00,Inventory,true,true,true
+6642928000001332080,Evans Easy Strip,,Strip polish with mop or machine ,NGN 100000.00,Sales,,,,,,,,goods,12,,,Active,5lit,,NGN 80000.00,Cost of Goods Sold,,Rinse free Polish stripper,Inventory Asset,,fifo,,,,1.00,NGN 100000.00,1.00,Inventory,true,true,true
+6642928000001333011,Evans Clean & Shine,,Ideal for cleaning & restoring gloss finish to floor ,NGN 100000.00,Sales,,,,,,,,goods,12,,,Active,5ltr,,NGN 80000.00,Cost of Goods Sold,,Neutral floor maintainer ,Inventory Asset,,fifo,,,,1.00,NGN 100000.00,1.00,Inventory,true,true,true
+6642928000001336011,Room Footmat,,Soft room footmat ,NGN 7000.00,Sales,,,,,,,,goods,12,,,Active,Pcs,,NGN 5000.00,Cost of Goods Sold,,Room footmat ,Inventory Asset,,fifo,,,,3.00,NGN 70000.00,2.00,Inventory,true,true,true
+6642928000001349021,Ethereum,,Oven and cookware cleaning paste ,NGN 4500.00,Sales,,,,,,,,goods,12,,,Active,5 pcs,,NGN 3000.00,Cost of Goods Sold,,Oven and cookware cleaner ,Inventory Asset,,fifo,,,,5.00,NGN 4500.00,2.00,Inventory,true,true,true
+6642928000001369013,Elena,,Liquid detergent ,NGN 8500.00,Sales,,,,,,,,goods,12,,,Active,4ltr,,NGN 7000.00,Cost of Goods Sold,,Multipurpose liquid wash ,Inventory Asset,,fifo,,,,1.00,NGN 8500.00,1.00,Inventory,true,true,true
+6642928000001375013,Harpic,,Power plus ,NGN 5500.00,Sales,,,,,,,,goods,12,,,Active,725ml,,NGN 4000.00,Cost of Goods Sold,,Disinfetant toilet cleaner ,Inventory Asset,,fifo,,,,3.00,NGN 5500.00,3.00,Inventory,true,true,true
+6642928000001376011,Jik,,Multipurpose bleach whitens &remove stain ,NGN 4500.00,Sales,,,,,,,,goods,12,,,Inactive,750ml,,NGN 3000.00,Cost of Goods Sold,,Multipurpose bleach whitens &remove stain ,Inventory Asset,,fifo,,,,3.00,NGN 4500.00,3.00,Inventory,true,true,true
+6642928000001387013,Hypo,,,NGN 200.00,Sales,,,,,,,,goods,12,,,Active,75ml,,NGN 100.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 200.00,2.00,Inventory,true,true,true
+6642928000001395011,Stain X,,,NGN 3000.00,Sales,,,,,,,,goods,12,,,Active,500ml,,NGN 2000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 3000.00,1.00,Inventory,true,true,true
+6642928000001418013,GBC Super,,Air freshener ,NGN 3000.00,Sales,,,,,,,,goods,12,,,Inactive,250nl,,NGN 2000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 3000.00,3.00,Inventory,true,true,true
+6642928000001421013,Febreze & Glade,,White jasmine ,NGN 20000.00,Sales,,,,,,,,goods,12,,,Active,20ml,,NGN 15000.00,Cost of Goods Sold,,Champagne cheers,Inventory Asset,,fifo,,,,1.00,NGN 20000.00,1.00,Inventory,true,true,true
+6642928000001424011,Happy Time,,Pure and naturals fragrance ,NGN 4000.00,Sales,,,,,,,,goods,12,,,Active,230g,,NGN 3000.00,Cost of Goods Sold,,Pure and naturals fragrance ,Inventory Asset,,fifo,,,,2.00,NGN 4000.00,2.00,Inventory,true,true,true
+6642928000001425013,Ikeda Scent ( Big),,Ceramic air freshener ,NGN 25000.00,Sales,,,,,,,,goods,12,,,Inactive,40g,,NGN 20000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 25000.00,1.00,Inventory,true,true,true
+6642928000001429013,Dehumidifier Scented Wardrobe,,"Helps stop damp, mould, mildew, and condensation ",NGN 6500.00,Sales,,,,,,,,goods,12,,,Active,180g,,NGN 5000.00,Cost of Goods Sold,,"Helps stop damp, mould, mildew, and condensation ",Inventory Asset,,fifo,,,,3.00,NGN 6500.00,3.00,Inventory,true,true,true
+6642928000001418084,Astonish,,6 power action ,NGN 6000.00,Sales,,,,,,,,goods,12,,,Active,40g,,NGN 5000.00,Cost of Goods Sold,,Foam and fresh ,Inventory Asset,,fifo,,,,2.00,NGN 6000.00,2.00,Inventory,true,true,true
+6642928000001432013,Excelsior,,Chinese writing ,NGN 2500.00,Sales,,,,,,,,goods,12,,,Active,4g,,NGN 2000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 2500.00,1.00,Inventory,true,true,true
+6642928000001433013,US Grill Cleaning Sponge,, Black and grey small sponge,NGN 1000.00,Sales,,,,,,,,goods,12,,,Active,5pcs,,NGN 500.00,Cost of Goods Sold,,Black spong,Inventory Asset,,fifo,,,,5.00,NGN 1000.00,5.00,Inventory,true,true,true
+6642928000001430019,Urinary,,Stop smelling of urine,NGN 5000.00,Sales,,,,,,,,goods,12,,,Active,2pcs,,NGN 3000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 5000.00,2.00,Inventory,true,true,true
+6642928000001437013,Amanda Scourers,,Super cleaning ,NGN 1000.00,Sales,,,,,,,,goods,12,,,Active,42pcs,,NGN 700.00,Cost of Goods Sold,,Cleaning series best products of kitchen and bathroom family necessity ,Inventory Asset,,fifo,,,,42.00,NGN 1000.00,40.00,Inventory,true,true,true
+6642928000001445013,Vinegar,,Concentrate ,NGN 200000.00,Sales,,,,,,,,goods,12,,,Active,3.78l,,NGN 180000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 200000.00,1.00,Inventory,true,true,true
+6642928000001446013,P&g Proline,,Professional,NGN 100000.00,Sales,,,,,,,,goods,12,,,Active,3.78lt,,NGN 80000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 80000.00,2.00,Inventory,true,true,true
+6642928000001447011,Stonebrite,,Floor cleaning speciality formulated for terrazzo and marble ,NGN 70000.00,Sales,,,,,,,,goods,12,,,Active,5ltr,,NGN 50000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 70000.00,1.00,Inventory,true,true,true
+6642928000001450013,Kleansol Anti-bacterial,,"Multipurpose cleaner for floor, kitchen, and bathroom ",NGN 8000.00,Sales,,,,,,,,goods,12,,,Active,2ltr,,NGN 5000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 8000.00,3.00,Inventory,true,true,true
+6642928000001451011,Limpo Clean,,All purposes cleaner tile ,NGN 7000.00,Sales,,,,,,,,goods,12,,,Inactive,1LTR,,NGN 5000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,5.00,NGN 7000.00,5.00,Inventory,true,true,true
+6642928000001450080,Colourfilled Big,,Antibacterial floor and tile cleaner ,NGN 13000.00,Sales,,,,,,,,goods,12,,,Active,4ltrs,,NGN 10000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 13000.00,2.00,Inventory,true,true,true
+6642928000001452011,Colourfilled  Medium,,Antibacterial floor and tiles cleaner ,NGN 7000.00,Sales,,,,,,,,goods,12,,,Active,1LTR,,NGN 5000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 8000.00,2.00,Inventory,true,true,true
+6642928000001469013,Blessed,,For portable gas range ,NGN 10000.00,Sales,,,,,,,,goods,12,,,Active,227g,,NGN 8000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,8.00,NGN 10000.00,8.00,Inventory,true,true,true
+6642928000001471013,WD -40,,"Stops squeaks,drive out moisture,clean and protect ",NGN 12000.00,Sales,,,,,,,,goods,12,,,Active,330ml,,NGN 10000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 12000.00,1.00,Inventory,true,true,true
+6642928000001473011,Jyax,,,NGN 9000.00,Sales,,,,,,,,goods,12,,,Active,2pcs,,NGN 10000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 13000.00,2.00,Inventory,true,true,true
+6642928000001477461,YLY PCO,,INSECTICIDE POWDER,NGN 4000.00,Sales,,,,,,,,goods,14,,,Active,g,Grams,NGN 2500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,6.00,NGN 2500.00,6.00,Inventory,true,true,true
+6642928000001477800,Refuse sack(small)black,,Small black refuse sack,NGN 800.00,Sales,,,,,,,,goods,14,,,Active,Pcs,,NGN 400.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,4.00,NGN 400.00,0.00,Inventory,true,true,true
+6642928000001491013,Good Knight,,"For insect, mosquito, cockroach, flies, ants",NGN 3000.00,Sales,,,,,,,,goods,12,,,Active,120ml,,NGN 2000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 3000.00,12.00,Inventory,true,true,true
+6642928000001498013,Hand Parker,,,NGN 2000.00,Sales,,,,,,,,goods,12,,,Active,6pcs,,NGN 1500.00,Cost of Goods Sold,,Small hand parker ,Inventory Asset,,fifo,,,,6.00,NGN 2000.00,4.00,Inventory,true,true,true
+6642928000001500001,Floor Brush And Water Sweeper,,Floor Brush And Rubber dullop,NGN 10000.00,Sales,,,,,,,,goods,12,,,Active,Pcs,,NGN 8000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 10000.00,1.00,Inventory,true,true,true
+6642928000001507001,Crazytiger insecticide,,Active Insecticide,NGN 4000.00,Sales,,,,,,,,goods,14,,,Active,g,Grams,NGN 2500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,7.00,NGN 2500.00,6.00,Inventory,true,true,true
+6642928000001515013,Disposable Face Mask Park,,Face mask ,NGN 3500.00,Sales,,,,,,,,goods,12,,,Active,50pcs,,NGN 2500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,4.00,NGN 3500.00,4.00,Inventory,true,true,true
+6642928000001517013,Latex Examination Gloves( Disposable),,Surgical hand glove ,NGN 4000.00,Sales,,,,,,,,goods,12,,,Active,4pack,,NGN 3000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,4.00,NGN 4000.00,2.00,Inventory,true,true,true
+6642928000001530001,BASIC PACKAGE,,"Essential Protection Plan
+
+Reliable and cost-effective pest control solution
+
+This package is ideal for clients seeking an effective and affordable treatment option with strong residual protection.
+
+Service Scope
+	•	Non-odourless mist treatment only (slightly pungent)
+	•	Fogging of septic system included
+	•	Suitable for standard residential and commercial pest control needs
+
+Features & Benefits
+	•	Public health compliant fumigant
+	•	Effective against common crawling and flying pests
+	•	Slightly pungent odour during application
+	•	Residual protection: up to 90 days
+
+Re-entry Guideline
+	•	8 hours for healthy occupants
+	•	24 hours for:
+	•	pregnant women
+	•	children below 5 years
+	•	elderly persons above 60 years
+	•	asthmatic persons
+	•	sick or immunocompromised persons
+
+After-Service Support
+	•	Dedicated customer care follow-up
+	•	Free reapplication within 7 days if treated pests persist",NGN 0.00,Sales,,,,,,,,service,13,,,Active,,,NGN 0.00,Uncategorized,,,Inventory Asset,,,,,,,,,Sales and Purchases,true,true,false
+6642928000001530012,CLASSIC PACKAGE,,"Comfort Protection Plan
+
+Balanced performance with enhanced comfort
+
+Designed for clients who desire stronger comfort and minimal indoor disruption.
+
+Service Scope
+	•	Odourless mist treatment for interior spaces
+	•	Non-odourless treatment for exterior areas
+
+Features & Benefits
+	•	Public health compliant fumigant
+	•	Comfortable indoor treatment experience
+	•	No indoor odour
+	•	Fast restoration of normal activities
+	•	Residual protection: up to 90 days
+
+Re-entry Guideline
+	•	3–6 hours for all occupants
+
+After-Service Support
+	•	Dedicated customer care follow-up
+	•	Free reapplication within 30 days if treated pests persist",NGN 400000.00,Sales,,,,,,,,goods,13,,,Active,,,NGN 0.00,,,,,,,,,,,,,Sales,true,false,false
+6642928000001530023,PREMIUM PACKAGE,,"Total Shield Elite Plan
+
+Maximum protection • Zero compromise • Premium comfort
+
+This is our flagship executive pest management package, specially designed for clients who want the highest level of comfort, protection, speed, and peace of mind.
+
+Perfect for:
+	•	executive homes
+	•	premium apartments
+	•	hotels
+	•	offices
+	•	healthcare environments
+	•	VIP spaces
+	•	clients who do not want recurring pest problems
+
+Service Scope
+	•	100% odourless mist treatment for both interior and exterior
+	•	Advanced fogging where necessary
+	•	Precision treatment of high-risk pest zones
+	•	Enhanced perimeter defense application
+
+Premium Features & Benefits
+	•	Public health compliant premium-grade fumigant
+	•	Completely odourless treatment inside and outside
+	•	Maximum convenience with minimal disruption
+	•	Rapid re-entry timeline
+	•	Enhanced treatment coverage for hidden breeding zones
+	•	Superior comfort for families, guests, and sensitive occupants
+	•	Residual protection: up to 90 days
+	•	Priority service response
+	•	Premium customer support
+
+Re-entry Guideline
+	•	3–6 hours for all occupants
+
+Premium After-Service Assurance
+	•	Dedicated priority customer care follow-up
+	•	Free reapplication within 60 days if treated pests persist
+	•	Priority callback support
+	•	Preferred scheduling for repeat visits
+
+Why Clients Choose Premium
+
+Because it offers the longest post-treatment support window, the highest comfort standard, and the lowest likelihood of recurring infestation concerns.
+
+This package is best for clients who want complete peace of mind without compromise.",NGN 0.00,Sales,,,,,,,,service,13,,,Active,,,NGN 0.00,,,,,,,,,,,,,Sales,true,false,false
+6642928000001530079,Rodent Bait Station Installation & Monitoring:,,"Supply, strategic placement, and periodic monitoring of tamper-resistant rodent bait stations designed for effective rodent control and prevention in designated indoor and outdoor areas. Service includes bait replenishment, inspection, and activity assessment to ensure continuous protection against rodent infestation.",NGN 400000.00,Sales,,,,,,,,service,13,,,Active,,,NGN 0.00,,,,,,,,,,,,,Sales,true,false,false
+6642928000001540013,Battery Powered Spray,,,NGN 60000.00,Sales,,,,,,,,goods,12,,,Active,8lt,,NGN 5000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 60000.00,2.00,Inventory,true,true,true
+6642928000001546011,Hand Parker Big,,,NGN 4000.00,Sales,,,,,,,,goods,12,,,Active,1,,NGN 3000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,4000.00,NGN 1.00,3999.00,Inventory,true,true,true
+6642928000001548241,Sacvin dust parker,,small hand packer,NGN 2500.00,Sales,,,,,,,,goods,14,,,Active,Pcs,,NGN 1500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,6.00,NGN 1500.00,4.00,Inventory,true,true,true
+6642928000001569121,MENTO Mop bucket,,Fine colour mop bucket,NGN 18000.00,Sales,,,,,,,,goods,14,,,Active,Pcs,,NGN 15000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,9.00,NGN 15000.00,7.00,Inventory,true,true,true
+6642928000001599001,Floor Sweeper And Brush,,,NGN 10000.00,Sales,,,,,,,,goods,12,,,Active,1,,NGN 7000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 10000.00,0.00,Inventory,true,true,true
+6642928000001600011,Hand Held Floor Scrub Brush,,Blue brush ,NGN 4000.00,Sales,,,,,,,,goods,12,,,Active,2pcs,,NGN 2000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 4000.00,0.00,Inventory,true,true,true
+6642928000001625121,Power Wash cannister with trimmer&nozzle,,For fumigation with triggers,NGN 70000.00,Sales,,,,,,,,goods,14,,,Active,ml,Milli Litre,NGN 60000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 60000.00,2.00,Inventory,true,true,true
+6642928000001631291,Magical Dual Action Window cleaning tool,,Window cleaning tool,NGN 55000.00,Sales,,,,,,,,goods,14,,,Active,pcs,Pieces,NGN 40000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 40000.00,1.00,Inventory,true,true,true
+6642928000001631336,Tide Buzz,,Stain removing machine,NGN 100000.00,Sales,,,,,,,,goods,14,,,Active,Pcs,,NGN 87000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 87000.00,1.00,Inventory,true,true,true
+6642928000001631387,Door Bottom Seal,,Under Door protective seal,NGN 4000.00,Sales,,,,,,,,goods,14,,,Active,Pcs,,NGN 2000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 2000.00,2.00,Inventory,true,true,true
+6642928000001697137,Big black leather,,,NGN 500.00,Sales,,,,,,,,goods,14,,,Inactive,pcs,Pieces,NGN 300.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 300.00,0.00,Inventory,true,true,true
+6642928000001697274,Wireless Vacuum Cleaner,,Wireless Vacuum Cleaner in Cartoon,NGN 100000.00,Sales,,,,,,,,goods,14,,,Active,Pcs,,NGN 80000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 80000.00,1.00,Inventory,true,true,true
+6642928000001741001,Nasco Action Dish Liquid 1000ml,,Dish Liquid ,NGN 2800.00,Sales,,,,,,,,goods,14,,,Active,ml,Milli Litre,NGN 2000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,8.00,NGN 2000.00,8.00,Inventory,true,true,true
+6642928000001741023,GBC Airfreshner,,Liquid Airfreshner,NGN 3500.00,Sales,,,,,,,,goods,14,,,Active,Pcs,,NGN 3000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,6.00,NGN 3000.00,8.00,Inventory,true,true,true
+6642928000001741057,Nasco Beauty Rose,,Liquid Handwash ,NGN 2000.00,Sales,,,,,,,,goods,14,,,Active,pcs,Pieces,NGN 1500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 1500.00,7.00,Inventory,true,true,true
+6642928000001741079,Stain Deep Cleaner,,Deep Stain Liquid Cleaner in a White container,NGN 3000.00,Sales,,,,,,,,goods,14,,,Active,pcs,Pieces,NGN 2500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 2500.00,1.00,Inventory,true,true,true
+6642928000001741101,Jik 950ml,,950ml ,NGN 4500.00,Sales,,,,,,,,goods,14,,,Inactive,pcs,Pieces,NGN 4000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,5.00,NGN 4000.00,5.00,Inventory,true,true,true
+6642928000001741123,Harpic 725ml,,725ml,NGN 5500.00,Sales,,,,,,,,goods,14,,,Inactive,pcs,Pieces,NGN 4500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 4500.00,9.00,Inventory,true,true,true
+6642928000001741145,Airwick Airfreshner Spray,,Airfreshner Spray,NGN 4500.00,Sales,,,,,,,,goods,14,,,Inactive,Pcs,,NGN 3500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,6.00,NGN 3500.00,12.00,Inventory,true,true,true
+6642928000001741179,Fumisect Bugs & Mosquitoes,,,NGN 6000.00,Sales,,,,,,,,goods,14,,,Active,Pcs,,NGN 4000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 4000.00,2.00,Inventory,true,true,true
+6642928000001763006,Ridax Bedbug Killer Spray,,Ridax ,NGN 5000.00,Sales,,,,,,,,goods,12,,,Active,6pcs,,NGN 3000.00,Cost of Goods Sold,,Bedbug ,Inventory Asset,,fifo,,,,6.00,NGN 5000.00,4.00,Inventory,true,true,true
+6642928000001777007,Micro Fibre Flats Mop,,Pink and brown ,NGN 24000.00,Sales,,,,,,,,goods,12,,,Active,3pcs,,NGN 20000.00,Cost of Goods Sold,,Window wip,Inventory Asset,,fifo,,,,3.00,NGN 24000.00,2.00,Inventory,true,true,true
+6642928000001763039,Toilets Brush With Partern,,Toilets brush with parttern,NGN 4000.00,Sales,,,,,,,,goods,12,,,Active,4pcs,,NGN 3000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,4.00,NGN 4000.00,1.00,Inventory,true,true,true
+6642928000001793006,Goodmans Machines,,Machines ,NGN 250000.00,Sales,,,,,,,,goods,12,,,Active,1 pcs,,NGN 200000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 250000.00,1.00,Inventory,true,true,true
+6642928000001795006,Scrubbing  MACHINE,,Scubbing machines blue and white tank,NGN 1100000.00,Sales,,,,,,,,goods,12,,,Active,1,,NGN 800000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 1100000.00,1.00,Inventory,true,true,true
+6642928000001796007,Jarkcio,,Machine ,NGN 3000000.00,Sales,,,,,,,,goods,12,,,Active,1pcs,,NGN 2500000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 3000000.00,1.00,Inventory,true,true,true
+6642928000001799006,Henry Machines,,Machines small ,NGN 100000.00,Sales,,,,,,,,goods,12,,,Active,1pcs,,NGN 90000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 100000.00,1.00,Inventory,true,true,true
+6642928000001801006,Wickes,,Wet and dry vacum cleaner ,NGN 160000.00,Sales,,,,,,,,goods,12,,,Active,1 pcs,,NGN 170000.00,Cost of Goods Sold,,Machine ,Inventory Asset,,fifo,,,,1.00,NGN 170000.00,1.00,Inventory,true,true,true
+6642928000001803007,Familiar Tissue Paper,,Tissue paper ,NGN 700.00,Sales,,,,,,,,goods,12,,,Active,24pcs,,NGN 500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,24.00,NGN 700.00,12.00,Inventory,true,true,true
+6642928000001805007,Plus Tissue Paper,,,NGN 2500.00,Sales,,,,,,,,goods,12,,,Active,12pcs,,NGN 1000.00,Cost of Goods Sold,,Tissue Paper ,Inventory Asset,,fifo,,,,12.00,NGN 2500.00,7.00,Inventory,true,true,true
+6642928000001807006,Paper Towel,,Rose pluse,NGN 2500.00,Sales,,,,,,,,goods,12,,,Active,12pcs,,NGN 2500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,12.00,NGN 2500.00,12.00,Inventory,true,true,true
+6642928000001808006,2 Sure Hand Sanitizer,,Hand sanitizer ,NGN 2500.00,Sales,,,,,,,,goods,12,,,Active,24pcs,,NGN 2200.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,24.00,NGN 2500.00,20.00,Inventory,true,true,true
+6642928000001809006,Mentor,,Mop buket ,NGN 20000.00,Sales,,,,,,,,goods,12,,,Active,2pcs,,NGN 18000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 20000.00,2.00,Inventory,true,true,true
+6642928000001810006,Refuse Sac (Blossom),,4 in 1 Blossom Garbage Bag,NGN 4000.00,Sales,,,,,,,,goods,12,,,Active,6pcs,,NGN 3000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,6.00,NGN 4000.00,6.00,Inventory,true,true,true
+6642928000001813007,Cobweb Removal Circle,,Circle cobwebs ,NGN 7000.00,Sales,,,,,,,,goods,12,,,Active,2,,NGN 5000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 7000.00,2.00,Inventory,true,true,true
+6642928000001814006,Trimmer Line,,Hawk king,NGN 5000.00,Sales,,,,,,,,goods,12,,,Active,2pcs,,NGN 4000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 5000.00,2.00,Inventory,true,true,true
+6642928000001815006,Star Quality Shining Light Big,,Clean expert,NGN 15000.00,Sales,,,,,,,,goods,12,,,Active,1,,NGN 13000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 15000.00,1.00,Inventory,true,true,true
+6642928000001816006,Star Quality Shining Life Medium,,Cleaning expert ,NGN 13000.00,Sales,,,,,,,,goods,12,,,Active,1pcs,,NGN 12000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 13000.00,1.00,Inventory,true,true,true
+6642928000001817006,Star Quality Shining Life,,Clean expert ,NGN 10000.00,Sales,,,,,,,,goods,12,,,Active,1pcs,,NGN 9000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 10000.00,1.00,Inventory,true,true,true
+6642928000001815038,Cobweb Removal Iron Small,,With iron handle ,NGN 10000.00,Sales,,,,,,,,goods,12,,,Active,2pcs,,NGN 8000.00,Cost of Goods Sold,,Two step,Inventory Asset,,fifo,,,,2.00,NGN 10000.00,2.00,Inventory,true,true,true
+6642928000001818006,Let It Know,,Kitchen towel ,NGN 2000.00,Sales,,,,,,,,goods,12,,,Active,6pcs,,NGN 1500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,6.00,NGN 2000.00,6.00,Inventory,true,true,true
+6642928000001814033,Cobweb Removal Iron Handle Big,,Cobweb Removal Iron ,NGN 12000.00,Sales,,,,,,,,goods,12,,,Active,2pcs,,NGN 10000.00,Cost of Goods Sold,,Two step,Inventory Asset,,fifo,,,,2.00,NGN 12000.00,2.00,Inventory,true,true,true
+6642928000001810038,Mentor Wheelers Bin Big Yellow,,Yellow Wheelers bin ,NGN 115000.00,Sales,,,,,,,,goods,12,,,Active,1pcs,,NGN 100000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 115000.00,1.00,Inventory,true,true,true
+6642928000001805051,Mentor Wheelers Bin,,Black mentor,NGN 105000.00,Sales,,,,,,,,goods,12,,,Active,1 pcs,,NGN 90000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 105000.00,1.00,Inventory,true,true,true
+6642928000001820006,Agiville Industries Ltd Wheelers Bin Green,,Green Wheelers bin ,NGN 110000.00,Sales,,,,,,,,goods,12,,,Active,2pcs,,NGN 100000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 110000.00,2.00,Inventory,true,true,true
+6642928000001858006,Medium Industrial Wooden Brush,,Brush for washing interlock floor,NGN 10000.00,Sales,,,,,,,,goods,12,,,Active,3pcs,,NGN 8000.00,Cost of Goods Sold,,Brush with iron head ,Inventory Asset,,fifo,,,,3.00,NGN 10000.00,3.00,Inventory,true,true,true
+6642928000001859006,Small Industrial Brush,,Brush not  full,NGN 5000.00,Sales,,,,,,,,goods,12,,,Active,1pcs,,NGN 4000.00,Cost of Goods Sold,,Brush with garb,Inventory Asset,,fifo,,,,1.00,NGN 5000.00,1.00,Inventory,true,true,true
+6642928000001860006,Shots Handled Hoe,,Hoe small,NGN 3500.00,Sales,,,,,,,,goods,12,,,Active,1 pcs,,NGN 2500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 3500.00,1.00,Inventory,true,true,true
+6642928000001867006,Squeeze Small Roller Mop,,,NGN 20000.00,Sales,,,,,,,,goods,12,,,Active,1 pcs,,NGN 18000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 20000.00,1.00,Inventory,true,true,true
+6642928000001875015,Tile And Wood Floor Polish,,Loorsan,NGN 8000.00,Sales,,,,,,,,goods,12,,,Active,2pcs,,NGN 7000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 8000.00,2.00,Inventory,true,true,true
+6642928000001878006,Marble Polishing Powder,,Efficient Polishing speed,NGN 10000.00,Sales,,,,,,,,goods,12,,,Active,2pcs,,NGN 8000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 10000.00,2.00,Inventory,true,true,true
+6642928000001879006,Toilet Rust Removal,,,NGN 5000.00,Sales,,,,,,,,goods,12,,,Active,2pcs,,NGN 4000.00,Cost of Goods Sold,,Fariene,Inventory Asset,,fifo,,,,2.00,NGN 5000.00,2.00,Inventory,true,true,true
+6642928000001880006,Heavy Oil Elimination,,Axabr,NGN 2000.00,Sales,,,,,,,,goods,12,,,Active,2pcs,,NGN 2000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 3000.00,3.00,Inventory,true,true,true
+6642928000001876008,Yin Digital Solution,,,NGN 15000.00,Sales,,,,,,,,goods,12,,,Active,1 pcs,,NGN 13000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 15000.00,1.00,Inventory,true,true,true
+6642928000001876040,Floor Polish Tile Nursing,,Fresh and not irritating ,NGN 1500.00,Sales,,,,,,,,goods,12,,,Active,1pcs,,NGN 1000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 1500.00,1.00,Inventory,true,true,true
+6642928000001882006,Window Track Cleaning Brush (With Scouring Pad),,"For clearing dirt, dust and grime out of narrow crevices and tracks",NGN 4500.00,Sales,,,,,,,,goods,12,,,Active,2pcs,,NGN 3000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 4500.00,2.00,Inventory,true,true,true
+6642928000001881018,Binwenn Micro Fibre Duster With Extendable,,Lemon green expendables duster,NGN 15000.00,Sales,,,,,,,,goods,12,,,Active,2pcs,,NGN 13000.00,Cost of Goods Sold,,Triangular design ,Inventory Asset,,fifo,,,,4.00,NGN 15000.00,4.00,Inventory,true,true,true
+6642928000001883006,7 Polishing Bonnet,,,NGN 7000.00,Sales,,,,,,,,goods,12,,,Active,1 pcs,,NGN 6000.00,Cost of Goods Sold,,For use for buffers and polishers,Inventory Asset,,fifo,,,,1.00,NGN 7000.00,1.00,Inventory,true,true,true
+6642928000001884006,5 Polishing  Bonnet,,Small,NGN 4000.00,Sales,,,,,,,,goods,12,,,Active,4pcs,,NGN 3000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,4.00,NGN 4000.00,4.00,Inventory,true,true,true
+6642928000001875047,Marble Polishing Paste,,,NGN 1500.00,Sales,,,,,,,,goods,12,,,Active,1 pcs,,NGN 1000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 1500.00,1.00,Inventory,true,true,true
+6642928000001885007,Mosquito Repellent,,Shixis and kinetic molecular wristband,NGN 3000.00,Sales,,,,,,,,goods,12,,,Active,9pcs,,NGN 2000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,9.00,NGN 3000.00,9.00,Inventory,true,true,true
+6642928000001886006,Uvc Toilet Sterilizer,,Uvc,NGN 5000.00,Sales,,,,,,,,goods,12,,,Active,3pcs,,NGN 4000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 5000.00,3.00,Inventory,true,true,true
+6642928000001887006,Climax Rtv,,Silicone gasket maker,NGN 4500.00,Sales,,,,,,,,goods,12,,,Active,1 pcs,,NGN 3000.00,Cost of Goods Sold,,Hi-temp instant gasket,Inventory Asset,,fifo,,,,1.00,NGN 4500.00,1.00,Inventory,true,true,true
+6642928000001882038,Hand Squeegee,,Hand squeegee ,NGN 6000.00,Sales,,,,,,,,goods,12,,,Active,1,,NGN 5000.00,Cost of Goods Sold,,Three mouth squeegee ,Inventory Asset,,fifo,,,,1.00,NGN 6000.00,1.00,Inventory,true,true,true
+6642928000001888006,Hand Brush With Four Face,,With four face brush ,NGN 12000.00,Sales,,,,,,,,goods,12,,,Active,3pcs,,NGN 10000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 12000.00,3.00,Inventory,true,true,true
+6642928000001877032,HDX Hand Brush,,,NGN 7000.00,Sales,,,,,,,,goods,12,,,Active,1pcs,,NGN 5000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 7000.00,1.00,Inventory,true,true,true
+6642928000001870056,Sun Insect Trap,,Solar tdap,NGN 20000.00,Sales,,,,,,,,goods,12,,,Active,3pcs,,NGN 15000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 20000.00,3.00,Inventory,true,true,true
+6642928000001883038,SMALL Industrial Hand Brush,,,NGN 3500.00,Sales,,,,,,,,goods,12,,,Active,3pcs,,NGN 2500.00,Cost of Goods Sold,,Hand brush,Inventory Asset,,fifo,,,,3.00,NGN 3500.00,3.00,Inventory,true,true,true
+6642928000001876072,Hdx Brush Black And Yellow,,Yellow and black ,NGN 7000.00,Sales,,,,,,,,goods,12,,,Active,1pcs,,NGN 5000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 7000.00,1.00,Inventory,true,true,true
+6642928000001890006,Window Grove Brush,,"For cleaning grooves, crevices and window tracks",NGN 6000.00,Sales,,,,,,,,goods,12,,,Active,2pcs,,NGN 3500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,4.00,NGN 6000.00,4.00,Inventory,true,true,true
+6642928000001910001,glass polishing,,,NGN 2700.00,Sales,,,,,,,,goods,14,,,Active,1pcs,,NGN 1500.00,Cost of Goods Sold,,,Inventory Asset,,,,,,,,,Sales and Purchases,true,true,false
+6642928000001931013,FAMILIAR,,FAMILIAR TISSUE PAPER,NGN 500.00,Sales,,,,,,,,goods,14,,,Active,Pcs 3,,NGN 400.00,Cost of Goods Sold,,,Inventory Asset,,,,,,,,,Sales and Purchases,true,true,false
+6642928000001933008,FLEXIBLE CARE,,SONICO TISSUE PAPER,NGN 1000.00,Sales,,,,,,,,goods,14,,,Active,16 PCS,,NGN 800.00,Cost of Goods Sold,,WATER TO WET THE REMOVABLE TISSUES,Inventory Asset,,,,,,,,,Sales and Purchases,true,true,false
+6642928000001937065,avert  DF,,cocrach,NGN 80000.00,Sales,,,,,,,,goods,14,,,Active,1pcs,,NGN 70000.00,Cost of Goods Sold,,,Inventory Asset,,,,,,,,,Sales and Purchases,true,true,false
+6642928000001937070,lada tools bag,,bag,NGN 10000.00,Sales,,,,,,,,goods,14,,,Active,3pcs,,NGN 7000.00,Cost of Goods Sold,,,Inventory Asset,,,,,,,,,Sales and Purchases,true,true,false
+6642928000001986001,Sophitol tile polish,,Restore gloss to floor,NGN 12000.00,Sales,,,,,,,,goods,14,,,Active,litres,,NGN 10000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 10000.00,2.00,Inventory,true,true,true
+6642928000001999055,Foldable Mini Sponge Mop,,"Mini foldable  self squeeze absorbs water, grease, fluids & spills",NGN 10500.00,Sales,,,,,,,,goods,12,,,Active,pc,,NGN 8500.00,Cost of Goods Sold,,"Can be used on bathroom mirror,  glass surfaces & tiles",Inventory Asset,,fifo,,,,1.00,NGN 10500.00,1.00,Inventory,true,true,true
+6642928000002005006,Vacuum cleaner extractor nozzle (transparent),,Transparent vacuum cleaner extractor nozzle ,NGN 17000.00,Sales,,,,,,,,goods,12,,,Active,pcs,Pieces,NGN 15000.00,Cost of Goods Sold,,Transparent vacuum cleaner extractor nozzle  ,Inventory Asset,,fifo,,,,3.00,NGN 17000.00,3.00,Inventory,true,true,true
+6642928000002013006,Window cleaning squeegee brush (Plastic Sponge),,Window cleaning squeegee/washer for glass cleaning ,NGN 6000.00,Discount,,,,,,,,goods,12,,,Active,pcs,Pieces,NGN 4000.00,Cost of Goods Sold,,Window cleaning squeegee/washer for glass cleaning ,Inventory Asset,,fifo,,,,1.00,NGN 6000.00,1.00,Inventory,true,true,true
+6642928000002016007,Portable Self Squeegee Sponge Mop,,For quick & hand-free cleanup of small space ,NGN 7000.00,Sales,,,,,,,,goods,12,,,Active,pc,,NGN 5000.00,Cost of Goods Sold,,For quick & hand-free cleanup of small space,Inventory Asset,,fifo,,,,1.00,NGN 7000.00,1.00,Inventory,true,true,true
+6642928000002029006,MIAPRID 350 SC,,Eliminate and control destructive piercing - sucking and soil dwelling pest,NGN 9000.00,Sales,,,,,,,,goods,12,,,Active,ml,Milli Litre,NGN 6500.00,Cost of Goods Sold,,Eliminate and control destructive piercing - sucking and soil dwelling pest,Inventory Asset,,fifo,,,,1.00,NGN 9000.00,1.00,Inventory,true,true,true
+6642928000002030007,DAKSH DICHLORVOS 1000 G/L EC,,Agricultural insecticide and fumigant that eliminates persistent agricultural and household pest,NGN 30000.00,Sales,,,,,,,,goods,12,,,Active,Ltr,,NGN 23000.00,Cost of Goods Sold,,Agricultural insecticide and fumigant that eliminates persistent agricultural and household pest,Inventory Asset,,fifo,,,,1.00,NGN 30000.00,1.00,Inventory,true,true,true
+6642928000002029038,Fivestar 325 SC,,Preventive and curative protection against severe fungal infection,NGN 10000.00,Sales,,,,,,,,goods,12,,,Active,Ltr,,NGN 7000.00,Cost of Goods Sold,,Preventive and curative protection against severe fungal infection,Inventory Asset,,fifo,,,,1.00,NGN 10000.00,1.00,Inventory,true,true,true
+6642928000002041006,Slug Trap,,For trapping slug,NGN 5000.00,Sales,,,,,,,,goods,12,,,Active,pc,,NGN 3000.00,Cost of Goods Sold,,For trapping slug,Inventory Asset,,fifo,,,,3.00,NGN 5000.00,3.00,Inventory,true,true,true
+6642928000002031018,Karcher Upholtery and Funiture Nozzle Attachment,,"For spray extraction, vacuum cleaner ",NGN 35000.00,Sales,,WHT,10.00,ItemAmount,,,,goods,12,,,Active,pc,,NGN 30000.00,Word roped,,"For spray extraction, vacuum cleaner ",Inventory Asset,,fifo,,,,1.00,NGN 35000.00,1.00,Inventory,true,true,true
+6642928000002051006,Telescopic Pole 3 Step,,,NGN 25000.00,Sales,,,,,,,,goods,12,,,Active,1 pcs,,NGN 20000.00,Cost of Goods Sold,,3step,Inventory Asset,,fifo,,,,1.00,NGN 25000.00,1.00,Inventory,true,true,true
+6642928000002053006,Telescopic Pole 2 Step,,Pole,NGN 20000.00,Sales,,,,,,,,goods,12,,,Active,1,,NGN 18000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 20000.00,1.00,Inventory,true,true,true
+6642928000002054006,Karcher,,620 m steamer ,NGN 800000.00,Sales,,,,,,,,goods,12,,,Active,1,,NGN 750000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 800000.00,1.00,Inventory,true,true,true
+6642928000002056006,Astonish Glass Cleaner,,With lemons oil for a streaks free shine,NGN 6500.00,Sales,,,,,,,,goods,12,,,Active,3pcs,,NGN 5000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,3.00,NGN 6500.00,3.00,Inventory,true,true,true
+6642928000002054039,Emywit,,Hand sanitizer ,NGN 2000.00,Sales,,,,,,,,goods,12,,,Active,"1
+ pcs",,NGN 1500.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,1.00,NGN 2000.00,1.00,Inventory,true,true,true
+6642928000002061159,Stain Remover Multipurpose Cleaner,,Remove stain of colour paint and ink,NGN 100000.00,Sales,,,,,,,,goods,12,,,Active,5ltr,,NGN 80000.00,Cost of Goods Sold,,,Inventory Asset,,fifo,,,,2.00,NGN 100000.00,2.00,Inventory,true,true,true
+6642928000002115006,Passover Cotton Mop,,Cotton tring mop higly absorbent & handles heavy duty scrubbing,NGN 6000.00,Sales,,,,,,,,goods,12,,,Active,pcs,Pieces,NGN 4500.00,Cost of Goods Sold,,Cotton tring mop higly absorbent & handles heavy duty scrubbing,Inventory Asset,,fifo,,,,4.00,NGN 6000.00,4.00,Inventory,true,true,true
+6642928000002136006,Lagon Herbicide,,Surpresses germination of annual grasses & broadleaf weeds,NGN 25000.00,Sales,,,,,,,,goods,12,,,Active,250ml,,NGN 18000.00,Cost of Goods Sold,,Surpresses germination of annual grasses & broadleaf weeds,Inventory Asset,,fifo,,,,3.00,NGN 25000.00,2.00,Inventory,true,true,true

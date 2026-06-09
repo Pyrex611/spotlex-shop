@@ -1,26 +1,24 @@
 import React, { useState, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useShop } from '../context/ShopContext';
-import { Home, Package, Tags, Plus, Pencil, Trash2, ImagePlus, X, LogOut, Loader2 } from 'lucide-react';
+import { Home, Package, Tags, Plus, Pencil, Trash2, ImagePlus, X, LogOut, Loader2, ShoppingCart, CheckCircle } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function AdminDashboard() {
-  const { products, categories, addProduct, updateProduct, deleteProduct, addCategory, deleteCategory, logout } = useShop();
+  const { products, categories, orders, addProduct, updateProduct, deleteProduct, addCategory, deleteCategory, logout, approveOrder } = useShop();
   const navigate = useNavigate();
   
-  const [activeTab, setActiveTab] = useState('products');
+  const [activeTab, setActiveTab] = useState('orders'); // Default to Orders now!
   const [isProductModalOpen, setIsProductModalOpen] = useState(false);
   const [isCategoryModalOpen, setIsCategoryModalOpen] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
   
-  // Product Form State
   const [editingProduct, setEditingProduct] = useState(null);
   const [productForm, setProductForm] = useState({ name: '', price: '', description: '', categoryId: '', image: '' });
   const [imageFile, setImageFile] = useState(null);
   const [imagePreview, setImagePreview] = useState('');
   const fileInputRef = useRef(null);
 
-  // Category Form State
   const [categoryName, setCategoryName] = useState('');
 
   const handleLogout = async () => {
@@ -39,13 +37,7 @@ export default function AdminDashboard() {
   const openProductModal = (product = null) => {
     if (product) {
       setEditingProduct(product);
-      setProductForm({ 
-        name: product.name, 
-        price: product.price, 
-        description: product.description, 
-        categoryId: product.category_id, 
-        image: product.image 
-      });
+      setProductForm({ name: product.name, price: product.price, description: product.description, categoryId: product.category_id, image: product.image });
       setImagePreview(product.image);
     } else {
       setEditingProduct(null);
@@ -84,7 +76,6 @@ export default function AdminDashboard() {
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col md:flex-row">
-      {/* Sidebar */}
       <aside className="w-full md:w-64 bg-white border-r border-gray-200 shrink-0 flex flex-col">
         <div className="p-6 border-b border-gray-200 flex items-center gap-3">
           <img src="/spotlex_logo.jpg" alt="Logo" className="w-8 h-8 rounded-full" />
@@ -94,6 +85,20 @@ export default function AdminDashboard() {
           <Link to="/" className="flex items-center gap-3 px-4 py-3 text-gray-600 hover:bg-gray-50 rounded-xl transition-colors">
             <Home className="w-5 h-5" /> View Live Store
           </Link>
+          
+          {/* New Orders Tab */}
+          <button 
+            onClick={() => setActiveTab('orders')}
+            className={`w-full flex items-center justify-between px-4 py-3 rounded-xl transition-colors ${activeTab === 'orders' ? 'bg-brand-50 text-brand-700 font-medium' : 'text-gray-600 hover:bg-gray-50'}`}
+          >
+            <div className="flex items-center gap-3"><ShoppingCart className="w-5 h-5" /> Orders</div>
+            {orders.filter(o => o.status === 'pending').length > 0 && (
+              <span className="bg-red-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full">
+                {orders.filter(o => o.status === 'pending').length}
+              </span>
+            )}
+          </button>
+
           <button 
             onClick={() => setActiveTab('products')}
             className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-colors ${activeTab === 'products' ? 'bg-brand-50 text-brand-700 font-medium' : 'text-gray-600 hover:bg-gray-50'}`}
@@ -114,8 +119,70 @@ export default function AdminDashboard() {
         </div>
       </aside>
 
-      {/* Main Content Area */}
       <main className="flex-1 p-6 md:p-10 overflow-y-auto">
+        
+        {/* ORDERS TAB */}
+        {activeTab === 'orders' && (
+          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+            <div className="flex justify-between items-center mb-8">
+              <div>
+                <h1 className="text-2xl font-bold text-gray-900">Customer Orders</h1>
+                <p className="text-gray-500 text-sm mt-1">Confirm WhatsApp payments to deduct stock.</p>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
+              <table className="w-full text-left text-sm">
+                <thead className="bg-gray-50 border-b border-gray-200 text-gray-600">
+                  <tr>
+                    <th className="px-6 py-4 font-medium">Date</th>
+                    <th className="px-6 py-4 font-medium">Items</th>
+                    <th className="px-6 py-4 font-medium">Total Amount</th>
+                    <th className="px-6 py-4 font-medium">Status</th>
+                    <th className="px-6 py-4 font-medium text-right">Actions</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-gray-100">
+                  {orders.length === 0 ? (
+                    <tr><td colSpan="5" className="text-center py-10 text-gray-500">No orders yet.</td></tr>
+                  ) : orders.map(order => (
+                    <tr key={order.id} className="hover:bg-gray-50/50 transition-colors">
+                      <td className="px-6 py-4 text-gray-500">
+                        {new Date(order.created_at).toLocaleDateString()} <br/>
+                        <span className="text-xs">{new Date(order.created_at).toLocaleTimeString()}</span>
+                      </td>
+                      <td className="px-6 py-4 text-gray-900">
+                        {order.items.map((item, i) => (
+                          <div key={i} className="text-xs mb-1">• {item.quantity}x {item.name}</div>
+                        ))}
+                      </td>
+                      <td className="px-6 py-4 font-bold text-gray-900">₦{Number(order.subtotal).toLocaleString()}</td>
+                      <td className="px-6 py-4">
+                        {order.status === 'pending' ? (
+                          <span className="bg-amber-100 text-amber-700 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Pending</span>
+                        ) : (
+                          <span className="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Paid</span>
+                        )}
+                      </td>
+                      <td className="px-6 py-4 text-right">
+                        {order.status === 'pending' && (
+                          <button 
+                            onClick={() => { if(window.confirm('Confirm payment received? This will deduct stock.')) approveOrder(order.id, order.items) }} 
+                            className="bg-brand-500 hover:bg-brand-600 text-white px-4 py-2 rounded-lg text-xs font-bold transition-colors flex items-center gap-2 ml-auto"
+                          >
+                            <CheckCircle className="w-4 h-4" /> Confirm Payment
+                          </button>
+                        )}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </motion.div>
+        )}
+
+        {/* PRODUCTS TAB */}
         {activeTab === 'products' && (
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
             <div className="flex justify-between items-center mb-8">
@@ -133,7 +200,7 @@ export default function AdminDashboard() {
                 <thead className="bg-gray-50 border-b border-gray-200 text-gray-600">
                   <tr>
                     <th className="px-6 py-4 font-medium">Product</th>
-                    <th className="px-6 py-4 font-medium">Category</th>
+                    <th className="px-6 py-4 font-medium">Stock</th>
                     <th className="px-6 py-4 font-medium">Price</th>
                     <th className="px-6 py-4 font-medium text-right">Actions</th>
                   </tr>
@@ -145,25 +212,19 @@ export default function AdminDashboard() {
                     <tr key={product.id} className="hover:bg-gray-50/50 transition-colors">
                       <td className="px-6 py-4 flex items-center gap-4">
                         <div className="w-12 h-12 rounded-lg border border-gray-100 bg-gray-50 flex items-center justify-center shrink-0 overflow-hidden">
-                          {product.image ? (
-                            <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
-                          ) : (
-                            <Package className="w-5 h-5 text-gray-300" />
-                          )}
+                          {product.image ? <img src={product.image} alt={product.name} className="w-full h-full object-cover" /> : <Package className="w-5 h-5 text-gray-300" />}
                         </div>
-                        <span className="font-medium text-gray-900">{product.name}</span>
+                        <span className="font-medium text-gray-900 leading-snug">{product.name}</span>
                       </td>
-                      <td className="px-6 py-4 text-gray-500">
-                        {categories.find(c => c.id === product.category_id)?.name || 'Uncategorized'}
+                      <td className="px-6 py-4">
+                        <span className={`font-bold ${product.stock_quantity > 0 ? 'text-emerald-600' : 'text-red-500'}`}>
+                          {product.stock_quantity}
+                        </span>
                       </td>
                       <td className="px-6 py-4 text-gray-900 font-medium">₦{Number(product.price).toLocaleString()}</td>
-                      <td className="px-6 py-4 text-right">
-                        <button onClick={() => openProductModal(product)} className="text-brand-600 hover:bg-brand-50 p-2 rounded-md transition-colors mr-2">
-                          <Pencil className="w-4 h-4" />
-                        </button>
-                        <button onClick={() => { if(window.confirm('Delete this product?')) deleteProduct(product.id) }} className="text-red-500 hover:bg-red-50 p-2 rounded-md transition-colors">
-                          <Trash2 className="w-4 h-4" />
-                        </button>
+                      <td className="px-6 py-4 text-right whitespace-nowrap">
+                        <button onClick={() => openProductModal(product)} className="text-brand-600 hover:bg-brand-50 p-2 rounded-md transition-colors mr-2"><Pencil className="w-4 h-4" /></button>
+                        <button onClick={() => { if(window.confirm('Delete this product?')) deleteProduct(product.id) }} className="text-red-500 hover:bg-red-50 p-2 rounded-md transition-colors"><Trash2 className="w-4 h-4" /></button>
                       </td>
                     </tr>
                   ))}
@@ -173,6 +234,7 @@ export default function AdminDashboard() {
           </motion.div>
         )}
 
+        {/* CATEGORIES TAB */}
         {activeTab === 'categories' && (
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
             <div className="flex justify-between items-center mb-8">
@@ -227,35 +289,25 @@ export default function AdminDashboard() {
               <form onSubmit={saveProduct} className="space-y-4">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Product Image</label>
-                  <div 
-                    onClick={() => fileInputRef.current?.click()}
-                    className="border-2 border-dashed border-gray-200 rounded-xl h-40 flex flex-col items-center justify-center bg-gray-50 cursor-pointer hover:bg-gray-100 hover:border-brand-500 transition-colors overflow-hidden relative"
-                  >
-                    {imagePreview ? (
-                      <img src={imagePreview} alt="Preview" className="w-full h-full object-contain bg-white" />
-                    ) : (
-                      <div className="text-center">
-                        <ImagePlus className="w-8 h-8 text-gray-400 mx-auto mb-2" />
-                        <span className="text-sm text-gray-500">Click to upload image</span>
-                      </div>
-                    )}
+                  <div onClick={() => fileInputRef.current?.click()} className="border-2 border-dashed border-gray-200 rounded-xl h-40 flex flex-col items-center justify-center bg-gray-50 cursor-pointer hover:bg-gray-100 hover:border-brand-500 transition-colors overflow-hidden relative">
+                    {imagePreview ? <img src={imagePreview} alt="Preview" className="w-full h-full object-contain bg-white" /> : <div className="text-center"><ImagePlus className="w-8 h-8 text-gray-400 mx-auto mb-2" /><span className="text-sm text-gray-500">Click to upload image</span></div>}
                   </div>
                   <input type="file" accept="image/*" ref={fileInputRef} onChange={handleImageChange} className="hidden" />
                 </div>
 
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Product Name</label>
-                  <input required type="text" value={productForm.name} onChange={e => setProductForm({...productForm, name: e.target.value})} className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-transparent outline-none" />
+                  <input required type="text" value={productForm.name} onChange={e => setProductForm({...productForm, name: e.target.value})} className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-brand-500 outline-none" />
                 </div>
 
                 <div className="grid grid-cols-2 gap-4">
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-1">Price (₦)</label>
-                    <input required type="number" min="0" step="1" value={productForm.price} onChange={e => setProductForm({...productForm, price: e.target.value})} className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-transparent outline-none" />
+                    <input required type="number" min="0" step="1" value={productForm.price} onChange={e => setProductForm({...productForm, price: e.target.value})} className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-brand-500 outline-none" />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-1">Category</label>
-                    <select required value={productForm.categoryId} onChange={e => setProductForm({...productForm, categoryId: e.target.value})} className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-transparent outline-none bg-white">
+                    <select required value={productForm.categoryId} onChange={e => setProductForm({...productForm, categoryId: e.target.value})} className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-brand-500 outline-none bg-white">
                       <option value="" disabled>Select category</option>
                       {categories.map(c => <option key={c.id} value={c.id}>{c.name}</option>)}
                     </select>
@@ -264,19 +316,18 @@ export default function AdminDashboard() {
 
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Description</label>
-                  <textarea required rows="3" value={productForm.description} onChange={e => setProductForm({...productForm, description: e.target.value})} className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-transparent outline-none resize-none"></textarea>
+                  <textarea required rows="3" value={productForm.description} onChange={e => setProductForm({...productForm, description: e.target.value})} className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-brand-500 outline-none resize-none"></textarea>
                 </div>
 
                 <button disabled={isSaving} type="submit" className="w-full bg-brand-600 text-white py-3 rounded-lg font-medium hover:bg-brand-700 transition-colors mt-6 flex justify-center items-center gap-2 disabled:opacity-70">
-                  {isSaving && <Loader2 className="w-5 h-5 animate-spin" />}
-                  {editingProduct ? 'Save Changes' : 'Create Product'}
+                  {isSaving && <Loader2 className="w-5 h-5 animate-spin" />} {editingProduct ? 'Save Changes' : 'Create Product'}
                 </button>
               </form>
             </motion.div>
           </div>
         )}
       </AnimatePresence>
-
+      
       {/* Category Modal */}
       <AnimatePresence>
         {isCategoryModalOpen && (

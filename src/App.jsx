@@ -44,7 +44,6 @@ function App() {
       }
       return [...prev, { ...product, quantity: 1 }];
     });
-    // UX Update: Removed setIsCartOpen(true) to prevent interrupting the user
   };
 
   const removeFromCart = (id) => {
@@ -59,6 +58,10 @@ function App() {
       }
       return item;
     }));
+  };
+
+  const clearCart = () => {
+    setCartItems([]);
   };
 
   const hideNavAndFooter = location.pathname.startsWith('/admin');
@@ -97,6 +100,7 @@ function App() {
         items={cartItems} 
         onRemove={removeFromCart}
         onUpdateQuantity={updateQuantity}
+        clearCart={clearCart}
       />
     </div>
   );
