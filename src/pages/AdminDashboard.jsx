@@ -8,7 +8,7 @@ export default function AdminDashboard() {
   const { products, categories, orders, addProduct, updateProduct, deleteProduct, addCategory, deleteCategory, logout, approveOrder } = useShop();
   const navigate = useNavigate();
   
-  const [activeTab, setActiveTab] = useState('orders'); // Default to Orders now!
+  const [activeTab, setActiveTab] = useState('orders'); 
   const [isProductModalOpen, setIsProductModalOpen] = useState(false);
   const [isCategoryModalOpen, setIsCategoryModalOpen] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
@@ -86,7 +86,6 @@ export default function AdminDashboard() {
             <Home className="w-5 h-5" /> View Live Store
           </Link>
           
-          {/* New Orders Tab */}
           <button 
             onClick={() => setActiveTab('orders')}
             className={`w-full flex items-center justify-between px-4 py-3 rounded-xl transition-colors ${activeTab === 'orders' ? 'bg-brand-50 text-brand-700 font-medium' : 'text-gray-600 hover:bg-gray-50'}`}
@@ -327,8 +326,8 @@ export default function AdminDashboard() {
           </div>
         )}
       </AnimatePresence>
-      
-      {/* Category Modal */}
+
+      {/* Category Modal - Fully Restored */}
       <AnimatePresence>
         {isCategoryModalOpen && (
           <div className="fixed inset-0 z-50 flex items-center justify-center p-4">

@@ -10,7 +10,6 @@ const slides = [
   "https://images.unsplash.com/photo-1527515637-ed2fc9ce722f?q=80&w=1600&auto=format&fit=crop"  
 ];
 
-// Pre-define trust cards to easily duplicate them for the Marquee
 const trustCards = [
   { id: 1, icon: Truck, title: "Nationwide Delivery", desc: "Fast, secure shipping across Nigeria." },
   { id: 2, icon: Leaf, title: "Eco-Friendly", desc: "Non-toxic, plant-derived solutions." },
@@ -62,7 +61,6 @@ export default function Shop({ cartItems, onAddToCart, onUpdateQuantity }) {
   return (
     <div className="bg-gray-50 min-h-screen pb-16 md:pb-24 pt-24 md:pt-28 overflow-hidden">
       
-      {/* 1. Introductory Text */}
       <AnimatePresence>
         {showIntro && (
           <motion.section 
@@ -81,7 +79,6 @@ export default function Shop({ cartItems, onAddToCart, onUpdateQuantity }) {
         )}
       </AnimatePresence>
 
-      {/* 2. Shop Hero Slideshow */}
       <section className="px-4 sm:px-6 md:px-12 max-w-7xl mx-auto mb-8">
         <div className="relative w-full h-48 sm:h-64 md:h-[400px] rounded-2xl md:rounded-[2rem] overflow-hidden shadow-xl bg-gray-900">
           <AnimatePresence mode="wait">
@@ -101,9 +98,7 @@ export default function Shop({ cartItems, onAddToCart, onUpdateQuantity }) {
         </div>
       </section>
 
-      {/* 3. Trust Cards (Continuous Infinite Marquee) */}
       <section className="max-w-[100vw] mx-auto mb-10 md:mb-12 relative overflow-hidden">
-        {/* Fading Edges for aesthetic */}
         <div className="absolute left-0 top-0 bottom-0 w-8 md:w-24 bg-gradient-to-r from-gray-50 to-transparent z-10 pointer-events-none"></div>
         <div className="absolute right-0 top-0 bottom-0 w-8 md:w-24 bg-gradient-to-l from-gray-50 to-transparent z-10 pointer-events-none"></div>
         
@@ -112,7 +107,6 @@ export default function Shop({ cartItems, onAddToCart, onUpdateQuantity }) {
           animate={{ x: ["0%", "-50%"] }}
           transition={{ ease: "linear", duration: 15, repeat: Infinity }}
         >
-          {/* We render the array twice so it loops perfectly without snapping */}
           {[...trustCards, ...trustCards].map((card, index) => (
             <div key={index} className="w-[280px] md:w-[350px] mx-2 md:mx-3 bg-white p-4 md:p-5 rounded-2xl border border-gray-100 flex items-center gap-4 shadow-sm shrink-0">
               <div className="w-10 h-10 md:w-12 md:h-12 bg-brand-50 rounded-xl flex items-center justify-center shrink-0 text-brand-600">
@@ -127,7 +121,6 @@ export default function Shop({ cartItems, onAddToCart, onUpdateQuantity }) {
         </motion.div>
       </section>
 
-      {/* 4. Catalog Section */}
       <section id="catalog" className="px-4 sm:px-6 md:px-12 max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-8">
           
@@ -166,7 +159,6 @@ export default function Shop({ cartItems, onAddToCart, onUpdateQuantity }) {
             <p className="text-gray-500 text-sm">No items match your search.</p>
           </motion.div>
         ) : (
-          /* Mobile: grid-cols-2, Desktop: grid-cols-3 or 4 */
           <motion.div layout className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-6 md:gap-8">
             <AnimatePresence>
               {processedProducts.map((product) => {
