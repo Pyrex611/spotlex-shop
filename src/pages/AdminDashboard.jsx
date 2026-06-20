@@ -1,14 +1,16 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useMemo } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useShop } from '../context/ShopContext';
-import { Home, Package, Tags, Plus, Pencil, Trash2, ImagePlus, X, LogOut, Loader2, ShoppingCart, CheckCircle } from 'lucide-react';
+import { Home, Package, Tags, Plus, Pencil, Trash2, ImagePlus, X, LogOut, Loader2, ShoppingCart, CheckCircle, Image as ImageIcon } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { supabase } from '../lib/supabase';
+import toast from 'react-hot-toast';
 
 export default function AdminDashboard() {
   const { products, categories, orders, addProduct, updateProduct, deleteProduct, addCategory, deleteCategory, logout, approveOrder } = useShop();
   const navigate = useNavigate();
   
-  const [activeTab, setActiveTab] = useState('orders'); 
+  const [activeTab, setActiveTab] = useState('products'); 
   const [isProductModalOpen, setIsProductModalOpen] = useState(false);
   const [isCategoryModalOpen, setIsCategoryModalOpen] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
@@ -20,6 +22,10 @@ export default function AdminDashboard() {
   const fileInputRef = useRef(null);
 
   const [categoryName, setCategoryName] = useState('');
+
+  // --- Image Sync State ---
+  const [isSyncingImages, setIsSyncingImages] = useState(false);
+  const [syncProgress, setSyncProgress] = useState({ current: 0, total: 0 });
 
   const handleLogout = async () => {
     await logout();
@@ -74,14 +80,61 @@ export default function AdminDashboard() {
     }
   };
 
+  // --- ZOHO IMAGE SYNC ORCHESTRATOR ---
+  const handleBulkImageSync = async () => {
+    // 1. Find products missing images that have a Zoho ID
+    const missingImages = products.filter(p => !p.image && p.zoho_item_id);
+    
+    if (missingImages.length === 0) {
+      toast.success("All products already have images!");
+      return;
+    }
+
+    setIsSyncingImages(true);
+    setSyncProgress({ current: 0, total: missingImages.length });
+    
+    let successCount = 0;
+
+    // 2. Loop through and call the secure Edge Function one by one
+    for (let i = 0; i < missingImages.length; i++) {
+      const product = missingImages[i];
+      setSyncProgress({ current: i + 1, total: missingImages.length });
+
+      try {
+        const { data, error } = await supabase.functions.invoke('zoho-image-sync', {
+          body: { productId: product.id, zohoItemId: product.zoho_item_id }
+        });
+
+        if (error) throw error;
+        if (data.success) {
+          successCount++;
+          // Visually update the product array in the UI instantly
+          product.image = data.imageUrl; 
+        }
+      } catch (err) {
+        console.error(`Failed to sync image for ${product.name}:`, err);
+      }
+    }
+
+    setIsSyncingImages(false);
+    toast.success(`Sync Complete! Downloaded ${successCount} new images from Zoho.`);
+  };
+
+  const lastSyncTime = useMemo(() => {
+    if (!products || products.length === 0) return "Never";
+    const latestDate = new Date(Math.max(...products.map(p => new Date(p.created_at).getTime())));
+    return latestDate.toLocaleString('en-US', { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' });
+  }, [products]);
+
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col md:flex-row">
-      <aside className="w-full md:w-64 bg-white border-r border-gray-200 shrink-0 flex flex-col">
+      <aside className="w-full md:w-64 bg-white border-r border-gray-200 shrink-0 flex flex-col h-screen sticky top-0">
         <div className="p-6 border-b border-gray-200 flex items-center gap-3">
           <img src="/spotlex_logo.jpg" alt="Logo" className="w-8 h-8 rounded-full" />
           <span className="font-bold text-gray-900 text-lg">Spotlex Admin</span>
         </div>
-        <nav className="p-4 space-y-2 flex-grow">
+        
+        <nav className="p-4 space-y-2 flex-grow overflow-y-auto">
           <Link to="/" className="flex items-center gap-3 px-4 py-3 text-gray-600 hover:bg-gray-50 rounded-xl transition-colors">
             <Home className="w-5 h-5" /> View Live Store
           </Link>
@@ -111,9 +164,21 @@ export default function AdminDashboard() {
             <Tags className="w-5 h-5" /> Manage Categories
           </button>
         </nav>
-        <div className="p-4 border-t border-gray-200">
-           <button onClick={handleLogout} className="w-full flex items-center gap-3 px-4 py-3 text-red-600 hover:bg-red-50 rounded-xl transition-colors font-medium">
-            <LogOut className="w-5 h-5" /> Sign Out
+
+        <div className="p-4 border-t border-gray-200 bg-gray-50 flex flex-col gap-3">
+          <div className="flex items-center gap-3 bg-white p-3 rounded-xl border border-gray-200 shadow-sm">
+            <div className="relative flex items-center justify-center w-8 h-8 bg-emerald-100 rounded-full shrink-0">
+              <div className="absolute w-2.5 h-2.5 bg-emerald-500 rounded-full animate-ping opacity-75"></div>
+              <div className="relative w-2 h-2 bg-emerald-500 rounded-full"></div>
+            </div>
+            <div className="flex flex-col overflow-hidden">
+              <span className="text-[11px] font-bold text-gray-900 uppercase tracking-wider">Zoho Sync Active</span>
+              <span className="text-[10px] text-gray-500 truncate">Last update: {lastSyncTime}</span>
+            </div>
+          </div>
+
+          <button onClick={handleLogout} className="w-full flex items-center justify-center gap-2 px-4 py-2.5 bg-white border border-gray-200 text-red-600 hover:bg-red-50 rounded-xl transition-colors text-sm font-medium">
+            <LogOut className="w-4 h-4" /> Sign Out
           </button>
         </div>
       </aside>
@@ -184,15 +249,42 @@ export default function AdminDashboard() {
         {/* PRODUCTS TAB */}
         {activeTab === 'products' && (
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-            <div className="flex justify-between items-center mb-8">
+            <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-8 gap-4">
               <div>
                 <h1 className="text-2xl font-bold text-gray-900">Products Inventory</h1>
                 <p className="text-gray-500 text-sm mt-1">Manage equipment displayed in the shop.</p>
               </div>
-              <button onClick={() => openProductModal()} className="bg-gray-900 text-white px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-gray-800 transition-colors flex items-center gap-2 shadow-sm">
-                <Plus className="w-4 h-4" /> Add Product
-              </button>
+              <div className="flex items-center gap-3">
+                {/* ZOHO IMAGE SYNC BUTTON */}
+                <button 
+                  onClick={handleBulkImageSync} 
+                  disabled={isSyncingImages}
+                  className="bg-white border border-gray-200 text-gray-700 px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-gray-50 hover:text-brand-600 transition-colors flex items-center gap-2 shadow-sm disabled:opacity-50"
+                >
+                  {isSyncingImages ? <Loader2 className="w-4 h-4 animate-spin" /> : <ImageIcon className="w-4 h-4" />}
+                  {isSyncingImages ? `Syncing ${syncProgress.current} / ${syncProgress.total}...` : "Sync Missing Images"}
+                </button>
+                
+                <button onClick={() => openProductModal()} className="bg-gray-900 text-white px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-gray-800 transition-colors flex items-center gap-2 shadow-sm">
+                  <Plus className="w-4 h-4" /> Add Product
+                </button>
+              </div>
             </div>
+
+            {/* Progress Bar UI */}
+            <AnimatePresence>
+              {isSyncingImages && (
+                <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }} className="mb-6 bg-brand-50 border border-brand-100 p-4 rounded-xl">
+                  <div className="flex justify-between text-sm font-medium text-brand-800 mb-2">
+                    <span>Downloading images from Zoho...</span>
+                    <span>{Math.round((syncProgress.current / syncProgress.total) * 100)}%</span>
+                  </div>
+                  <div className="w-full bg-brand-200 rounded-full h-2 overflow-hidden">
+                    <div className="bg-brand-500 h-2 rounded-full transition-all duration-300" style={{ width: `${(syncProgress.current / syncProgress.total) * 100}%` }}></div>
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
 
             <div className="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
               <table className="w-full text-left text-sm">
@@ -327,7 +419,7 @@ export default function AdminDashboard() {
         )}
       </AnimatePresence>
 
-      {/* Category Modal - Fully Restored */}
+      {/* Category Modal */}
       <AnimatePresence>
         {isCategoryModalOpen && (
           <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
