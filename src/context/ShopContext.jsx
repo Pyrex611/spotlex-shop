@@ -10,8 +10,12 @@ export const ShopProvider = ({ children }) => {
   const [products, setProducts] = useState([]);
   const [categories, setCategories] = useState([]);
   const [orders, setOrders] = useState([]);
+  
   const [user, setUser] = useState(null);
+  const [isAdmin, setIsAdmin] = useState(false);
+  
   const [loading, setLoading] = useState(true);
+  const [authLoading, setAuthLoading] = useState(true);
 
   const handleDbError = (error, fallbackMessage) => {
     console.error(error);
@@ -24,19 +28,53 @@ export const ShopProvider = ({ children }) => {
     }
   };
 
+  const checkRole = async (userId) => {
+    try {
+      // Specifically targeting your existing 'profiles' table
+      const { data, error } = await supabase
+        .from('profiles')
+        .select('role')
+        .eq('id', userId)
+        .single();
+        
+      if (data && (data.role === 'admin' || data.role === 'superadmin')) {
+        setIsAdmin(true);
+      } else {
+        setIsAdmin(false);
+      }
+    } catch (err) {
+      setIsAdmin(false);
+    } finally {
+      setAuthLoading(false);
+    }
+  };
+
   useEffect(() => {
     if (!isSupabaseConfigured) {
       toast.error('Supabase is not configured.');
       setLoading(false);
+      setAuthLoading(false);
       return;
     }
 
     supabase.auth.getSession().then(({ data: { session } }) => {
       setUser(session?.user ?? null);
+      if (session?.user) {
+        checkRole(session.user.id);
+      } else {
+        setIsAdmin(false);
+        setAuthLoading(false);
+      }
     });
 
     const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
       setUser(session?.user ?? null);
+      if (session?.user) {
+        checkRole(session.user.id);
+      } else {
+        setIsAdmin(false);
+        setAuthLoading(false);
+      }
     });
 
     fetchDatabase();
@@ -44,10 +82,10 @@ export const ShopProvider = ({ children }) => {
   }, []);
 
   useEffect(() => {
-    if (user) {
+    if (user && isAdmin) {
       fetchOrders();
     }
-  }, [user]);
+  }, [user, isAdmin]);
 
   const fetchDatabase = async () => {
     setLoading(true);
@@ -79,7 +117,6 @@ export const ShopProvider = ({ children }) => {
     }
   };
 
-  // --- ORDER MODERATION FLOW ---
   const createOrder = async (cartItems, subtotal, method = 'whatsapp', reference = null) => {
     try {
       const orderRef = reference || `WA-${Date.now()}`;
@@ -124,7 +161,6 @@ export const ShopProvider = ({ children }) => {
     }
   };
 
-  // --- AUTH FLOW ---
   const login = async (email, password) => {
     if (!isSupabaseConfigured) throw new Error("Database not connected");
     const { error } = await supabase.auth.signInWithPassword({ email, password });
@@ -136,7 +172,6 @@ export const ShopProvider = ({ children }) => {
     await supabase.auth.signOut();
   };
 
-  // --- PRODUCT & CATEGORY CRUD ---
   const addProduct = async (productData, imageFile) => {
     try {
       let imageUrl = '';
@@ -237,7 +272,7 @@ export const ShopProvider = ({ children }) => {
 
   return (
     <ShopContext.Provider value={{
-      products, categories, orders, loading, user, login, logout,
+      products, categories, orders, loading, authLoading, user, isAdmin, login, logout,
       addProduct, updateProduct, deleteProduct, addCategory, deleteCategory,
       createOrder, approveOrder
     }}>

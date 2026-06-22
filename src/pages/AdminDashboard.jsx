@@ -1,7 +1,7 @@
 import React, { useState, useRef, useMemo } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useShop } from '../context/ShopContext';
-import { Home, Package, Tags, Plus, Pencil, Trash2, ImagePlus, X, LogOut, Loader2, ShoppingCart, CheckCircle, Image as ImageIcon } from 'lucide-react';
+import { Home, Package, Tags, Plus, Pencil, Trash2, ImagePlus, X, LogOut, Loader2, ShoppingCart, CheckCircle, Image as ImageIcon, RefreshCcw } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { supabase } from '../lib/supabase';
 import toast from 'react-hot-toast';
@@ -20,11 +20,11 @@ export default function AdminDashboard() {
   const [imageFile, setImageFile] = useState(null);
   const [imagePreview, setImagePreview] = useState('');
   const fileInputRef = useRef(null);
-
   const [categoryName, setCategoryName] = useState('');
 
-  // --- Image Sync State ---
+  // Sync States
   const [isSyncingImages, setIsSyncingImages] = useState(false);
+  const [isSyncingCatalog, setIsSyncingCatalog] = useState(false);
   const [syncProgress, setSyncProgress] = useState({ current: 0, total: 0 });
 
   const handleLogout = async () => {
@@ -80,9 +80,27 @@ export default function AdminDashboard() {
     }
   };
 
+  // --- NEW: ZOHO BULK CATALOG SYNC ---
+  const handleBulkCatalogSync = async () => {
+    setIsSyncingCatalog(true);
+    const toastId = toast.loading("Fetching latest catalog from Zoho...");
+    try {
+      const { data, error } = await supabase.functions.invoke('zoho-bulk-sync');
+      if (error) throw error;
+      if (data.error) throw new Error(data.error);
+      
+      toast.success(`Successfully synced ${data.count} items from Zoho! Refreshing page...`, { id: toastId });
+      setTimeout(() => window.location.reload(), 2000);
+    } catch (err) {
+      console.error(err);
+      toast.error(`Sync Failed: ${err.message}`, { id: toastId });
+    } finally {
+      setIsSyncingCatalog(false);
+    }
+  };
+
   // --- ZOHO IMAGE SYNC ORCHESTRATOR ---
   const handleBulkImageSync = async () => {
-    // 1. Find products missing images that have a Zoho ID
     const missingImages = products.filter(p => !p.image && p.zoho_item_id);
     
     if (missingImages.length === 0) {
@@ -94,8 +112,9 @@ export default function AdminDashboard() {
     setSyncProgress({ current: 0, total: missingImages.length });
     
     let successCount = 0;
+    let failCount = 0;
+    let lastError = "";
 
-    // 2. Loop through and call the secure Edge Function one by one
     for (let i = 0; i < missingImages.length; i++) {
       const product = missingImages[i];
       setSyncProgress({ current: i + 1, total: missingImages.length });
@@ -106,18 +125,27 @@ export default function AdminDashboard() {
         });
 
         if (error) throw error;
+        if (data.error) throw new Error(data.error);
+
         if (data.success) {
           successCount++;
-          // Visually update the product array in the UI instantly
           product.image = data.imageUrl; 
         }
       } catch (err) {
+        failCount++;
+        lastError = err.message;
         console.error(`Failed to sync image for ${product.name}:`, err);
       }
     }
 
     setIsSyncingImages(false);
-    toast.success(`Sync Complete! Downloaded ${successCount} new images from Zoho.`);
+    if (successCount > 0) {
+      toast.success(`Sync Complete! Downloaded ${successCount} new images.`);
+    } else if (failCount > 0) {
+      toast.error(`Sync failed. Error: ${lastError}`);
+    } else {
+      toast("No new images found in Zoho.");
+    }
   };
 
   const lastSyncTime = useMemo(() => {
@@ -128,7 +156,7 @@ export default function AdminDashboard() {
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col md:flex-row">
-      <aside className="w-full md:w-64 bg-white border-r border-gray-200 shrink-0 flex flex-col h-screen sticky top-0">
+      <aside className="w-full md:w-64 bg-white border-r border-gray-200 shrink-0 flex flex-col h-screen sticky top-0 z-10">
         <div className="p-6 border-b border-gray-200 flex items-center gap-3">
           <img src="/spotlex_logo.jpg" alt="Logo" className="w-8 h-8 rounded-full" />
           <span className="font-bold text-gray-900 text-lg">Spotlex Admin</span>
@@ -139,28 +167,17 @@ export default function AdminDashboard() {
             <Home className="w-5 h-5" /> View Live Store
           </Link>
           
-          <button 
-            onClick={() => setActiveTab('orders')}
-            className={`w-full flex items-center justify-between px-4 py-3 rounded-xl transition-colors ${activeTab === 'orders' ? 'bg-brand-50 text-brand-700 font-medium' : 'text-gray-600 hover:bg-gray-50'}`}
-          >
+          <button onClick={() => setActiveTab('orders')} className={`w-full flex items-center justify-between px-4 py-3 rounded-xl transition-colors ${activeTab === 'orders' ? 'bg-brand-50 text-brand-700 font-medium' : 'text-gray-600 hover:bg-gray-50'}`}>
             <div className="flex items-center gap-3"><ShoppingCart className="w-5 h-5" /> Orders</div>
             {orders.filter(o => o.status === 'pending').length > 0 && (
-              <span className="bg-red-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full">
-                {orders.filter(o => o.status === 'pending').length}
-              </span>
+              <span className="bg-red-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full">{orders.filter(o => o.status === 'pending').length}</span>
             )}
           </button>
 
-          <button 
-            onClick={() => setActiveTab('products')}
-            className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-colors ${activeTab === 'products' ? 'bg-brand-50 text-brand-700 font-medium' : 'text-gray-600 hover:bg-gray-50'}`}
-          >
+          <button onClick={() => setActiveTab('products')} className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-colors ${activeTab === 'products' ? 'bg-brand-50 text-brand-700 font-medium' : 'text-gray-600 hover:bg-gray-50'}`}>
             <Package className="w-5 h-5" /> Manage Products
           </button>
-          <button 
-            onClick={() => setActiveTab('categories')}
-            className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-colors ${activeTab === 'categories' ? 'bg-brand-50 text-brand-700 font-medium' : 'text-gray-600 hover:bg-gray-50'}`}
-          >
+          <button onClick={() => setActiveTab('categories')} className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-colors ${activeTab === 'categories' ? 'bg-brand-50 text-brand-700 font-medium' : 'text-gray-600 hover:bg-gray-50'}`}>
             <Tags className="w-5 h-5" /> Manage Categories
           </button>
         </nav>
@@ -176,7 +193,6 @@ export default function AdminDashboard() {
               <span className="text-[10px] text-gray-500 truncate">Last update: {lastSyncTime}</span>
             </div>
           </div>
-
           <button onClick={handleLogout} className="w-full flex items-center justify-center gap-2 px-4 py-2.5 bg-white border border-gray-200 text-red-600 hover:bg-red-50 rounded-xl transition-colors text-sm font-medium">
             <LogOut className="w-4 h-4" /> Sign Out
           </button>
@@ -230,10 +246,7 @@ export default function AdminDashboard() {
                       </td>
                       <td className="px-6 py-4 text-right">
                         {order.status === 'pending' && (
-                          <button 
-                            onClick={() => { if(window.confirm('Confirm payment received? This will deduct stock.')) approveOrder(order.id, order.items) }} 
-                            className="bg-brand-500 hover:bg-brand-600 text-white px-4 py-2 rounded-lg text-xs font-bold transition-colors flex items-center gap-2 ml-auto"
-                          >
+                          <button onClick={() => { if(window.confirm('Confirm payment received? This will deduct stock.')) approveOrder(order.id, order.items) }} className="bg-brand-500 hover:bg-brand-600 text-white px-4 py-2 rounded-lg text-xs font-bold transition-colors flex items-center gap-2 ml-auto">
                             <CheckCircle className="w-4 h-4" /> Confirm Payment
                           </button>
                         )}
@@ -254,15 +267,22 @@ export default function AdminDashboard() {
                 <h1 className="text-2xl font-bold text-gray-900">Products Inventory</h1>
                 <p className="text-gray-500 text-sm mt-1">Manage equipment displayed in the shop.</p>
               </div>
-              <div className="flex items-center gap-3">
-                {/* ZOHO IMAGE SYNC BUTTON */}
+              <div className="flex flex-wrap items-center gap-3">
+                
+                {/* NEW: FULL CATALOG SYNC */}
                 <button 
-                  onClick={handleBulkImageSync} 
-                  disabled={isSyncingImages}
-                  className="bg-white border border-gray-200 text-gray-700 px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-gray-50 hover:text-brand-600 transition-colors flex items-center gap-2 shadow-sm disabled:opacity-50"
+                  onClick={handleBulkCatalogSync} disabled={isSyncingCatalog}
+                  className="bg-white border border-gray-200 text-gray-700 px-4 py-2.5 rounded-lg text-sm font-medium hover:bg-gray-50 hover:text-brand-600 transition-colors flex items-center gap-2 shadow-sm disabled:opacity-50"
+                >
+                  <RefreshCcw className={`w-4 h-4 ${isSyncingCatalog ? 'animate-spin' : ''}`} /> Sync Full Catalog
+                </button>
+
+                <button 
+                  onClick={handleBulkImageSync} disabled={isSyncingImages}
+                  className="bg-white border border-gray-200 text-gray-700 px-4 py-2.5 rounded-lg text-sm font-medium hover:bg-gray-50 hover:text-brand-600 transition-colors flex items-center gap-2 shadow-sm disabled:opacity-50"
                 >
                   {isSyncingImages ? <Loader2 className="w-4 h-4 animate-spin" /> : <ImageIcon className="w-4 h-4" />}
-                  {isSyncingImages ? `Syncing ${syncProgress.current} / ${syncProgress.total}...` : "Sync Missing Images"}
+                  {isSyncingImages ? `Syncing ${syncProgress.current}/${syncProgress.total}` : "Sync Images"}
                 </button>
                 
                 <button onClick={() => openProductModal()} className="bg-gray-900 text-white px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-gray-800 transition-colors flex items-center gap-2 shadow-sm">
@@ -271,7 +291,6 @@ export default function AdminDashboard() {
               </div>
             </div>
 
-            {/* Progress Bar UI */}
             <AnimatePresence>
               {isSyncingImages && (
                 <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }} className="mb-6 bg-brand-50 border border-brand-100 p-4 rounded-xl">
@@ -305,7 +324,7 @@ export default function AdminDashboard() {
                         <div className="w-12 h-12 rounded-lg border border-gray-100 bg-gray-50 flex items-center justify-center shrink-0 overflow-hidden">
                           {product.image ? <img src={product.image} alt={product.name} className="w-full h-full object-cover" /> : <Package className="w-5 h-5 text-gray-300" />}
                         </div>
-                        <span className="font-medium text-gray-900 leading-snug">{product.name}</span>
+                        <span className="font-medium text-gray-900 leading-snug max-w-xs">{product.name}</span>
                       </td>
                       <td className="px-6 py-4">
                         <span className={`font-bold ${product.stock_quantity > 0 ? 'text-emerald-600' : 'text-red-500'}`}>
