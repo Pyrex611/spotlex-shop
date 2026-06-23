@@ -10,7 +10,7 @@ export default function AdminDashboard() {
   const { products, categories, orders, addProduct, updateProduct, deleteProduct, addCategory, deleteCategory, logout, approveOrder } = useShop();
   const navigate = useNavigate();
   
-  const [activeTab, setActiveTab] = useState('products'); 
+  const [activeTab, setActiveTab] = useState('orders'); 
   const [isProductModalOpen, setIsProductModalOpen] = useState(false);
   const [isCategoryModalOpen, setIsCategoryModalOpen] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
@@ -80,14 +80,20 @@ export default function AdminDashboard() {
     }
   };
 
-  // --- NEW: ZOHO BULK CATALOG SYNC ---
+  // --- ZOHO BULK CATALOG SYNC ---
   const handleBulkCatalogSync = async () => {
     setIsSyncingCatalog(true);
     const toastId = toast.loading("Fetching latest catalog from Zoho...");
     try {
       const { data, error } = await supabase.functions.invoke('zoho-bulk-sync');
-      if (error) throw error;
-      if (data.error) throw new Error(data.error);
+      
+      // Check for actual network failures
+      if (error) throw new Error(error.message || "Failed to contact Edge Function.");
+      
+      // Read our custom 200-status error payload
+      if (data && data.success === false) {
+        throw new Error(data.error || "Unknown synchronization error.");
+      }
       
       toast.success(`Successfully synced ${data.count} items from Zoho! Refreshing page...`, { id: toastId });
       setTimeout(() => window.location.reload(), 2000);
@@ -124,10 +130,20 @@ export default function AdminDashboard() {
           body: { productId: product.id, zohoItemId: product.zoho_item_id }
         });
 
-        if (error) throw error;
-        if (data.error) throw new Error(data.error);
+        if (error) throw new Error(error.message);
+        
+        // Read custom 200-status error payload
+        if (data && data.error) {
+          throw new Error(data.error);
+        }
 
-        if (data.success) {
+        // Expected skip (No image in Zoho is not a fatal failure)
+        if (data && data.success === false) {
+          console.log(`Skipped ${product.name}: ${data.reason}`);
+          continue;
+        }
+
+        if (data && data.success) {
           successCount++;
           product.image = data.imageUrl; 
         }
@@ -142,7 +158,7 @@ export default function AdminDashboard() {
     if (successCount > 0) {
       toast.success(`Sync Complete! Downloaded ${successCount} new images.`);
     } else if (failCount > 0) {
-      toast.error(`Sync failed. Error: ${lastError}`);
+      toast.error(`Sync encountered errors. Last error: ${lastError}`);
     } else {
       toast("No new images found in Zoho.");
     }
@@ -193,6 +209,7 @@ export default function AdminDashboard() {
               <span className="text-[10px] text-gray-500 truncate">Last update: {lastSyncTime}</span>
             </div>
           </div>
+
           <button onClick={handleLogout} className="w-full flex items-center justify-center gap-2 px-4 py-2.5 bg-white border border-gray-200 text-red-600 hover:bg-red-50 rounded-xl transition-colors text-sm font-medium">
             <LogOut className="w-4 h-4" /> Sign Out
           </button>
@@ -269,7 +286,7 @@ export default function AdminDashboard() {
               </div>
               <div className="flex flex-wrap items-center gap-3">
                 
-                {/* NEW: FULL CATALOG SYNC */}
+                {/* FULL CATALOG SYNC */}
                 <button 
                   onClick={handleBulkCatalogSync} disabled={isSyncingCatalog}
                   className="bg-white border border-gray-200 text-gray-700 px-4 py-2.5 rounded-lg text-sm font-medium hover:bg-gray-50 hover:text-brand-600 transition-colors flex items-center gap-2 shadow-sm disabled:opacity-50"
@@ -372,9 +389,7 @@ export default function AdminDashboard() {
                     <tr key={category.id} className="hover:bg-gray-50/50 transition-colors">
                       <td className="px-6 py-4 font-medium text-gray-900">{category.name}</td>
                       <td className="px-6 py-4 text-right">
-                        <button onClick={() => { if(window.confirm('Delete this category?')) deleteCategory(category.id) }} className="text-red-500 hover:bg-red-50 p-2 rounded-md transition-colors">
-                          <Trash2 className="w-4 h-4" />
-                        </button>
+                        <button onClick={() => { if(window.confirm('Delete this category?')) deleteCategory(category.id) }} className="text-red-500 hover:bg-red-50 p-2 rounded-md transition-colors"><Trash2 className="w-4 h-4" /></button>
                       </td>
                     </tr>
                   ))}
