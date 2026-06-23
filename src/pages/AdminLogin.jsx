@@ -9,12 +9,22 @@ export default function AdminLogin() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const { login, user } = useShop();
+  const { login, user, isAdmin, authLoading } = useShop();
   const navigate = useNavigate();
 
-  // Redirect if already logged in
+  // If auth is still loading, wait before evaluating redirects
+  if (authLoading) {
+    return <div className="min-h-screen flex items-center justify-center bg-gray-50"><Loader2 className="w-8 h-8 text-brand-500 animate-spin" /></div>;
+  }
+
+  // Redirect based on role if already logged in
   if (user) {
-    return <Navigate to="/admin" replace />;
+    if (isAdmin) {
+      return <Navigate to="/admin" replace />;
+    } else {
+      toast.error("Unauthorized account.");
+      return <Navigate to="/" replace />;
+    }
   }
 
   const handleLogin = async (e) => {
@@ -22,13 +32,12 @@ export default function AdminLogin() {
     setIsSubmitting(true);
     try {
       await login(email, password);
-      toast.success('Welcome back, Admin.');
-      navigate('/admin');
+      toast.success('Authenticating...');
+      // The auth state listener in ShopContext will catch this, check the role, and trigger a re-render.
     } catch (error) {
       toast.error('Invalid credentials. Please try again.');
-    } finally {
       setIsSubmitting(false);
-    }
+    } 
   };
 
   return (
