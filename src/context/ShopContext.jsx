@@ -1,26 +1,26 @@
+// src/context/ShopContext.jsx
 import React, { createContext, useState, useEffect, useContext } from 'react';
 import { supabase, isSupabaseConfigured } from '../lib/supabase';
 import toast from 'react-hot-toast';
 
 const ShopContext = createContext();
-
 export const useShop = () => useContext(ShopContext);
 
 export const ShopProvider = ({ children }) => {
-  const [products, setProducts] = useState([]);
-  const [categories, setCategories] = useState([]);
-  const [orders, setOrders] = useState([]);
-  
-  const [user, setUser] = useState(null);
-  const [isAdmin, setIsAdmin] = useState(false);
-  
-  const [loading, setLoading] = useState(true);
+  const [products,    setProducts]    = useState([]);
+  const [categories,  setCategories]  = useState([]);
+  const [orders,      setOrders]      = useState([]);
+  const [user,        setUser]        = useState(null);
+  const [isAdmin,     setIsAdmin]     = useState(false);
+  const [loading,     setLoading]     = useState(true);
   const [authLoading, setAuthLoading] = useState(true);
+
+  // ─── Helpers ────────────────────────────────────────────────────────────────
 
   const handleDbError = (error, fallbackMessage) => {
     console.error(error);
     if (error.message?.includes('row-level security') || error.code === '42501') {
-      toast.error('Permission Denied: Database security policies are blocking this.');
+      toast.error('Permission Denied: Database security policies are blocking this action.');
     } else if (error.message) {
       toast.error(`Database Error: ${error.message}`);
     } else {
@@ -30,24 +30,25 @@ export const ShopProvider = ({ children }) => {
 
   const checkRole = async (userId) => {
     try {
-      // Specifically targeting your existing 'profiles' table
       const { data, error } = await supabase
         .from('profiles')
         .select('role')
         .eq('id', userId)
         .single();
-        
-      if (data && (data.role === 'admin' || data.role === 'superadmin')) {
+
+      if (!error && data && (data.role === 'admin' || data.role === 'superadmin')) {
         setIsAdmin(true);
       } else {
         setIsAdmin(false);
       }
-    } catch (err) {
+    } catch {
       setIsAdmin(false);
     } finally {
       setAuthLoading(false);
     }
   };
+
+  // ─── Auth bootstrapping ──────────────────────────────────────────────────────
 
   useEffect(() => {
     if (!isSupabaseConfigured) {
@@ -82,17 +83,17 @@ export const ShopProvider = ({ children }) => {
   }, []);
 
   useEffect(() => {
-    if (user && isAdmin) {
-      fetchOrders();
-    }
+    if (user && isAdmin) fetchOrders();
   }, [user, isAdmin]);
+
+  // ─── Data fetching ───────────────────────────────────────────────────────────
 
   const fetchDatabase = async () => {
     setLoading(true);
     try {
       const [productsRes, categoriesRes] = await Promise.all([
         supabase.from('products').select('*').order('created_at', { ascending: false }),
-        supabase.from('categories').select('*').order('created_at', { ascending: true })
+        supabase.from('categories').select('*').order('created_at', { ascending: true }),
       ]);
 
       if (productsRes.error) throw productsRes.error;
@@ -109,24 +110,38 @@ export const ShopProvider = ({ children }) => {
 
   const fetchOrders = async () => {
     try {
-      const { data, error } = await supabase.from('orders').select('*').order('created_at', { ascending: false });
+      const { data, error } = await supabase
+        .from('orders')
+        .select('*')
+        .order('created_at', { ascending: false });
       if (error) throw error;
       setOrders(data || []);
     } catch (error) {
-      console.error("Failed to load orders", error);
+      console.error('Failed to load orders', error);
     }
   };
 
+  // ─── Order management ────────────────────────────────────────────────────────
+
+  /**
+   * Creates a pending order row. The `cartItems` array comes from the cart
+   * and already includes all product fields (including zoho_item_id) because
+   * products are fetched with select('*') from Supabase.
+   */
   const createOrder = async (cartItems, subtotal, method = 'whatsapp', reference = null) => {
     try {
       const orderRef = reference || `WA-${Date.now()}`;
-      const { data, error } = await supabase.from('orders').insert([{
-        reference: orderRef,
-        items: cartItems,
-        subtotal: subtotal,
-        payment_method: method,
-        status: 'pending'
-      }]).select().single();
+      const { data, error } = await supabase
+        .from('orders')
+        .insert([{
+          reference:      orderRef,
+          items:          cartItems,   // includes zoho_item_id on Zoho-synced products
+          subtotal:       subtotal,
+          payment_method: method,
+          status:         'pending',
+        }])
+        .select()
+        .single();
 
       if (error) throw error;
       return data;
@@ -136,33 +151,51 @@ export const ShopProvider = ({ children }) => {
     }
   };
 
-  const approveOrder = async (orderId, orderItems) => {
+  /**
+   * Admin action: approve a WhatsApp / cash payment.
+   *
+   * Calls the `zoho-approve-order` Edge Function which:
+   *   • Marks the order as paid in Supabase
+   *   • Deducts stock in Supabase
+   *   • Creates a Zoho Inventory invoice (best-effort)
+   *
+   * We no longer do stock deduction here — the Edge Function handles it
+   * so that the Zoho invoice and the local stock change are one atomic step.
+   */
+  const approveOrder = async (orderId, _orderItems) => {
+    const toastId = toast.loading('Confirming payment & syncing to Zoho...');
     try {
-      const { error: orderError } = await supabase
-        .from('orders')
-        .update({ status: 'paid' })
-        .eq('id', orderId);
-      
-      if (orderError) throw orderError;
+      const { data, error } = await supabase.functions.invoke('zoho-approve-order', {
+        body: { orderId },
+      });
 
-      for (const item of orderItems) {
-        const { data: currentProduct } = await supabase.from('products').select('stock_quantity').eq('id', item.id).single();
-        if (currentProduct) {
-          const newStock = Math.max(0, currentProduct.stock_quantity - item.quantity);
-          await supabase.from('products').update({ stock_quantity: newStock }).eq('id', item.id);
-        }
+      if (error) throw new Error(error.message || 'Edge Function call failed.');
+      if (data?.success === false) throw new Error(data.error || 'Unknown error from Edge Function.');
+
+      // Surface whether the Zoho invoice was created, skipped, or errored
+      if (data?.zoho?.error) {
+        toast.success('Payment confirmed & stock deducted!', { id: toastId });
+        toast.error(`Zoho invoice warning: ${data.zoho.error}`, { duration: 6000 });
+      } else if (data?.zoho?.skipped) {
+        toast.success('Payment confirmed & stock deducted! (Zoho invoice skipped — no Zoho item IDs on order)', { id: toastId });
+      } else {
+        toast.success(
+          `Payment confirmed! Zoho Invoice #${data?.zoho?.invoice_number ?? ''} created.`,
+          { id: toastId }
+        );
       }
 
-      toast.success('Payment confirmed & stock deducted!');
       fetchOrders();
       fetchDatabase();
     } catch (error) {
-      handleDbError(error, 'Failed to approve order.');
+      toast.error(`Approval failed: ${error.message}`, { id: toastId });
     }
   };
 
+  // ─── Auth ────────────────────────────────────────────────────────────────────
+
   const login = async (email, password) => {
-    if (!isSupabaseConfigured) throw new Error("Database not connected");
+    if (!isSupabaseConfigured) throw new Error('Database not connected');
     const { error } = await supabase.auth.signInWithPassword({ email, password });
     if (error) throw error;
   };
@@ -172,6 +205,8 @@ export const ShopProvider = ({ children }) => {
     await supabase.auth.signOut();
   };
 
+  // ─── Product CRUD ────────────────────────────────────────────────────────────
+
   const addProduct = async (productData, imageFile) => {
     try {
       let imageUrl = '';
@@ -180,22 +215,24 @@ export const ShopProvider = ({ children }) => {
         const fileName = `${Math.random()}-${Date.now()}.${fileExt}`;
         const { error: uploadError } = await supabase.storage.from('images').upload(fileName, imageFile);
         if (uploadError) throw uploadError;
-        
         const { data } = supabase.storage.from('images').getPublicUrl(fileName);
         imageUrl = data.publicUrl;
       }
 
-      const newProduct = {
-        name: productData.name,
-        price: productData.price,
-        description: productData.description,
-        category_id: productData.categoryId,
-        image: imageUrl
-      };
+      const { data, error } = await supabase
+        .from('products')
+        .insert([{
+          name:        productData.name,
+          price:       productData.price,
+          description: productData.description,
+          category_id: productData.categoryId,
+          image:       imageUrl,
+          // zoho_item_id intentionally omitted — manually-added products don't have one
+        }])
+        .select()
+        .single();
 
-      const { data, error } = await supabase.from('products').insert([newProduct]).select().single();
       if (error) throw error;
-      
       setProducts([data, ...products]);
       toast.success('Product added successfully!');
     } catch (error) {
@@ -206,29 +243,30 @@ export const ShopProvider = ({ children }) => {
 
   const updateProduct = async (id, productData, imageFile) => {
     try {
-      let imageUrl = productData.image; 
-
+      let imageUrl = productData.image;
       if (imageFile) {
         const fileExt = imageFile.name.split('.').pop();
         const fileName = `${Math.random()}-${Date.now()}.${fileExt}`;
         const { error: uploadError } = await supabase.storage.from('images').upload(fileName, imageFile);
         if (uploadError) throw uploadError;
-        
         const { data } = supabase.storage.from('images').getPublicUrl(fileName);
         imageUrl = data.publicUrl;
       }
 
-      const updates = {
-        name: productData.name,
-        price: productData.price,
-        description: productData.description,
-        category_id: productData.categoryId,
-        image: imageUrl
-      };
+      const { data, error } = await supabase
+        .from('products')
+        .update({
+          name:        productData.name,
+          price:       productData.price,
+          description: productData.description,
+          category_id: productData.categoryId,
+          image:       imageUrl,
+        })
+        .eq('id', id)
+        .select()
+        .single();
 
-      const { data, error } = await supabase.from('products').update(updates).eq('id', id).select().single();
       if (error) throw error;
-
       setProducts(products.map(p => p.id === id ? data : p));
       toast.success('Product updated!');
     } catch (error) {
@@ -248,6 +286,8 @@ export const ShopProvider = ({ children }) => {
     }
   };
 
+  // ─── Category CRUD ───────────────────────────────────────────────────────────
+
   const addCategory = async (name) => {
     try {
       const { data, error } = await supabase.from('categories').insert([{ name }]).select().single();
@@ -266,15 +306,21 @@ export const ShopProvider = ({ children }) => {
       setCategories(categories.filter(c => c.id !== id));
       toast.success('Category deleted.');
     } catch (error) {
-      handleDbError(error, 'Failed to delete category. Ensure no products are attached.');
+      handleDbError(error, 'Failed to delete category. Ensure no products are still using it.');
     }
   };
 
+  // ─── Context value ───────────────────────────────────────────────────────────
+
   return (
     <ShopContext.Provider value={{
-      products, categories, orders, loading, authLoading, user, isAdmin, login, logout,
-      addProduct, updateProduct, deleteProduct, addCategory, deleteCategory,
-      createOrder, approveOrder
+      products, categories, orders, loading, authLoading,
+      user, isAdmin,
+      login, logout,
+      addProduct, updateProduct, deleteProduct,
+      addCategory, deleteCategory,
+      createOrder, approveOrder,
+      fetchOrders, fetchDatabase,
     }}>
       {children}
     </ShopContext.Provider>

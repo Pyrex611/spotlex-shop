@@ -1,112 +1,110 @@
-// supabase/functions/zoho-image-sync/index.ts
-import { createClient } from "https://esm.sh/@supabase/supabase-js@2.39.8"
+/**
+ * supabase/functions/zoho-image-sync/index.ts
+ *
+ * Downloads the primary image for a single Zoho Inventory item, uploads it
+ * to Supabase Storage, and updates the product row's `image` column.
+ *
+ * Called per-product from the Admin Dashboard "Sync Images" orchestrator.
+ * Body: { productId: string, zohoItemId: string }
+ */
+
+import { createClient } from 'https://esm.sh/@supabase/supabase-js@2.39.8';
+import { getZohoAccessToken, getZohoApiBase } from '../_shared/zoho-auth.ts';
 
 const corsHeaders = {
   'Access-Control-Allow-Origin': '*',
   'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
-}
+};
 
 Deno.serve(async (req) => {
   if (req.method === 'OPTIONS') {
-    return new Response('ok', { headers: corsHeaders })
+    return new Response('ok', { headers: corsHeaders });
   }
 
   try {
-    const { productId, zohoItemId } = await req.json()
+    const { productId, zohoItemId } = await req.json();
 
     if (!productId || !zohoItemId) {
-      return new Response(JSON.stringify({ error: 'Missing required parameters' }), { status: 400, headers: corsHeaders })
+      return new Response(
+        JSON.stringify({ error: 'Missing required parameters: productId and zohoItemId.' }),
+        { status: 400, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+      );
     }
 
-    const supabaseUrl = Deno.env.get('SUPABASE_URL')!
-    const supabaseKey = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!
-    const supabase = createClient(supabaseUrl, supabaseKey)
+    const supabase = createClient(
+      Deno.env.get('SUPABASE_URL')!,
+      Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!
+    );
 
-    const ZOHO_CLIENT_ID = Deno.env.get('ZOHO_CLIENT_ID')!
-    const ZOHO_CLIENT_SECRET = Deno.env.get('ZOHO_CLIENT_SECRET')!
-    const ZOHO_REFRESH_TOKEN = Deno.env.get('ZOHO_REFRESH_TOKEN')!
-    const ZOHO_ORG_ID = Deno.env.get('ZOHO_ORG_ID')!
+    const orgId   = Deno.env.get('ZOHO_ORG_ID')!;
+    const token   = await getZohoAccessToken();
+    const apiBase = getZohoApiBase();
 
-    if (!ZOHO_CLIENT_ID || !ZOHO_CLIENT_SECRET || !ZOHO_REFRESH_TOKEN || !ZOHO_ORG_ID) {
-      throw new Error("Missing Zoho secrets in Supabase dashboard. Please run 'supabase secrets set' for all keys.")
+    // ── 1. Check whether the item actually has an image ───────────────────────
+    const itemRes  = await fetch(
+      `${apiBase}/items/${zohoItemId}?organization_id=${orgId}`,
+      { headers: { Authorization: `Zoho-oauthtoken ${token}` } }
+    );
+    const itemData = await itemRes.json() as Record<string, unknown>;
+
+    if (itemData.code !== undefined && itemData.code !== 0) {
+      throw new Error(`Zoho API Error (${itemData.code}): ${itemData.message}`);
     }
 
-    // 1. Get Zoho Access Token
-    const tokenRes = await fetch(`https://accounts.zoho.com/oauth/v2/token`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: new URLSearchParams({
-        refresh_token: ZOHO_REFRESH_TOKEN,
-        client_id: ZOHO_CLIENT_ID,
-        client_secret: ZOHO_CLIENT_SECRET,
-        grant_type: 'refresh_token',
-      }),
-    })
-    const tokenData = await tokenRes.json()
-    if (!tokenData.access_token) {
-      throw new Error(`Zoho Auth Failed: ${JSON.stringify(tokenData)}`)
+    const item = itemData.item as Record<string, unknown> | undefined;
+    if (!item?.image_name) {
+      // Not an error — many items simply have no image in Zoho yet
+      return new Response(
+        JSON.stringify({ success: false, reason: 'No image on this item in Zoho.' }),
+        { headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+      );
     }
 
-    // 2. Get Item Details from Zoho
-    const itemRes = await fetch(`https://www.zohoapis.com/inventory/v1/items/${zohoItemId}?organization_id=${ZOHO_ORG_ID}`, {
-      headers: { 'Authorization': `Zoho-oauthtoken ${tokenData.access_token}` }
-    })
-    const itemData = await itemRes.json()
-
-    if (itemData.code && itemData.code !== 0) {
-      throw new Error(`Zoho API Error (${itemData.code}): ${itemData.message}`)
-    }
-
-    if (!itemData.item || !itemData.item.image_name) {
-      return new Response(JSON.stringify({ success: false, reason: 'No image found on this item in Zoho.' }), { 
-        headers: { ...corsHeaders, 'Content-Type': 'application/json' } 
-      })
-    }
-
-    // 3. Download the Binary Image
-    const imageRes = await fetch(`https://www.zohoapis.com/inventory/v1/items/${zohoItemId}/image?organization_id=${ZOHO_ORG_ID}`, {
-      headers: { 'Authorization': `Zoho-oauthtoken ${tokenData.access_token}` }
-    })
+    // ── 2. Download the binary image from Zoho ────────────────────────────────
+    const imageRes = await fetch(
+      `${apiBase}/items/${zohoItemId}/image?organization_id=${orgId}`,
+      { headers: { Authorization: `Zoho-oauthtoken ${token}` } }
+    );
 
     if (!imageRes.ok) {
-      throw new Error(`Failed to download image file from Zoho. Status: ${imageRes.status}`)
+      throw new Error(`Failed to download image from Zoho (HTTP ${imageRes.status}).`);
     }
 
-    const imageBuffer = await imageRes.arrayBuffer()
-    const contentType = imageRes.headers.get('content-type') || 'image/jpeg'
-    const fileExt = contentType.split('/')[1] || 'jpg'
-    const fileName = `${zohoItemId}-${Date.now()}.${fileExt}`
+    const imageBuffer  = await imageRes.arrayBuffer();
+    const contentType  = imageRes.headers.get('content-type') ?? 'image/jpeg';
+    const ext          = contentType.split('/')[1]?.split(';')[0] ?? 'jpg';
+    const fileName     = `${zohoItemId}-${Date.now()}.${ext}`;
 
-    // 4. Upload to Supabase Storage Bucket
+    // ── 3. Upload to Supabase Storage ─────────────────────────────────────────
     const { error: uploadError } = await supabase.storage
       .from('images')
-      .upload(fileName, imageBuffer, { contentType, upsert: true })
+      .upload(fileName, imageBuffer, { contentType, upsert: true });
 
     if (uploadError) {
-      throw new Error(`Supabase Storage Upload Error: ${uploadError.message}`)
+      throw new Error(`Storage upload failed: ${uploadError.message}`);
     }
 
-    // 5. Get Public URL and Save to Products Table
-    const { data: publicUrlData } = supabase.storage.from('images').getPublicUrl(fileName)
-    const imageUrl = publicUrlData.publicUrl
+    const { data: urlData } = supabase.storage.from('images').getPublicUrl(fileName);
+    const imageUrl = urlData.publicUrl;
 
-    const { error: updateError } = await supabase
+    // ── 4. Update the product row ─────────────────────────────────────────────
+    const { error: dbError } = await supabase
       .from('products')
       .update({ image: imageUrl })
-      .eq('id', productId)
+      .eq('id', productId);
 
-    if (updateError) {
-      throw new Error(`Database Update Error: ${updateError.message}`)
-    }
+    if (dbError) throw new Error(`Database update failed: ${dbError.message}`);
 
-    return new Response(JSON.stringify({ success: true, imageUrl }), { 
-      headers: { ...corsHeaders, 'Content-Type': 'application/json' } 
-    })
+    return new Response(
+      JSON.stringify({ success: true, imageUrl }),
+      { headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+    );
 
-  } catch (error) {
-    return new Response(JSON.stringify({ success: false, error: error.message }), { 
-      status: 200, 
-      headers: { ...corsHeaders, 'Content-Type': 'application/json' } 
-    })
+  } catch (err) {
+    console.error('[zoho-image-sync]', err);
+    return new Response(
+      JSON.stringify({ success: false, error: (err as Error).message }),
+      { status: 500, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+    );
   }
-})
+});
