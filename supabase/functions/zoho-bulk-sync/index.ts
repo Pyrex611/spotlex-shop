@@ -1,86 +1,105 @@
-// supabase/functions/zoho-bulk-sync/index.ts
-import { createClient } from "https://esm.sh/@supabase/supabase-js@2.39.8"
+/**
+ * supabase/functions/zoho-bulk-sync/index.ts
+ *
+ * Pulls ALL active items from Zoho Inventory (handles pagination) and
+ * upserts them into the Supabase `products` table keyed on `zoho_item_id`.
+ *
+ * Called from the Admin Dashboard "Sync Full Catalog" button.
+ * Requires secrets: ZOHO_CLIENT_ID, ZOHO_CLIENT_SECRET, ZOHO_REFRESH_TOKEN, ZOHO_ORG_ID
+ */
+
+import { createClient } from 'https://esm.sh/@supabase/supabase-js@2.39.8';
+import { getZohoAccessToken, getZohoApiBase } from '../_shared/zoho-auth.ts';
 
 const corsHeaders = {
   'Access-Control-Allow-Origin': '*',
   'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
-}
+};
 
 Deno.serve(async (req) => {
   if (req.method === 'OPTIONS') {
-    return new Response('ok', { headers: corsHeaders })
+    return new Response('ok', { headers: corsHeaders });
   }
 
   try {
-    const supabaseUrl = Deno.env.get('SUPABASE_URL')!
-    const supabaseKey = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!
-    const supabase = createClient(supabaseUrl, supabaseKey)
+    const supabase = createClient(
+      Deno.env.get('SUPABASE_URL')!,
+      Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!
+    );
 
-    const ZOHO_CLIENT_ID = Deno.env.get('ZOHO_CLIENT_ID')!
-    const ZOHO_CLIENT_SECRET = Deno.env.get('ZOHO_CLIENT_SECRET')!
-    const ZOHO_REFRESH_TOKEN = Deno.env.get('ZOHO_REFRESH_TOKEN')!
-    const ZOHO_ORG_ID = Deno.env.get('ZOHO_ORG_ID')!
+    const orgId = Deno.env.get('ZOHO_ORG_ID');
+    if (!orgId) throw new Error('Missing ZOHO_ORG_ID secret.');
 
-    if (!ZOHO_CLIENT_ID || !ZOHO_CLIENT_SECRET || !ZOHO_REFRESH_TOKEN || !ZOHO_ORG_ID) {
-      throw new Error("Missing Zoho secrets in Supabase dashboard. Please run 'supabase secrets set' for all keys.")
+    // Auth — throws a descriptive error if credentials are wrong/missing
+    const token  = await getZohoAccessToken();
+    const apiBase = getZohoApiBase();
+
+    // ── Paginate through ALL Zoho Inventory active items ──────────────────────
+    const allItems: Record<string, unknown>[] = [];
+    let page = 1;
+    const PER_PAGE = 200; // Zoho's maximum per-page value
+
+    while (true) {
+      const res  = await fetch(
+        `${apiBase}/items?organization_id=${orgId}&page=${page}&per_page=${PER_PAGE}&status=active`,
+        { headers: { Authorization: `Zoho-oauthtoken ${token}` } }
+      );
+      const body = await res.json() as Record<string, unknown>;
+
+      if (body.code !== undefined && body.code !== 0) {
+        throw new Error(`Zoho API Error (code ${body.code}): ${body.message}`);
+      }
+
+      const items = body.items as Record<string, unknown>[] | undefined;
+      if (!items || items.length === 0) break;
+
+      allItems.push(...items);
+
+      // page_context.has_more_page is false when we've reached the last page
+      const pageCtx = body.page_context as Record<string, unknown> | undefined;
+      if (!pageCtx?.has_more_page) break;
+      page++;
     }
 
-    // 1. Fetch Zoho Access Token
-    const tokenRes = await fetch(`https://accounts.zoho.com/oauth/v2/token`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: new URLSearchParams({
-        refresh_token: ZOHO_REFRESH_TOKEN,
-        client_id: ZOHO_CLIENT_ID,
-        client_secret: ZOHO_CLIENT_SECRET,
-        grant_type: 'refresh_token',
-      }),
-    })
-    const tokenData = await tokenRes.json()
-    if (!tokenData.access_token) {
-      throw new Error(`Zoho Auth Failed: ${JSON.stringify(tokenData)}`)
+    if (allItems.length === 0) {
+      return new Response(
+        JSON.stringify({ success: true, count: 0, message: 'No active items found in Zoho.' }),
+        { headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+      );
     }
 
-    // 2. Fetch Catalog Items List
-    const itemsRes = await fetch(`https://www.zohoapis.com/inventory/v1/items?organization_id=${ZOHO_ORG_ID}`, {
-      headers: { 'Authorization': `Zoho-oauthtoken ${tokenData.access_token}` }
-    })
-    const itemsData = await itemsRes.json()
-    
-    if (itemsData.code && itemsData.code !== 0) {
-      throw new Error(`Zoho API Error (${itemsData.code}): ${itemsData.message}`)
-    }
+    // ── Map Zoho item fields → Supabase products columns ─────────────────────
+    const formatted = allItems.map((item) => ({
+      // item_id from Zoho is a large integer; store as text to avoid JS precision loss
+      zoho_item_id:   String(item.item_id),
+      name:           item.name as string,
+      sku:            (item.sku as string)         ?? '',
+      description:    (item.description as string) ?? '',
+      price:          Number(item.rate             ?? 0),
+      // actual_available_stock is more accurate than stock_on_hand for committed stock
+      stock_quantity: Number(
+        (item.actual_available_stock ?? item.stock_on_hand) ?? 0
+      ),
+    }));
 
-    if (!itemsData.items) {
-      throw new Error("No items returned from Zoho")
-    }
-
-    // 3. Map to Database Schema
-    const formattedProducts = itemsData.items.map((item: any) => ({
-      zoho_item_id: item.item_id,
-      name: item.name,
-      sku: item.sku || '',
-      description: item.description || '',
-      price: Number(item.rate || 0),
-      stock_quantity: Number(item.stock_on_hand || 0),
-    }))
-
-    // 4. Upsert into database
+    // Upsert — insert new rows, update existing ones by zoho_item_id
     const { error: upsertError } = await supabase
       .from('products')
-      .upsert(formattedProducts, { onConflict: 'zoho_item_id', ignoreDuplicates: false })
+      .upsert(formatted, { onConflict: 'zoho_item_id', ignoreDuplicates: false });
 
-    if (upsertError) throw upsertError
+    if (upsertError) throw upsertError;
 
-    return new Response(JSON.stringify({ success: true, count: formattedProducts.length }), { 
-      headers: { ...corsHeaders, 'Content-Type': 'application/json' } 
-    })
+    return new Response(
+      JSON.stringify({ success: true, count: formatted.length }),
+      { headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+    );
 
-  } catch (error) {
-    // Return 200 so the Supabase JS Client does not swallow the JSON error body
-    return new Response(JSON.stringify({ success: false, error: error.message }), { 
-      status: 200, 
-      headers: { ...corsHeaders, 'Content-Type': 'application/json' } 
-    })
+  } catch (err) {
+    console.error('[zoho-bulk-sync]', err);
+    // Return 500 so the frontend knows this is a real failure, not a success
+    return new Response(
+      JSON.stringify({ success: false, error: (err as Error).message }),
+      { status: 500, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+    );
   }
-})
+});
